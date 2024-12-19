@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 export default function Carousel() {
   return (
@@ -7,19 +10,23 @@ export default function Carousel() {
       className="relative w-full"
       data-carousel="slide"
     >
-      <div className="relative mt-4 h-56 overflow-hidden dark:bg-gray-900 md:h-96">
+      <div className="relative py-20 h-56 overflow-hidden dark:bg-gray-900 md:h-96">
         {/* Carousel Item 1 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">
             <Image
-              src="/pechemignon_home_pic.jpg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              src="/Le-Péché-Mignon.2.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
               alt="Carousel Image 1"
               width={500}
               height={500}
             />
             <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
-              <span>Family friendly outdoor space</span>
+              <span
+                className={`${lora.className} bg-[#c18a52]/30 backdrop-blur-md border border-white/30 py-4 px-10 rounded`}
+              >
+                Family friendly outdoor space
+              </span>
             </div>
           </div>
         </div>
@@ -28,14 +35,18 @@ export default function Carousel() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">
             <Image
-              src="/pechemignon_home_pic.jpg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Carousel Image 2"
+              src="/Artisan-coffee.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+              alt="Artisan coffee"
               width={500}
               height={500}
             />
             <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
-              <span>Slide 2 Text</span>
+              <span
+                className={`${lora.className} bg-[#c18a52]/30 backdrop-blur-md border border-white/30 py-4 px-10 rounded`}
+              >
+                Artisan coffee
+              </span>
             </div>
           </div>
         </div>
@@ -44,14 +55,18 @@ export default function Carousel() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">
             <Image
-              src="/pechemignon_home_pic.jpg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              src="/Le-Péché-Mignon.3.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
               alt="Carousel Image 3"
               width={500}
               height={500}
             />
             <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
-              <span>Slide 3 Text</span>
+              <span
+                className={`${lora.className} bg-[#c18a52]/30 backdrop-blur-md border border-white/30 py-4 px-10 rounded`}
+              >
+                Taste of local producers in Highbury
+              </span>
             </div>
           </div>
         </div>
@@ -60,30 +75,18 @@ export default function Carousel() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">
             <Image
-              src="/pechemignon_home_pic.jpg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              src="/pechemignon_home_pic1.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
               alt="Carousel Image 4"
               width={500}
               height={500}
             />
             <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
-              <span>Slide 4 Text</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Carousel Item 5 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <div className="relative w-full h-full">
-            <Image
-              src="/pechemignon_home_pic.jpg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Carousel Image 5"
-              width={500}
-              height={500}
-            />
-            <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
-              <span>Slide 5 Text</span>
+              <span
+                className={`${lora.className} bg-[#c18a52]/30 backdrop-blur-md border border-white/30 py-4 px-10 rounded`}
+              >
+                Delicious food and more to savor
+              </span>
             </div>
           </div>
         </div>
@@ -119,19 +122,12 @@ export default function Carousel() {
           aria-label="Slide 4"
           data-carousel-slide-to="3"
         ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 5"
-          data-carousel-slide-to="4"
-        ></button>
       </div>
 
       {/* Previous Button */}
       <button
         type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -157,7 +153,7 @@ export default function Carousel() {
       {/* Next Button */}
       <button
         type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">

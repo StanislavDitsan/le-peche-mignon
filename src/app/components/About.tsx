@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <section className="py-14 lg:py-24 dark:bg-gray-900 relative">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
+      <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
           <div className="img-box">
             <Image
@@ -17,7 +17,7 @@ export default function About() {
           </div>
           <div className="lg:pl-[100px] flex items-center">
             <div className="data w-full">
-              <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black dark:text-white mb-16 max-lg:text-center relative mt-4 lg:mt-0">
+              <h2 className="font-bold text-4xl lg:text-5xl text-black dark:text-white max-lg:text-center relative lg:mt-0">
                 About Us{" "}
               </h2>
               <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto mt-2">
