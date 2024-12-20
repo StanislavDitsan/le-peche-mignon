@@ -22,7 +22,7 @@ const Coffee = () => {
             alt=""
             className="inline-block h-full w-full rounded-2xl object-cover"
           />
-          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-black p-10 sm:p-20">
+          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-gray-300 p-10 sm:p-20">
             <h2 className="text-3xl font-bold md:text-5xl">
               A French Twist on Artisan Coffee
             </h2>
