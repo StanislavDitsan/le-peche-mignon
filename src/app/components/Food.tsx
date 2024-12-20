@@ -6,7 +6,7 @@ const Food = () => {
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Title */}
-        <h2 className="text-center text-3xl font-bold md:text-5xl">Our Menu</h2>
+        <h2 className="text-center text-4xl font-bold md:text-6xl">Our Menu</h2>
         <p className="mx-auto mb-8 mt-4 text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16">
           Indulgent weekend brunch, daily specials, and classic favourites with
           a twist. Freshly made every day using the finest ingredients.
@@ -85,7 +85,7 @@ const Food = () => {
           </div>
         </div>
         <div className="mt-16">
-          <h3 className="text-center text-2xl font-bold md:text-4xl">
+          <h3 className="text-center text-4xl font-bold md:text-6xl">
             More Than Just a Menu
           </h3>
           <p className="mx-auto mt-4 mb-8 max-w-3xl text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16">

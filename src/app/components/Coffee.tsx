@@ -4,9 +4,9 @@ const Coffee = () => {
   return (
     <section>
       {/* Container */}
-      <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+      <div className="mx-auto w-full max-w-7xl px-5 md:px-10 md:py-20">
         {/* Title */}
-        <h2 className="mb-8 text-3xl font-bold md:text-5xl lg:mb-4">
+        <h2 className="mb-8 text-3xl font-bold md:text-6xl lg:mb-4">
           Crafting Perfect Coffee
         </h2>
         <p className="mb-8 max-w-lg text-sm text-gray-500 sm:text-base lg:mb-24">
