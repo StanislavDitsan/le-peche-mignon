@@ -3,6 +3,7 @@ import Carousel from "./components/Carousel";
 import Coffee from "./components/Coffee";
 import FindUs from "./components/FindUs";
 import Food from "./components/Food";
+import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 
 export default function Home() {
@@ -24,8 +25,11 @@ export default function Home() {
       <section>
         <Carousel />
       </section>
-      <section>
+      <section id="FindUs">
         <FindUs />
+      </section>
+      <section>
+        <Gallery />
       </section>
     </>
   );

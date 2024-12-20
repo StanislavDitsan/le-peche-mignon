@@ -14,7 +14,11 @@ const Food = () => {
         {/* Content */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:justify-center md:grid-cols-1 md:gap-8 lg:grid-cols-2">
           {/* Item */}
-          <div className="grid w-full grid-flow-row justify-center gap-6 rounded-md border border-solid border-gray-300 p-8 md:grid-cols-2">
+          <div className="relative grid w-full grid-flow-row justify-center gap-6 rounded-md p-8 md:grid-cols-2">
+            {/* Borders for top-left and bottom-right corners */}
+            <div className="absolute top-0 left-0 h-4 w-4 border-t-4 border-l-4 border-gray-100"></div>
+            <div className="absolute bottom-0 right-0 h-4 w-4 border-b-4 border-r-4 border-gray-100"></div>
+
             <img
               src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Brunch"
@@ -31,8 +35,11 @@ const Food = () => {
               </p>
             </div>
           </div>
+
           {/* Item */}
-          <div className="grid w-full grid-flow-row justify-center gap-6 rounded-md border border-solid border-gray-300 p-8 md:grid-cols-2">
+          <div className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2">
+            <div className="absolute top-0 right-0 h-4 w-4 border-t-4 border-r-4 border-gray-100"></div>
+            <div className="absolute bottom-0 left-0 h-4 w-4 border-b-4 border-l-4 border-gray-100"></div>
             <img
               src="https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Toasted Sandwiches"
@@ -50,7 +57,9 @@ const Food = () => {
             </div>
           </div>
           {/* Item */}
-          <div className="grid w-full grid-flow-row justify-center gap-6 rounded-md border border-solid border-gray-300 p-8 md:grid-cols-2">
+          <div className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2">
+            <div className="absolute top-0 right-0 h-4 w-4 border-t-4 border-r-4 border-gray-100"></div>
+            <div className="absolute bottom-0 left-0 h-4 w-4 border-b-4 border-l-4 border-gray-100"></div>
             <img
               src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Soups and Stews"
@@ -66,7 +75,11 @@ const Food = () => {
             </div>
           </div>
           {/* Item */}
-          <div className="grid w-full grid-flow-row justify-center gap-6 rounded-md border border-solid border-gray-300 p-8 md:grid-cols-2">
+          <div className="relative grid w-full grid-flow-row justify-center gap-6 rounded-md p-8 md:grid-cols-2">
+            {/* Pseudo-elements for borders */}
+            <div className="absolute top-0 left-0 h-4 w-4 border-t-4 border-l-4 border-gray-100"></div>
+            <div className="absolute bottom-0 right-0 h-4 w-4 border-b-4 border-r-4 border-gray-100"></div>
+
             <img
               src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Fresh Ingredients"
