@@ -4,6 +4,12 @@ import { useEffect } from "react";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { Lora } from "next/font/google";
+import { Inter } from "next/font/google";
+
+// Importing Lora and Inter fonts
+const lora = Lora({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -45,6 +51,18 @@ export default function RootLayout({
             `,
           }}
         ></script>
+        {/* Apply Lora font globally to h1, h2 and Inter font to paragraphs */}
+        <style jsx global>{`
+          h1,
+          h2,
+          h3 {
+            font-family: ${lora.style.fontFamily};
+          }
+          p,
+          a {
+            font-family: ${inter.style.fontFamily};
+          }
+        `}</style>
       </head>
       <body className="antialiased">
         <NavBar />
