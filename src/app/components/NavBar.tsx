@@ -98,7 +98,7 @@ export default function NavBar() {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="relative block py-2 px-3 text-black text-lg rounded md:bg-transparent md:p-0 hover:text-gray-500 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                   aria-current="page"
                 >
@@ -135,10 +135,19 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  href="#FindUs"
+                  href="#findus"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Find Us
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
+                >
+                  Gallery
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
