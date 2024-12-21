@@ -99,42 +99,47 @@ export default function NavBar() {
               <li>
                 <Link
                   href="#"
-                  className="block py-2 px-3 text-white bg-blue-700 text-lg rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  className="relative block py-2 px-3 text-black text-lg rounded md:bg-transparent md:p-0 hover:text-gray-500 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                   aria-current="page"
                 >
                   Home
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/#coffee"
+                  className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Coffee
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/#menu"
+                  className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Menu
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/#foodstore"
+                  className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Food Store
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
                 <Link
                   href="#FindUs"
-                  className="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Find Us
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
 

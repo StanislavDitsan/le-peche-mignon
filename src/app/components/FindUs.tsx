@@ -2,7 +2,7 @@ import React from "react";
 
 const FindUs = () => {
   return (
-    <section>
+    <section id="FindUs">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Component */}

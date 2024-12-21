@@ -2,7 +2,7 @@ import React from "react";
 
 const Food = () => {
   return (
-    <section>
+    <section id="menu">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Title */}
@@ -97,7 +97,7 @@ const Food = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16">
+        <div id="foodstore" className="mt-16">
           <h3 className="text-center text-4xl font-bold md:text-6xl">
             More Than Just a Menu
           </h3>
