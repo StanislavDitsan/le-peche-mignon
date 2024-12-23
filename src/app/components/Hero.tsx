@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
             Welcome to <span className="text-[#431500]">Le Péché Mignon</span>
           </h1>
-          <p className="max-w-2xl font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
             A cozy French café offering artisan coffee, buttery croissants, and
             fine food products. Nestled on Highbury&apos;s Ronalds Road, we
             invite you to relax, unwind, and savor the moment.

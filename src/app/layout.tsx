@@ -5,11 +5,11 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Lora } from "next/font/google";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
 // Importing Lora and Inter fonts
 const lora = Lora({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
+const open_sans = Open_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -55,12 +55,12 @@ export default function RootLayout({
         <style jsx global>{`
           h1,
           h2,
-          h3 {
+          h3,
+          a {
             font-family: ${lora.style.fontFamily};
           }
-          p,
-          a {
-            font-family: ${inter.style.fontFamily};
+          p {
+            font-family: ${open_sans.style.fontFamily};
           }
         `}</style>
       </head>

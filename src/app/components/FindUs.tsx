@@ -2,7 +2,7 @@ import React from "react";
 
 const FindUs = () => {
   return (
-    <section id="FindUs">
+    <section id="findus">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Component */}
@@ -16,20 +16,34 @@ const FindUs = () => {
           </div>
           <div>
             <h1 className="mb-4 text-4xl font-bold md:text-6xl">Find Us</h1>
-            <p className="mb-6 max-w-lg text-sm text-gray-500 sm:text-xl md:mb-10 lg:mb-12">
-              Le Péché Mignon is a 5 minute walk from either Highbury and
-              Islington or Holloway Road station. We don't take reservations,
-              but please don't let this put you off. Come along and we will seat
-              you as quickly as we can. All our tables are for sharing. We've
-              got a beautifully secluded garden to the rear, if the weather is
-              good it's a great place to relax. We're always trying to improve -
-              we'd love to hear what you think about Le Péché Mignon - drop us a
-              line at: feedback@lepechemignon.co.uk
+            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+              Le Péché Mignon is a 5-minute walk from either Highbury and
+              Islington or Holloway Road station.
             </p>
+            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+              We don't take reservations, but please don't let this put you off.
+              Come along and we will seat you as quickly as we can. All our
+              tables are for sharing.
+            </p>
+            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+              We've got a beautifully secluded garden to the rear. If the
+              weather is good, it's a great place to relax.
+            </p>
+            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+              We're always trying to improve - we'd love to hear what you think
+              about Le Péché Mignon. Drop us a line at:{" "}
+              <a
+                href="mailto:feedback@lepechemignon.co.uk"
+                className="text-blue-600 hover:underline"
+              >
+                feedback@lepechemignon.co.uk
+              </a>
+            </p>
+
             <a
               href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
               target="_blank"
-              className="inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white"
+              className="inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white mt-2"
             >
               Get Directions
             </a>

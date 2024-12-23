@@ -1,4 +1,6 @@
 import React from "react";
+import { CiCoffeeCup } from "react-icons/ci";
+
 import {
   FaInstagram,
   FaPhone,
@@ -15,9 +17,14 @@ const Footer = () => {
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
         <div className="sm:flex-row flex justify-between flex-col">
-          <h2 className="font-bold text-3xl md:text-5xl w-full max-w-xl">
-            Your Cozy Coffee Spot
+          <h2 className="font-bold text-3xl md:text-5xl w-full max-w-xl inline-flex items-center">
+            Your Cozy Coffee Spot{" "}
+            <CiCoffeeCup
+              className="text-black ml-2"
+              style={{ fontSize: "1em" }}
+            />
           </h2>
+
           <div className="mt-8 md:mt-0">
             {/* Address with clickable Google directions link */}
             <div className="mb-4 flex items-center">

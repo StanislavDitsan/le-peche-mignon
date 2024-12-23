@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWineGlassAlt, FaBeer, FaUtensils } from "react-icons/fa";
 
 const Food = () => {
   return (
@@ -166,8 +167,8 @@ const Food = () => {
               </li>
             </ul>
             {/* Right Content */}
-            <div className="space-y-12 text-left lg:text-right">
-              <div className="border-l-4 border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
+            <div className="space-y-12 text-center lg:text-right">
+              <div className=" border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
                 <p className="text-lg font-semibold text-gray-700">
                   Natural and Biodynamic Wines
                 </p>
@@ -175,7 +176,7 @@ const Food = () => {
                   From Les Caves de Pyrene, curated to complement every meal.
                 </p>
               </div>
-              <div className="border-l-4 border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
+              <div className="border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
                 <p className="text-lg font-semibold text-gray-700">
                   Craft Beers
                 </p>
@@ -183,7 +184,7 @@ const Food = () => {
                   From The Kernel, London&apos;s celebrated microbrewery.
                 </p>
               </div>
-              <div className="border-l-4 border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
+              <div className="border-[#431500] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4">
                 <p className="text-lg font-semibold text-gray-700">
                   Catering Services
                 </p>
