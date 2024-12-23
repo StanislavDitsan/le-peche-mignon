@@ -17,8 +17,10 @@ export default function About() {
             />
           </div>
           {/* Content */}
-          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-gray-300 p-10 sm:p-20">
-            <h2 className="text-3xl font-bold md:text-6xl">About Us</h2>
+          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20">
+            <h2 className="text-3xl font-bold md:text-6xl dark:text-white">
+              About Us
+            </h2>
             <p className="text-sm text-gray-500 sm:text-base">
               Le Péché Mignon is an independent French café and fine food store
               nestled in a surprising location on Highbury&apos;s Ronalds Road,

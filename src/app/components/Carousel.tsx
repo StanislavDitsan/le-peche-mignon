@@ -10,7 +10,7 @@ export default function Carousel() {
       className="relative w-full"
       data-carousel="slide"
     >
-      <div className="relative py-20 h-56 overflow-hidden dark:bg-gray-900 md:h-96">
+      <div className="relative py-20 lg:h-screen overflow-hidden dark:bg-gray-900 md:h-96">
         {/* Carousel Item 1 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">

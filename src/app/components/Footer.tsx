@@ -12,15 +12,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <footer className="block">
+    <footer className="block dark:bg-gray-900">
       {/* Container */}
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
         <div className="sm:flex-row flex justify-between flex-col">
-          <h2 className="font-bold text-3xl md:text-5xl w-full max-w-xl inline-flex items-center">
+          <h2 className="font-bold text-3xl md:text-5xl w-full max-w-xl inline-flex items-center dark:text-white">
             Your Cozy Coffee Spot{" "}
             <CiCoffeeCup
-              className="text-black ml-2"
+              className="text-black ml-2 dark:text-white"
               style={{ fontSize: "1em" }}
             />
           </h2>

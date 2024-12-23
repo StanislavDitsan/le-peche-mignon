@@ -2,7 +2,7 @@ import React from "react";
 
 const FindUs = () => {
   return (
-    <section id="findus">
+    <section className="dark:bg-gray-900" id="findus">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Component */}
@@ -15,7 +15,9 @@ const FindUs = () => {
             />
           </div>
           <div>
-            <h1 className="mb-4 text-4xl font-bold md:text-6xl">Find Us</h1>
+            <h1 className="mb-4 text-4xl font-bold md:text-6xl dark:text-white">
+              Find Us
+            </h1>
             <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
               Le Péché Mignon is a 5-minute walk from either Highbury and
               Islington or Holloway Road station.
@@ -43,7 +45,7 @@ const FindUs = () => {
             <a
               href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
               target="_blank"
-              className="inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white mt-2"
+              className="button2 inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white dark:text-white mt-2"
             >
               Get Directions
             </a>

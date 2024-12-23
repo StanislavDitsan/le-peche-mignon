@@ -2,11 +2,11 @@ import React from "react";
 
 const Coffee = () => {
   return (
-    <section id="coffee">
+    <section className="dark:bg-gray-900" id="coffee">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 md:px-10 md:py-20">
         {/* Title */}
-        <h2 className="mb-8 text-3xl font-bold md:text-6xl lg:mb-4">
+        <h2 className="mb-8 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white">
           Crafting Perfect Coffee
         </h2>
         <p className="mb-8 max-w-lg text-sm text-gray-500 sm:text-base lg:mb-24">
@@ -22,8 +22,8 @@ const Coffee = () => {
             alt=""
             className="inline-block h-full w-full rounded-2xl object-cover"
           />
-          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-gray-300 p-10 sm:p-20">
-            <h2 className="text-3xl font-bold md:text-5xl">
+          <div className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20">
+            <h2 className="text-3xl font-bold md:text-5xl dark:text-white">
               A French Twist on Artisan Coffee
             </h2>
             <p className="text-sm text-gray-500 sm:text-base">
