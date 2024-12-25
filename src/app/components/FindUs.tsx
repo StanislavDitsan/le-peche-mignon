@@ -11,6 +11,8 @@ const FindUs = () => {
         <div className="grid items-center gap-8 sm:gap-20 lg:grid-cols-2">
           <div>
             <Image
+              width={500}
+              height={500}
               src="/peche_mignon_map.png"
               alt=""
               className="mx-auto inline-block h-full w-full max-w-2xl object-cover bg-black/90 border border-white/30 backdrop-blur-md rounded-2xl"

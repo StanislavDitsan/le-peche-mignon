@@ -19,6 +19,8 @@ const Coffee = () => {
             src="/coffee.jpg"
             alt=""
             className="inline-block h-full w-full rounded-2xl object-cover"
+            width={500}
+            height={500}
           />
           <div className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20">
             <h2 className="text-3xl font-bold md:text-5xl dark:text-white">

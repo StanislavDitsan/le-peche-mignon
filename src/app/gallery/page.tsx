@@ -130,6 +130,8 @@ const Gallery = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
+                width={500}
+                height={500}
                 className="inline-block h-full w-full rounded-lg object-cover group-hover:opacity-80 transition-opacity duration-300"
               />
               <div className="absolute bottom-5 left-5 flex flex-col justify-center rounded-lg bg-white px-6 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -159,9 +161,11 @@ const Gallery = () => {
               ×
             </button>
             <Image
+              width={900}
+              height={900}
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
-              className="w-full h-auto rounded-lg"
+              className="rounded-lg max-w-full max-h-[80vh] object-contain"
             />
             <div className="mt-4">
               <h3 className="text-xl font-semibold dark:text-white">
