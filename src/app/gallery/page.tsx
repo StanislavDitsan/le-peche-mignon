@@ -7,74 +7,50 @@ const Gallery = () => {
     {
       src: "/peche_mignon-1.jpg",
       alt: "peche_mignon-1",
-      projectName: "Project 1",
-      client: "Client 1",
     },
     {
       src: "/peche_mignon-2.jpg",
       alt: "Image 2",
-      projectName: "Project 2",
-      client: "Client 2",
     },
     {
       src: "/peche_mignon-3.jpg",
       alt: "Image 3",
-      projectName: "Project 3",
-      client: "Client 3",
     },
     {
       src: "/peche_mignon-4.jpg",
       alt: "Image 4",
-      projectName: "Project 4",
-      client: "Client 4",
     },
     {
       src: "/peche_mignon-5.jpg",
       alt: "Image 5",
-      projectName: "Project 5",
-      client: "Client 5",
     },
     {
       src: "/peche_mignon-6.jpg",
       alt: "Image 6",
-      projectName: "Project 6",
-      client: "Client 6",
     },
     {
       src: "/peche_mignon-7.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
     {
       src: "/peche_mignon-8.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
     {
       src: "/peche_mignon-9.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
     {
       src: "/peche_mignon-10.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
     {
       src: "/peche_mignon-11.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
     {
       src: "/peche_mignon-12.jpg",
       alt: "Image 7",
-      projectName: "Project 7",
-      client: "Client 7",
     },
   ];
 
@@ -134,12 +110,6 @@ const Gallery = () => {
                 height={500}
                 className="inline-block h-full w-full rounded-lg object-cover group-hover:opacity-80 transition-opacity duration-300"
               />
-              <div className="absolute bottom-5 left-5 flex flex-col justify-center rounded-lg bg-white px-6 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-sm font-medium text-gray-800">
-                  {image.projectName}
-                </p>
-                <p className="text-sm text-gray-500">{image.client}</p>
-              </div>
             </a>
           ))}
         </div>
@@ -167,14 +137,7 @@ const Gallery = () => {
               alt={images[currentIndex].alt}
               className="rounded-lg max-w-full max-h-[80vh] object-contain"
             />
-            <div className="mt-4">
-              <h3 className="text-xl font-semibold dark:text-white">
-                {images[currentIndex].projectName}
-              </h3>
-              <p className="text-sm text-gray-500">
-                {images[currentIndex].client}
-              </p>
-            </div>
+
             <div className="mt-4 flex justify-between">
               <button
                 className="bg-gray-200 px-4 py-2 rounded-md hover:bg-gray-300"
