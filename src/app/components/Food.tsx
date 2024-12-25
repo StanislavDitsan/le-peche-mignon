@@ -1,5 +1,5 @@
+import Image from "next/image";
 import React from "react";
-import { FaWineGlassAlt, FaBeer, FaUtensils } from "react-icons/fa";
 
 const Food = () => {
   return (
@@ -22,7 +22,7 @@ const Food = () => {
             <div className="absolute top-0 left-0 h-4 w-4 border-t-4 border-l-4 border-gray-100 dark:border-gray-700"></div>
             <div className="absolute bottom-0 right-0 h-4 w-4 border-b-4 border-r-4 border-gray-100 dark:border-gray-700"></div>
 
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Brunch"
               className="inline-block h-72 w-full object-cover rounded"
@@ -45,7 +45,7 @@ const Food = () => {
           <div className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2">
             <div className="absolute top-0 right-0 h-4 w-4 border-t-4 border-r-4 border-gray-100 dark:border-gray-700"></div>
             <div className="absolute bottom-0 left-0 h-4 w-4 border-b-4 border-l-4 border-gray-100 dark:border-gray-700"></div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Toasted Sandwiches"
               className="inline-block h-72 w-full object-cover rounded"
@@ -67,7 +67,7 @@ const Food = () => {
           <div className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2">
             <div className="absolute top-0 right-0 h-4 w-4 border-t-4 border-r-4 border-gray-100 dark:border-gray-700"></div>
             <div className="absolute bottom-0 left-0 h-4 w-4 border-b-4 border-l-4 border-gray-100 dark:border-gray-700"></div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Soups and Stews"
               className="inline-block h-72 w-full object-cover rounded"
@@ -89,7 +89,7 @@ const Food = () => {
             <div className="absolute top-0 left-0 h-4 w-4 border-t-4 border-l-4 border-gray-100 dark:border-gray-700"></div>
             <div className="absolute bottom-0 right-0 h-4 w-4 border-b-4 border-r-4 border-gray-100 dark:border-gray-700"></div>
 
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Fresh Ingredients"
               className="inline-block h-72 w-full object-cover rounded"
@@ -113,15 +113,15 @@ const Food = () => {
             More Than Just a Menu
           </h3>
           <p className="mx-auto mt-4 mb-8 max-w-3xl text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16">
-            We've been called petite, intimate, bijou, and even snug. What we do
-            hope is that we're packed with good things. Here are some highlights
-            of the best of Europe's fine food offerings:
+            We&apos;ve been called petite, intimate, bijou, and even snug. What
+            we do hope is that we&apos;re packed with good things. Here are some
+            highlights of the best of Europe&apos;s fine food offerings:
           </p>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             {/* Left Content */}
             <ul className="mx-auto max-w-4xl space-y-6 text-sm text-gray-500 sm:text-base md:space-y-8 lg:text-lg">
               <li className="flex items-start gap-4">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1624772398066-98584aa2f214?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Chorizo"
                   className="h-12 w-12 rounded-full object-cover"
@@ -132,7 +132,7 @@ const Food = () => {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1609607285694-e283bd2ea9a0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Teas"
                   className="h-12 w-12 rounded-full object-cover"
@@ -143,7 +143,7 @@ const Food = () => {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <img
+                <Image
                   src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=2849&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Coffee"
                   className="h-12 w-12 rounded-full object-cover"
@@ -154,7 +154,7 @@ const Food = () => {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <img
+                <Image
                   src="https://plus.unsplash.com/premium_photo-1691939610797-aba18030c15f?q=80&w=2822&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Cheese"
                   className="h-12 w-12 rounded-full object-cover"
@@ -165,7 +165,7 @@ const Food = () => {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <img
+                <Image
                   src="https://plus.unsplash.com/premium_photo-1666920429649-7562049bb713?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Yoghurt"
                   className="h-12 w-12 rounded-full object-cover"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Coffee = () => {
@@ -14,7 +15,7 @@ const Coffee = () => {
           machine and talented baristas
         </p>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-          <img
+          <Image
             src="/coffee.jpg"
             alt=""
             className="inline-block h-full w-full rounded-2xl object-cover"
@@ -24,10 +25,10 @@ const Coffee = () => {
               A French Twist on Artisan Coffee
             </h2>
             <p className="text-sm text-gray-500 sm:text-base">
-              Inspired by the emergence of London's artisan coffee scene we now
-              enjoy being part of it, albeit with a French touch. After all it's
-              not only the Antipodeans who know how to make a good cup of
-              coffee!
+              Inspired by the emergence of London&apos;s artisan coffee scene we
+              now enjoy being part of it, albeit with a French touch. After all
+              it&apos;s not only the Antipodeans who know how to make a good cup
+              of coffee!
               <br />
               <br />
               Our baristas are truly passionate and are trained to pour a great

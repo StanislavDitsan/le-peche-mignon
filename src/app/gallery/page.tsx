@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Gallery = () => {
@@ -126,7 +127,7 @@ const Gallery = () => {
               }}
               className="relative flex h-[300px] items-end group"
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                 className="inline-block h-full w-full rounded-lg object-cover group-hover:opacity-80 transition-opacity duration-300"
@@ -157,7 +158,7 @@ const Gallery = () => {
             >
               ×
             </button>
-            <img
+            <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
               className="w-full h-auto rounded-lg"
