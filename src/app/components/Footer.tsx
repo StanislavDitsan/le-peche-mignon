@@ -36,8 +36,26 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-blue-600"
+                    aria-label="google location 6 Ronalds Road, Highbury, London"
                   >
-                    6 Ronalds Road, Highbury, LONDON N5 1XH
+                    6 Ronalds Road, Highbury, London
+                  </a>
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </p>
+            </div>
+            <div className="mb-4 flex items-center">
+              <FaMapMarkerAlt className="text-gray-500 mr-3" />
+              <p className="text-gray-500 text-sm sm:text-base">
+                <span className="group relative">
+                  <a
+                    href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600"
+                    aria-label="google location 3A High St, Bishop's Stortford, Londond"
+                  >
+                    3A High St, Bishop's Stortford, London
                   </a>
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
                 </span>
@@ -48,8 +66,12 @@ const Footer = () => {
               <FaPhone className="text-gray-500 mr-3" />
               <p className="text-gray-500 text-sm sm:text-base">
                 <span className="group relative">
-                  <a href="tel:+442076071826" className="hover:text-blue-600">
-                    020 7607 1826
+                  <a
+                    aria-label="phone number +441279654004"
+                    href="tel:+441279654004"
+                    className="hover:text-blue-600"
+                  >
+                    +44 1279 654 004
                   </a>
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
                 </span>
@@ -63,6 +85,7 @@ const Footer = () => {
                   <a
                     href="https://www.instagram.com/lepechemignonuk/"
                     target="_blank"
+                    aria-label="ING lepechemignonuk"
                     rel="noopener noreferrer"
                     className="hover:text-blue-600"
                   >
@@ -79,6 +102,7 @@ const Footer = () => {
                 <span className="group relative">
                   <a
                     href="mailto:feedback@lepechemignon.co.uk"
+                    aria-label="email Address feedback@lepechemignon.co.uk"
                     className="hover:text-blue-600"
                   >
                     feedback@lepechemignon.co.uk

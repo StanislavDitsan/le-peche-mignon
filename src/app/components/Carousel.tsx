@@ -11,6 +11,25 @@ export default function Carousel() {
       data-carousel="slide"
     >
       <div className="relative py-20 lg:h-screen overflow-hidden dark:bg-gray-900 md:h-96">
+        {/* Carousel Item 0 */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <div className="relative w-full h-full">
+            <Image
+              src="/la-peche.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+              alt="Carousel Image 0"
+              width={500}
+              height={500}
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold bg-black/50">
+              <span
+                className={`${lora.className} bg-[#c18a52]/30 backdrop-blur-md border border-white/30 py-4 px-10 rounded`}
+              >
+                New Location!
+              </span>
+            </div>
+          </div>
+        </div>
         {/* Carousel Item 1 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="relative w-full h-full">
@@ -146,7 +165,9 @@ export default function Carousel() {
               d="M5 1 1 5l4 4"
             />
           </svg>
-          <span className="sr-only">Previous</span>
+          <span aria-label="navigation button previous" className="sr-only">
+            Previous
+          </span>
         </span>
       </button>
 
@@ -172,7 +193,9 @@ export default function Carousel() {
               d="m1 9 4-4-4-4"
             />
           </svg>
-          <span className="sr-only">Next</span>
+          <span aria-label="navigation button next" className="sr-only">
+            Next
+          </span>
         </span>
       </button>
     </div>

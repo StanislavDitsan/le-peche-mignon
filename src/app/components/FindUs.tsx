@@ -22,24 +22,25 @@ const FindUs = () => {
             <h1 className="mb-4 text-4xl font-bold md:text-6xl dark:text-white">
               Find Us
             </h1>
-            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+            <p className="max-w-lg text-sm  text-gray-500 sm:text-base mb-2">
               Le Péché Mignon is a 5-minute walk from either Highbury and
               Islington or Holloway Road station.
             </p>
-            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+            <p className="max-w-lg text-sm text-gray-500 sm:text-base mb-2">
               We don&apos;t take reservations, but please don&apos;t let this
               put you off. Come along and we will seat you as quickly as we can.
               All our tables are for sharing.
             </p>
-            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+            <p className="max-w-lg text-sm text-gray-500 sm:text-base mb-2">
               We&apos;ve got a beautifully secluded garden to the rear. If the
               weather is good, it&apos;s a great place to relax.
             </p>
-            <p className="max-w-lg text-sm text-gray-500 sm:text-xl mb-2">
+            <p className="max-w-lg text-sm text-gray-500 sm:text-base mb-2">
               We&apos;re always trying to improve - we&apos;d love to hear what
               you think about Le Péché Mignon. Drop us a line at:{" "}
               <a
                 href="mailto:feedback@lepechemignon.co.uk"
+                aria-label="feedback email"
                 className="text-blue-600 hover:underline"
               >
                 feedback@lepechemignon.co.uk
@@ -49,20 +50,14 @@ const FindUs = () => {
             <a
               href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
               target="_blank"
+              aria-label="get directions link"
               className="button2 inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white dark:text-white mt-2"
             >
               Get Directions
             </a>
           </div>
         </div>
-        <div
-          className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 border border-white/30"
-          style={{
-            backgroundImage: "url('/path-to-your-image.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 border border-white/30">
           <div className="bg-white backdrop-blur-sm dark:bg-gray-900 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
             <div className="w-full md:w-4/5">
               <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex">
@@ -71,13 +66,13 @@ const FindUs = () => {
                   <CiLocationOn />
                 </span>
               </p>
-              <p className="text-sm text-gray-500 sm:text-xl mb-2">
+              <p className="text-sm text-gray-500 sm:text-base mb-2">
                 Bonjour Bishop&apos;s Stortford! We&apos;re excited to announce
                 the opening of our new location. Join us for breakfast and lunch
                 at our new spot
               </p>
 
-              <p className="text-sm text-gray-500 sm:text-xl mb-2">
+              <p className="text-sm text-gray-500 sm:text-base mb-2">
                 À bientôt &ndash; see you soon!
               </p>
             </div>
@@ -85,6 +80,7 @@ const FindUs = () => {
             <div className="w-full md:w-1/5 flex justify-center">
               <a
                 target="_blank"
+                aria-label="directions"
                 href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
                 className="button2 bg-black text-white dark:text-white px-8 py-4 rounded-lg"
               >

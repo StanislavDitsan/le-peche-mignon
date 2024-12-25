@@ -53,7 +53,7 @@ export default function NavBar() {
         >
           <Image
             src="/peche_mignon_logo.png"
-            className="h-12"
+            className="h-auto w-auto"
             alt="peche_mignon_logo.png"
             aria-label="peche_mignon_logo"
             width={80}
@@ -68,6 +68,7 @@ export default function NavBar() {
           onClick={toggleMenu} // Use custom toggle function for the menu
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
+          aria-label="Hamburger menu toggle button"
           aria-expanded={isMenuOpen ? "true" : "false"} // Dynamically change expanded state
         >
           <span className="sr-only">Open main menu</span>
@@ -101,6 +102,7 @@ export default function NavBar() {
                   href="/"
                   className="relative block py-2 px-3 text-black text-lg rounded md:bg-transparent md:p-0 hover:text-gray-500 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                   aria-current="page"
+                  aria-label="Home page"
                 >
                   Home
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
@@ -109,6 +111,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#coffee"
+                  aria-label="coffee section"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Coffee
@@ -117,6 +120,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
+                  aria-label="menu section"
                   href="/#menu"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
@@ -126,6 +130,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
+                  aria-label="foodstore section"
                   href="/#foodstore"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
@@ -136,6 +141,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#findus"
+                  aria-label="find us section"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Find Us
@@ -145,6 +151,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/gallery"
+                  aria-label="gallery section"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Gallery
@@ -160,6 +167,7 @@ export default function NavBar() {
                       id="switch"
                       type="checkbox"
                       className="circle"
+                      aria-label="dark toggle button"
                       checked={isDarkMode}
                       onChange={toggleDarkMode}
                     />
