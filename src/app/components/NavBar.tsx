@@ -135,7 +135,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  href="#findus"
+                  href="/#findus"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Find Us

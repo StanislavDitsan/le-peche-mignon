@@ -1,4 +1,6 @@
 import React from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { PiCoffeeBeanThin } from "react-icons/pi";
 
 const FindUs = () => {
   return (
@@ -49,6 +51,44 @@ const FindUs = () => {
             >
               Get Directions
             </a>
+          </div>
+        </div>
+        <div
+          className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 border border-white/30"
+          style={{
+            backgroundImage: "url('/path-to-your-image.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="bg-white backdrop-blur-sm dark:bg-gray-900 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
+            <div className="w-full md:w-4/5">
+              <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex">
+                New Location{" "}
+                <span className="lg:ml-2">
+                  <CiLocationOn />
+                </span>
+              </p>
+              <p className="text-sm text-gray-500 sm:text-xl mb-2">
+                Bonjour Bishop’s Stortford! We’re excited to announce the
+                opening of our new location. Join us for breakfast and lunch at
+                our new spot
+              </p>
+
+              <p className="text-sm text-gray-500 sm:text-xl mb-2">
+                À bientôt – see you soon!
+              </p>
+            </div>
+
+            <div className="w-full md:w-1/5 flex justify-center">
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
+                className="button2 bg-black text-white dark:text-white px-8 py-4 rounded-lg"
+              >
+                Directions
+              </a>
+            </div>
           </div>
         </div>
       </div>

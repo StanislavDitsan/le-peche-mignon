@@ -9,12 +9,9 @@ const Coffee = () => {
         <h2 className="mb-8 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white">
           Crafting Perfect Coffee
         </h2>
-        <p className="mb-8 max-w-lg text-sm text-gray-500 sm:text-base lg:mb-24">
+        <p className="mb-8 max-w-lg text-sm text-gray-500 sm:text-sm lg:mb-24">
           Our approach is simple: Monmouth beans, the unbeatable Marzocco
-          machine and talented baristasPhoto GalleryOur approach is simple:
-          Monmouth beans, the unbeatable Marzocco machine and talented
-          baristasPhoto GalleryOur approach is simple: Monmouth beans, the
-          unbeatable Marzocco machine and talented baristas.
+          machine and talented baristas
         </p>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
           <img

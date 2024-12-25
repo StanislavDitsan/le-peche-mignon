@@ -2,74 +2,127 @@
 import React, { useState } from "react";
 
 const Gallery = () => {
-  // An array of image data for the gallery
   const images = [
     {
-      src: "https://plus.unsplash.com/premium_photo-1666920429649-7562049bb713?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Image 1",
+      src: "/peche_mignon-1.jpg",
+      alt: "peche_mignon-1",
       projectName: "Project 1",
       client: "Client 1",
     },
     {
-      src: "https://plus.unsplash.com/premium_photo-1666920429649-7562049bb713?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/peche_mignon-2.jpg",
       alt: "Image 2",
       projectName: "Project 2",
       client: "Client 2",
     },
     {
-      src: "/pechemignon_home_pic1.jpg",
+      src: "/peche_mignon-3.jpg",
       alt: "Image 3",
       projectName: "Project 3",
       client: "Client 3",
     },
-    // Add more images here
+    {
+      src: "/peche_mignon-4.jpg",
+      alt: "Image 4",
+      projectName: "Project 4",
+      client: "Client 4",
+    },
+    {
+      src: "/peche_mignon-5.jpg",
+      alt: "Image 5",
+      projectName: "Project 5",
+      client: "Client 5",
+    },
+    {
+      src: "/peche_mignon-6.jpg",
+      alt: "Image 6",
+      projectName: "Project 6",
+      client: "Client 6",
+    },
+    {
+      src: "/peche_mignon-7.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
+    {
+      src: "/peche_mignon-8.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
+    {
+      src: "/peche_mignon-9.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
+    {
+      src: "/peche_mignon-10.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
+    {
+      src: "/peche_mignon-11.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
+    {
+      src: "/peche_mignon-12.jpg",
+      alt: "Image 7",
+      projectName: "Project 7",
+      client: "Client 7",
+    },
   ];
 
-  // State to manage the modal visibility and the selected image
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{
-    src: string;
-    alt: string;
-    projectName: string;
-    client: string;
-  } | null>(null);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
-  // Function to open the modal with the selected image
-  const openModal = (image: {
-    src: string;
-    alt: string;
-    projectName: string;
-    client: string;
-  }) => {
-    setSelectedImage(image);
+  const openModal = (index: number) => {
+    setCurrentIndex(index);
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
-    setSelectedImage(null);
+    setCurrentIndex(null);
+  };
+
+  const showPrevious = () => {
+    if (currentIndex !== null) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex! > 0 ? prevIndex! - 1 : images.length - 1
+      );
+    }
+  };
+
+  const showNext = () => {
+    if (currentIndex !== null) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex! < images.length - 1 ? prevIndex! + 1 : 0
+      );
+    }
   };
 
   return (
     <section>
-      {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
-        {/* Title */}
-        <h2 className="text-3xl font-bold md:text-5xl text-center">Gallery</h2>
-        <p className="mt-4 mb-8 text-sm text-gray-500 md:mb-12 lg:mb-16 text-center">
+        <h2 className="text-3xl font-bold md:text-5xl dark:text-white text-left">
+          Gallery
+        </h2>
+        <p className="mt-4 mb-8 text-sm text-gray-500 md:mb-12 lg:mb-16 text-left">
           Explore our amazing cafe.
         </p>
-        {/* Content */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-          {/* Map over the images array and render each item */}
           {images.map((image, index) => (
             <a
               href="#"
               key={index}
               onClick={(e) => {
                 e.preventDefault();
-                openModal(image);
+                openModal(index);
               }}
               className="relative flex h-[300px] items-end group"
             >
@@ -89,15 +142,14 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Modal */}
-      {isModalOpen && selectedImage && (
+      {isModalOpen && currentIndex !== null && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center sm:px-10 bg-black bg-opacity-50"
           onClick={closeModal}
         >
           <div
-            className="relative bg-white p-5 rounded-lg max-w-4xl"
-            onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
+            className="relative bg-white dark:bg-gray-900 p-5 rounded-lg max-w-4xl"
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-2 right-2 text-gray-600 text-2xl rounded-full bg-gray-100 px-2"
@@ -106,15 +158,31 @@ const Gallery = () => {
               ×
             </button>
             <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
               className="w-full h-auto rounded-lg"
             />
             <div className="mt-4">
-              <h3 className="text-xl font-semibold">
-                {selectedImage.projectName}
+              <h3 className="text-xl font-semibold dark:text-white">
+                {images[currentIndex].projectName}
               </h3>
-              <p className="text-sm text-gray-500">{selectedImage.client}</p>
+              <p className="text-sm text-gray-500">
+                {images[currentIndex].client}
+              </p>
+            </div>
+            <div className="mt-4 flex justify-between">
+              <button
+                className="bg-gray-200 px-4 py-2 rounded-md hover:bg-gray-300"
+                onClick={showPrevious}
+              >
+                Previous
+              </button>
+              <button
+                className="bg-gray-200 px-4 py-2 rounded-md hover:bg-gray-300"
+                onClick={showNext}
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>

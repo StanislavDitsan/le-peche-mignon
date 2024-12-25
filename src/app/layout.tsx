@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import { Lora } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 
-// Importing Lora and Inter fonts
 const lora = Lora({ subsets: ["latin"] });
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -38,6 +37,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         {/* Dark mode preference script */}
         <script
           dangerouslySetInnerHTML={{
