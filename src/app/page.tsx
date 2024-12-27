@@ -4,7 +4,6 @@ import Coffee from "./components/Coffee";
 import FindUs from "./components/FindUs";
 import Food from "./components/Food";
 import Hero from "./components/Hero";
-import type { Metadata } from "next";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
