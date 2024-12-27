@@ -18,8 +18,7 @@ export default function Hero() {
           </h1>
           <p className="max-w-2xl text-gray-200 md:text-lg lg:text-xl">
             A cozy French café offering artisan coffee, buttery croissants, and
-            fine food products. Nestled on Highbury&apos;s Ronalds Road, we
-            invite you to relax, unwind, and savor the moment.
+            fine food products. We invite you to relax and savor the moment
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 lg:justify-start">
             <Link
