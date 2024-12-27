@@ -1,5 +1,6 @@
 "use client"; // Make this a client-side component
 
+import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import "./globals.css";
 import NavBar from "./components/NavBar";
@@ -68,6 +69,7 @@ export default function RootLayout({
       <body className="antialiased dark:bg-gray-900">
         <NavBar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>

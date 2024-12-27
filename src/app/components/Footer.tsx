@@ -55,7 +55,7 @@ const Footer = () => {
                     className="hover:text-blue-600"
                     aria-label="google location 3A High St, Bishop's Stortford, Londond"
                   >
-                    3A High St, Bishop's Stortford, London
+                    3A High St, Bishop&apos;s Stortford, London
                   </a>
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
                 </span>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
     "embla-carousel": "^8.5.1",
     "embla-carousel-react": "^8.5.1",
     "flowbite": "^2.5.2",

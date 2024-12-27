@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { Lora } from "next/font/google";
@@ -37,7 +37,6 @@ const carouselItems = [
 
 export default function EmblaCarousel() {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Auto-slide logic
   useEffect(() => {
@@ -51,7 +50,7 @@ export default function EmblaCarousel() {
 
   const onSelect = useCallback(() => {
     if (!embla) return;
-    setSelectedIndex(embla.selectedScrollSnap());
+    embla.selectedScrollSnap(); // This was updating `selectedIndex`, but it's no longer needed
   }, [embla]);
 
   useEffect(() => {
@@ -87,6 +86,7 @@ export default function EmblaCarousel() {
       </div>
       {/* Rounded Previous Button */}
       <button
+        aria-label="button previous"
         className="absolute top-1/2 left-4 z-10 flex items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
         onClick={scrollPrev}
       >
@@ -94,6 +94,7 @@ export default function EmblaCarousel() {
       </button>
       {/* Rounded Next Button */}
       <button
+        aria-label="button next"
         className="absolute top-1/2 right-4 z-10 flex items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
         onClick={scrollNext}
       >
