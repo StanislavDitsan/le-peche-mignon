@@ -1,9 +1,4 @@
-import About from "./components/About";
-import Carousel from "./components/Carousel";
-import Coffee from "./components/Coffee";
-import FindUs from "./components/FindUs";
-import Food from "./components/Food";
-import Hero from "./components/Hero";
+import Landing from "./components/Landing";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
@@ -171,23 +166,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchemaData) }}
       />
       <section>
-        <Hero />
-      </section>
-
-      <section>
-        <About />
-      </section>
-      <section>
-        <Coffee />
-      </section>
-      <section>
-        <Food />
-      </section>
-      <section>
-        <Carousel />
-      </section>
-      <section>
-        <FindUs />
+        <Landing />
       </section>
     </>
   );

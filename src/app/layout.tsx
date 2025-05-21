@@ -67,10 +67,9 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="antialiased dark:bg-gray-900">
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
         <Analytics />
-        <Footer />
       </body>
     </html>
   );

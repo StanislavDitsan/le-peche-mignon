@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Gallery = () => {
   const images = [
@@ -85,6 +87,7 @@ const Gallery = () => {
 
   return (
     <section>
+      <NavBar />
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         <h2 className="text-3xl font-bold md:text-5xl dark:text-white text-left">
           Gallery
@@ -155,6 +158,7 @@ const Gallery = () => {
           </div>
         </div>
       )}
+      <Footer />
     </section>
   );
 };

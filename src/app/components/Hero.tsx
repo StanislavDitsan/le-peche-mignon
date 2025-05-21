@@ -22,14 +22,14 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 lg:justify-start">
             <Link
-              href="/#findus"
+              href="/highbury#findus"
               aria-label="Visit us navigation"
               className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
             >
               Visit Us
             </Link>
             <Link
-              href="/#menu"
+              href="/highbury/#menu"
               aria-label="Explore Our Menu"
               className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
             >

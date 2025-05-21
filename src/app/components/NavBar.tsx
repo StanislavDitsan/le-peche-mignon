@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { Lora } from "next/font/google";
 const lora = Lora({ subsets: ["latin"] });
 
 export default function NavBar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false); // Track mounting status
+  const [isMounted, setIsMounted] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
   // Ensure the dark mode class is applied only after the component is mounted
   useEffect(() => {
@@ -42,10 +42,39 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Hide/show navbar on scroll (desktop only)
+  useEffect(() => {
+    if (!isMounted) return;
+    // Only enable scroll effect if screen is at least 768px wide (md breakpoint)
+    const isDesktop = () => window.innerWidth >= 768;
+    let lastY = window.scrollY;
+    const threshold = 24;
+
+    const handleScroll = () => {
+      if (!isDesktop()) return; // Do nothing on mobile
+      const currentY = window.scrollY;
+      if (Math.abs(currentY - lastY) > threshold) {
+        if (currentY > lastY && currentY > 50) {
+          setShowNav(false);
+        } else {
+          setShowNav(true);
+        }
+        lastY = currentY;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMounted]);
+
   if (!isMounted) return null; // Avoid rendering on the server side
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky z-50 top-0">
+    <nav
+      className={`bg-white border-gray-200 dark:bg-gray-900 sticky z-50 top-0 transition-transform duration-300 ${
+        showNav ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
@@ -65,11 +94,11 @@ export default function NavBar() {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          onClick={toggleMenu} // Use custom toggle function for the menu
+          onClick={toggleMenu}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-label="Hamburger menu toggle button"
-          aria-expanded={isMenuOpen ? "true" : "false"} // Dynamically change expanded state
+          aria-expanded={isMenuOpen ? "true" : "false"}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -92,7 +121,7 @@ export default function NavBar() {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`} // Toggle visibility based on isMenuOpen
+          } w-full md:block md:w-auto`}
           id="navbar-default"
         >
           <div className={lora.className}>
@@ -104,13 +133,24 @@ export default function NavBar() {
                   aria-current="page"
                   aria-label="Home page"
                 >
+                  Main
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/highbury"
+                  className="relative block py-2 px-3 text-black text-lg rounded md:bg-transparent md:p-0 hover:text-gray-500 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
+                  aria-current="page"
+                  aria-label="Home page"
+                >
                   Home
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#coffee"
+                  href="highbury/#coffee"
                   aria-label="coffee section"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
@@ -121,7 +161,7 @@ export default function NavBar() {
               <li>
                 <Link
                   aria-label="menu section"
-                  href="/#menu"
+                  href="highbury/#menu"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Menu
@@ -131,7 +171,7 @@ export default function NavBar() {
               <li>
                 <Link
                   aria-label="foodstore section"
-                  href="/#foodstore"
+                  href="highbury/#foodstore"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
                   Food Store
@@ -140,7 +180,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  href="/#findus"
+                  href="highbury/#findus"
                   aria-label="find us section"
                   className="relative block py-2 px-3 text-gray-900 text-lg rounded hover:text-gray-500 md:bg-transparent md:p-0 dark:text-white dark:hover:text-gray-300 group md:hover:text-gray-500"
                 >
