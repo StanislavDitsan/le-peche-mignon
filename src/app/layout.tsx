@@ -3,8 +3,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import "./globals.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 import { Lora } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 
