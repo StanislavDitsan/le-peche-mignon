@@ -16,13 +16,14 @@ const cardVariants = {
 
 const Landing = () => {
   return (
-    <div className="relative flex flex-col min-h-screen justify-center items-center">
+    <div className="relative flex flex-col h-screen justify-center items-center overflow-hidden">
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         loop
         muted
+        playsInline
       >
         <source src="/testvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -31,7 +32,7 @@ const Landing = () => {
       {/* Overlay for video */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
 
-      <main className="flex flex-col flex-1 justify-center items-center py-10 z-20">
+      <main className="flex flex-col flex-1 justify-center items-center py-10 z-20 w-full">
         <motion.div
           className="mb-8 justify-items-center text-center"
           initial={{ opacity: 0, y: -30 }}
@@ -42,8 +43,8 @@ const Landing = () => {
           <Image
             src="/peche_mignon_logo.png"
             alt="Le Péché Mignon Logo"
-            width={160} // adjust as needed
-            height={64} // adjust as needed
+            width={160}
+            height={64}
             className="w-40 h-auto mb-4"
             priority
           />
