@@ -43,9 +43,9 @@ const Landing = () => {
           <Image
             src="/peche_mignon_logo.png"
             alt="Le Péché Mignon Logo"
-            width={160}
-            height={64}
-            className="w-40 h-auto mb-4 mx-auto"
+            width={240}
+            height={96}
+            className="w-40 md:w-60 h-auto mb-4 mx-auto"
             priority
           />
           <p className="font-semibold uppercase mt-6 mb-8 text-gray-300">
