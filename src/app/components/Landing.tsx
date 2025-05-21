@@ -88,7 +88,7 @@ const Landing = () => {
           >
             <h2 className="text-xl font-semibold mb-4 text-[#fff]">
               <BiCoffeeTogo className="inline-block mr-2 text-[#fff]" />{" "}
-              Bishop's Stortford
+              Bishop&apos;s Stortford
             </h2>
             <div className="flex flex-row gap-4 justify-center">
               <Link href="/location2/book">
