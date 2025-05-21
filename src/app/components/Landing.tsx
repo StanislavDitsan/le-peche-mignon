@@ -113,7 +113,7 @@ const Landing = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
       >
-        <p className="text-white text-xs flex items-center gap-2">
+        <p className="text-white flex items-center gap-2">
           <FaCoffee className="text-[#ac6936]" /> Powered by Le Péché Mignon
         </p>
       </motion.footer>
