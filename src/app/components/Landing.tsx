@@ -53,7 +53,7 @@ const Landing = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-row gap-8 flex-wrap justify-center">
+        <div className="flex flex-row gap-8 flex-wrap justify-center ">
           {/* Location Card 1 */}
           <motion.div
             className="bg-white shadow-lg p-6 text-center mb-5 rounded-2xl hover:scale-105 transition-transform duration-300 hover:shadow-xl backdrop-blur-sm bg-white/20 relative"
@@ -62,7 +62,7 @@ const Landing = () => {
             animate="visible"
             transition={{ delay: 0 * 0.15, duration: 0.6, ease: "easeOut" }}
           >
-            <h2 className="text-xl font-semibold mb-4 text-[#fff]">
+            <h2 className="text-xl font-semibold mb-5 text-[#fff] lg:text-2xl">
               <CiCoffeeCup className="inline-block mr-2 text-[#fff]" /> Highbury
             </h2>
             <div className="flex flex-row gap-4 justify-center">
@@ -87,7 +87,7 @@ const Landing = () => {
             animate="visible"
             transition={{ delay: 1 * 0.15, duration: 0.6, ease: "easeOut" }}
           >
-            <h2 className="text-xl font-semibold mb-4 text-[#fff]">
+            <h2 className="text-xl font-semibold mb-5 text-[#fff] lg:text-2xl">
               <BiCoffeeTogo className="inline-block mr-2 text-[#fff]" />{" "}
               Bishop&apos;s Stortford
             </h2>
@@ -113,7 +113,7 @@ const Landing = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
       >
-        <p className="text-white flex items-center gap-2">
+        <p className="text-white text-xs flex items-center gap-2">
           <FaCoffee className="text-[#ac6936]" /> Powered by Le Péché Mignon
         </p>
       </motion.footer>
