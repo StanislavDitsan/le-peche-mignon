@@ -96,7 +96,7 @@ const FindUs = () => {
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
                   Bonjour Bishop&apos;s Stortford! We&apos;re excited to
                   announce the opening of our new location. Join us for
-                  breakfast and lunch at our new spot
+                  breakfast and lunch at our new spot.
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
                   À bientôt &ndash; see you soon!
