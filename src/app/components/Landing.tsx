@@ -92,7 +92,7 @@ const Landing = () => {
               Bishop&apos;s Stortford
             </h2>
             <div className="flex flex-row gap-4 justify-center">
-              <Link href="/location2/book">
+              <Link href="/bishopsstortford">
                 <button className="button px-6 py-3 rounded-lg shadow-md flex items-center gap-2 transition-colors">
                   Our Website
                 </button>

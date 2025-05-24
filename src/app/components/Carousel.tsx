@@ -87,7 +87,7 @@ export default function EmblaCarousel() {
       {/* Rounded Previous Button */}
       <button
         aria-label="button previous"
-        className="absolute top-1/2 left-4 z-10 flex items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
+        className="hidden md:flex absolute top-1/2 left-4 z-10 items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
         onClick={scrollPrev}
       >
         <FaArrowLeft className="text-xl" />
@@ -95,7 +95,7 @@ export default function EmblaCarousel() {
       {/* Rounded Next Button */}
       <button
         aria-label="button next"
-        className="absolute top-1/2 right-4 z-10 flex items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
+        className="hidden md:flex absolute top-1/2 right-4 z-10 items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
         onClick={scrollNext}
       >
         <FaArrowRight className="text-xl" />

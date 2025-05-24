@@ -19,14 +19,14 @@ const Coffee = () => {
           <p
             data-aos="fade-in"
             data-aos-delay="300"
-            className="mb-8 max-w-lg text-sm text-gray-500 sm:text-sm lg:mb-24"
+            className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg"
           >
             Our approach is simple: Monmouth beans, the unbeatable Marzocco
             machine and talented baristas
           </p>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="500"
               className="flex items-center"
             >
@@ -39,7 +39,7 @@ const Coffee = () => {
               />
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="700"
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >

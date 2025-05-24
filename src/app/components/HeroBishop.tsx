@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       className="relative bg-white dark:bg-gray-900 bg-cover bg-center lg:h-screen"
-      style={{ backgroundImage: "url('/Le-Péché-Mignon.1.jpg')" }}
+      style={{ backgroundImage: "url('/Le-Péché-Mignon-bishop.webp')" }}
     >
       {/* Dark semi-transparent overlay */}
       <div className="absolute inset-0 bg-black opacity-20"></div>

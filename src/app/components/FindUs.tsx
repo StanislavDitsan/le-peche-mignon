@@ -11,7 +11,7 @@ const FindUs = () => {
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
           {/* Component */}
           <div className="grid items-center gap-8 sm:gap-20 lg:grid-cols-2">
-            <div data-aos="fade-right" data-aos-delay="100">
+            <div data-aos="fade-in" data-aos-delay="100">
               <Image
                 width={500}
                 height={500}
@@ -20,7 +20,7 @@ const FindUs = () => {
                 className="mx-auto inline-block h-full w-full max-w-2xl object-cover bg-black/90 border border-white/30 backdrop-blur-md rounded-2xl"
               />
             </div>
-            <div data-aos="fade-left" data-aos-delay="200">
+            <div data-aos="fade-up" data-aos-delay="200">
               <h1 className="mb-4 text-4xl font-bold md:text-6xl dark:text-white">
                 Find Us
               </h1>
@@ -84,7 +84,7 @@ const FindUs = () => {
             <div className="bg-white backdrop-blur-sm dark:bg-gray-900 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
               <div
                 className="w-full md:w-4/5"
-                data-aos="fade-in"
+                data-aos="fade-up"
                 data-aos-delay="700"
               >
                 <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex">
@@ -104,7 +104,7 @@ const FindUs = () => {
               </div>
               <div
                 className="w-full md:w-1/5 flex justify-center"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-delay="800"
               >
                 <a

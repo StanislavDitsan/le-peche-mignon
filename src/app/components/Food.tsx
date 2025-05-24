@@ -10,7 +10,7 @@ const Food = () => {
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
           {/* Title */}
           <h2
-            data-aos="fade-down"
+            data-aos="fade-in"
             className="text-center text-4xl font-bold md:text-6xl dark:text-white"
           >
             Our Menu
@@ -27,7 +27,7 @@ const Food = () => {
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:justify-center md:grid-cols-1 md:gap-8 lg:grid-cols-2">
             {/* Item 1 */}
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="300"
               className="relative grid w-full grid-flow-row justify-center gap-6 rounded-md p-8 md:grid-cols-2"
             >
@@ -55,7 +55,7 @@ const Food = () => {
             </div>
             {/* Item 2 */}
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="400"
               className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2"
             >
@@ -84,7 +84,7 @@ const Food = () => {
             </div>
             {/* Item 3 */}
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="500"
               className="relative grid w-full grid-flow-row justify-center gap-6 p-8 md:grid-cols-2"
             >
@@ -112,7 +112,7 @@ const Food = () => {
             </div>
             {/* Item 4 */}
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="600"
               className="relative grid w-full grid-flow-row justify-center gap-6 rounded-md p-8 md:grid-cols-2"
             >
@@ -162,7 +162,7 @@ const Food = () => {
               {/* Left Content */}
               <ul className="mx-auto max-w-4xl space-y-6 text-sm text-gray-500 sm:text-base md:space-y-8 lg:text-lg">
                 <li
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-delay="900"
                   className="flex items-start gap-4"
                 >
@@ -179,7 +179,7 @@ const Food = () => {
                   </div>
                 </li>
                 <li
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-delay="1000"
                   className="flex items-start gap-4"
                 >
@@ -196,7 +196,7 @@ const Food = () => {
                   </div>
                 </li>
                 <li
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-delay="1100"
                   className="flex items-start gap-4"
                 >
@@ -213,7 +213,7 @@ const Food = () => {
                   </div>
                 </li>
                 <li
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-delay="1200"
                   className="flex items-start gap-4"
                 >
@@ -230,7 +230,7 @@ const Food = () => {
                   </div>
                 </li>
                 <li
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-delay="1300"
                   className="flex items-start gap-4"
                 >
@@ -250,7 +250,7 @@ const Food = () => {
               {/* Right Content */}
               <div className="space-y-12 text-center lg:text-right">
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-delay="900"
                   className="border-[#294ebc] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
                 >
@@ -262,7 +262,7 @@ const Food = () => {
                   </p>
                 </div>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-delay="1000"
                   className="border-[#dad1d1] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
                 >
@@ -274,7 +274,7 @@ const Food = () => {
                   </p>
                 </div>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-delay="1100"
                   className="border-[#ba2323] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
                 >

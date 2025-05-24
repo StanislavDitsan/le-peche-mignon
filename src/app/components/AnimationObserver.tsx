@@ -15,6 +15,7 @@ export default function AnimationObserver({
       duration: 1000, // Animation duration in milliseconds
       easing: "ease-in-out", // Animation easing
       once: true, // Whether animations should happen only once
+      offset: 40,
     });
   }, []);
 
