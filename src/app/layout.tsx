@@ -39,18 +39,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         {/* Dark mode preference script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (localStorage.getItem('color-theme') === 'dark' || 
-                  (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-              } else {
-                document.documentElement.classList.remove('dark');
-              }
-            `,
-          }}
-        ></script>
+
         {/* Apply Lora font globally to h1, h2 and Inter font to paragraphs */}
         <style jsx global>{`
           h1,
