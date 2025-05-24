@@ -42,7 +42,14 @@ export default function Hero() {
                 aria-label="Explore Our Menu"
                 className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
               >
-                Explore Our Menu
+                Our Menu
+              </Link>
+              <Link
+                href="/highbury/#menu"
+                aria-label="Book a Table"
+                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+              >
+                Book a Table
               </Link>
             </div>
           </div>

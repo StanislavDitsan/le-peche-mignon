@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import HeroBishop from "../components/HeroBishop";
+import AboutBishop from "../components/AboutBishop";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
@@ -172,6 +173,10 @@ export default function Bishop() {
 
       <section>
         <HeroBishop />
+      </section>
+
+      <section>
+        <AboutBishop />
       </section>
 
       <section>
