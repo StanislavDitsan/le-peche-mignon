@@ -16,7 +16,7 @@ const cardVariants = {
 
 const Landing = () => {
   return (
-    <div className="relative flex flex-col lg:h-screen justify-center items-center overflow-hidden">
+    <div className="relative flex flex-col min-h-screen justify-center items-center overflow-auto">
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
