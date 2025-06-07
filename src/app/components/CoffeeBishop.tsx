@@ -85,7 +85,7 @@ const Coffee = () => {
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             From hand-poured coffee to curated wines and fresh seasonal plates —
-            every visit is a reason to linger.
+            every visit is a reason to linger
           </p>
 
           {/* Content Grid */}

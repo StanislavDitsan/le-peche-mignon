@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
 import AnimationObserver from "./AnimationObserver";
+import { useState } from "react";
 
 export default function Hero() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section
       className="relative bg-white dark:bg-gray-900 bg-cover bg-center lg:h-screen"
@@ -15,7 +19,7 @@ export default function Hero() {
         <AnimationObserver>
           <div
             data-aos="fade-up"
-            className="lg:col-span-7 space-y-6 lg:space-y-8 text-white lg:mt-32  backdrop-blur-lg bg-white/30 p-10 rounded-xl shadow-xl dark:bg-gray-900"
+            className="lg:col-span-7 space-y-6 lg:space-y-8 text-white lg:mt-32 backdrop-blur-lg bg-white/30 p-10 rounded-xl shadow-xl dark:bg-gray-900"
           >
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white">
               Welcome to <br />{" "}
@@ -38,23 +42,88 @@ export default function Hero() {
                 Visit Us
               </Link>
               <Link
-                href="/highbury/#menu"
-                aria-label="Explore Our Menu"
-                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
-              >
-                Our Menu
-              </Link>
-              <Link
-                href="/highbury/#menu"
+                href="/bishopsstortford/#menu"
                 aria-label="Book a Table"
                 className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
               >
                 Book a Table
               </Link>
+              <button
+                onClick={() => setShowModal(true)}
+                aria-label="View Menu"
+                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+              >
+                View Menu
+              </button>
             </div>
           </div>
         </AnimationObserver>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}
+          aria-modal="true"
+          role="dialog"
+        >
+          <div
+            className="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-xl mx-4 p-4"
+            style={{ maxHeight: "90vh", overflowY: "auto" }}
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+          >
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 dark:hover:text-white text-3xl font-bold z-10"
+              aria-label="Close modal"
+              tabIndex={0}
+            >
+              &times;
+            </button>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: 0,
+                paddingTop: "141.4286%",
+                boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+                marginTop: "1.6em",
+                marginBottom: "0.9em",
+                overflow: "hidden",
+                borderRadius: "8px",
+                willChange: "transform",
+              }}
+            >
+              <iframe
+                loading="lazy"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  top: 0,
+                  left: 0,
+                  border: "none",
+                  padding: 0,
+                  margin: 0,
+                }}
+                src="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view?embed"
+                allowFullScreen
+                allow="fullscreen"
+                title="PDF Menu"
+              ></iframe>
+            </div>
+            <a
+              href="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view"
+              target="_blank"
+              rel="noopener"
+              className="block text-center text-[#ac6936] font-semibold underline mt-2"
+            >
+              Open in new tab
+            </a>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
