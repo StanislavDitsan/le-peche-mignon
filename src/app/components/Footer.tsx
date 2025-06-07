@@ -121,7 +121,7 @@ const Footer = () => {
             data-aos-delay="700"
           >
             <p className="text-gray-500 text-sm sm:text-base text-center">
-              © le peche mignon {currentYear}. All rights reserved.
+              © le peche mignon {currentYear}
             </p>
           </div>
         </div>
