@@ -67,7 +67,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/lapeche-sandwiches.avif"
                 alt="Toasted Sandwiches"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -124,7 +124,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/LaPeche_Quality_Ingredients.avif"
                 alt="Fresh Ingredients"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -167,7 +167,7 @@ const Food = () => {
               </p>
               <button
                 onClick={() => setShowModal(true)}
-                className="button2 inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#ac6936] text-white font-semibold text-lg shadow-lg hover:bg-[#8a552b] transition-all duration-300"
+                className="button2 inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#ac6936] text-white font-semibold text-lg shadow-lg hover:bg-[#8a552b] transition-all duration-300 dark:text-white"
                 data-aos="zoom-in"
                 data-aos-delay="900"
                 aria-label="Open PDF Menu Modal"
