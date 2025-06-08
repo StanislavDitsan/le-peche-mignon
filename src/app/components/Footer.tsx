@@ -18,12 +18,10 @@ const Footer = () => {
           <div
             className="sm:flex-row flex justify-between flex-col"
             data-aos="fade-up"
-            data-aos-delay="100"
           >
             <h2
               className="font-bold text-3xl md:text-5xl w-full max-w-xl inline-flex items-center dark:text-white"
               data-aos="fade-up"
-              data-aos-delay="200"
             >
               Your Cozy Coffee Spot{" "}
               <CiCoffeeCup
@@ -32,11 +30,7 @@ const Footer = () => {
               />
             </h2>
             <div className="mt-8 md:mt-0 space-y-4">
-              <div
-                className="flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
+              <div className="flex items-center" data-aos="fade-up">
                 <FaMapMarkerAlt className="text-gray-500 mr-3" />
                 <a
                   href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
@@ -48,11 +42,7 @@ const Footer = () => {
                   6 Ronalds Road, Highbury, London
                 </a>
               </div>
-              <div
-                className="flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="350"
-              >
+              <div className="flex items-center" data-aos="fade-up">
                 <FaMapMarkerAlt className="text-gray-500 mr-3" />
                 <a
                   href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
@@ -64,11 +54,7 @@ const Footer = () => {
                   3A High St, Bishop&apos;s Stortford, London
                 </a>
               </div>
-              <div
-                className="flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
+              <div className="flex items-center" data-aos="fade-up">
                 <FaPhone className="text-gray-500 mr-3" />
                 <a
                   aria-label="phone number +441279654004"
@@ -78,11 +64,7 @@ const Footer = () => {
                   +44 1279 654 004
                 </a>
               </div>
-              <div
-                className="flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="450"
-              >
+              <div className="flex items-center" data-aos="fade-up">
                 <FaInstagram className="text-gray-500 mr-3" />
                 <a
                   href="https://www.instagram.com/lepechemignonuk/"
@@ -94,11 +76,7 @@ const Footer = () => {
                   @peche_mignon
                 </a>
               </div>
-              <div
-                className="flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
+              <div className="flex items-center" data-aos="fade-up">
                 <FaEnvelope className="text-gray-500 mr-3" />
                 <a
                   href="mailto:feedback@lepechemignon.co.uk"
@@ -113,12 +91,10 @@ const Footer = () => {
           <div
             className="mb-14 w-full border-b border-black mt-16"
             data-aos="zoom-in"
-            data-aos-delay="600"
           ></div>
           <div
             className="md:flex-row flex justify-between sm:items-center sm:flex-col items-start flex-col-reverse"
             data-aos="fade-up"
-            data-aos-delay="700"
           >
             <p className="text-gray-500 text-sm sm:text-base text-center">
               © le peche mignon {currentYear}

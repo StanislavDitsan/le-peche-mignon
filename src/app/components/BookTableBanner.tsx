@@ -35,14 +35,14 @@ const BookTable = () => {
             >
               <h3
                 data-aos="zoom-in"
-                data-aos-delay="900"
+                data-aos-delay="200"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Your Table Awaits
               </h3>
               <p
                 data-aos="fade-in"
-                data-aos-delay="1100"
+                data-aos-delay="200"
                 className="text-sm text-gray-500 sm:text-base"
               >
                 Indulge in delectable dishes made from the finest ingredients in
@@ -63,7 +63,7 @@ const BookTable = () => {
             {/* Image Block (Left side) */}
             <div
               data-aos="fade-up"
-              data-aos-delay="500"
+              data-aos-delay="300"
               className="flex items-center"
             >
               <Image
