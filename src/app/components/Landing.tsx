@@ -107,7 +107,8 @@ const Landing = () => {
           data-aos-delay="300"
         >
           <p className="text-white flex items-center gap-2">
-            <FaCoffee className="text-[#ac6936]" /> Powered by Le Péché Mignon
+            <FaCoffee className="text-[#ac6936]" /> Your Cozy Café Spot | Le
+            Péché Mignon
           </p>
         </footer>
       </div>
