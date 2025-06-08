@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import AnimationObserver from "./AnimationObserver";
 
 const images = [
-  "/pechemignon_coffee.webp",
   "/la-peche-foodie.avif",
   "/la-peche-cafe-uk.avif",
+  "/pechemignon_coffee.webp",
   "/la-peche-best-coffee.avif",
 ];
 

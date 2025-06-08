@@ -1,8 +1,32 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AnimationObserver from "./AnimationObserver";
 
+const coffeeImages = [
+  "/la-peche-coffee.webp",
+  "/la-peche-coffee-time.avif",
+  "/la-peche-monmouth.avif",
+];
+
+const momentsImages = [
+  "/lepeche_dining.webp",
+  "/wine_at_la-peche-uk.avif",
+  "/la-peche-good-food_good_company.avif",
+];
+
 const Coffee = () => {
+  const [coffeeImageIndex, setCoffeeImageIndex] = useState(0);
+  const [momentsImageIndex, setMomentsImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCoffeeImageIndex((prev) => (prev + 1) % coffeeImages.length);
+      setMomentsImageIndex((prev) => (prev + 1) % momentsImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <AnimationObserver>
       <section className="dark:bg-gray-900" id="coffee">
@@ -26,7 +50,7 @@ const Coffee = () => {
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
             <div
               data-aos="fade-up"
-              data-aos-delay="300" // Delay changed for the text container
+              data-aos-delay="300"
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h2
@@ -38,7 +62,7 @@ const Coffee = () => {
               </h2>
               <p
                 data-aos="fade-in"
-                data-aos-delay="1100"
+                data-aos-delay="600"
                 className="text-sm text-gray-500 sm:text-base"
               >
                 We take pride in using the best Monmouth beans and the trusted
@@ -47,28 +71,32 @@ const Coffee = () => {
                 the experience &mdash; from the first sip to the last. Our
                 baristas are passionate about what they do, and it shows in
                 every pour.
-                <br />
-                <br />
-                Come for the coffee, stay for the warmth.
               </p>
             </div>
 
             <div
               data-aos="fade-up"
-              data-aos-delay="500" // Delay changed for the image container
-              className="flex items-center"
+              data-aos-delay="500"
+              className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
             >
-              <Image
-                src="/la-peche-coffee.webp"
-                alt=""
-                className="inline-block h-full w-full rounded-2xl object-cover shadow-xl"
-                width={500}
-                height={500}
-              />
+              {coffeeImages.map((src, i) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt=""
+                  width={500}
+                  height={500}
+                  quality={90}
+                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                    i === coffeeImageIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
       </section>
+
       <section className="dark:bg-gray-900 bg-white lg:mt-0 mt-10" id="moments">
         <div className="mx-auto w-full max-w-7xl px-5 md:px-10 md:py-20">
           {/* Title */}
@@ -94,15 +122,21 @@ const Coffee = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="500"
-              className="flex items-center order-1 lg:order-none"
+              className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl order-1 lg:order-none"
             >
-              <Image
-                src="/lepeche_dining.webp"
-                alt="Cozy coffee shop interior"
-                className="inline-block h-full w-full rounded-2xl object-cover shadow-xl"
-                width={500}
-                height={500}
-              />
+              {momentsImages.map((src, i) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt="Cozy coffee shop interior"
+                  width={500}
+                  height={500}
+                  quality={90}
+                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                    i === momentsImageIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
             </div>
 
             {/* Text Block (second on large screens) */}
@@ -113,14 +147,14 @@ const Coffee = () => {
             >
               <h3
                 data-aos="zoom-in"
-                data-aos-delay="900"
+                data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Good Food, Good Company
               </h3>
               <p
                 data-aos="fade-in"
-                data-aos-delay="1100"
+                data-aos-delay="500"
                 className="text-sm text-gray-500 sm:text-base"
               >
                 Some days it&apos;s full of chatter and clinking glasses, others
