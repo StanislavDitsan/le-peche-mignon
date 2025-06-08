@@ -21,8 +21,8 @@ const BookTable = () => {
             data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
-            Whether it's a special occasion or a casual night out, reserve your
-            spot for an unforgettable dining experience.
+            Whether it&apos;s a special occasion or a casual night out, reserve
+            your spot for an unforgettable dining experience.
           </p>
 
           {/* Content Grid */}

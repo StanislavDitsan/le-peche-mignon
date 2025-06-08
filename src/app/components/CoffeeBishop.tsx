@@ -123,9 +123,9 @@ const Coffee = () => {
                 data-aos-delay="1100"
                 className="text-sm text-gray-500 sm:text-base"
               >
-                Some days it's full of chatter and clinking glasses, others it's
-                slower, softer. But no matter the mood, there&apos;s always a
-                table, a smile, and something good on the plate.
+                Some days it&apos;s full of chatter and clinking glasses, others
+                it&apos;s slower, softer. But no matter the mood, there&apos;s
+                always a table, a smile, and something good on the plate.
               </p>
             </div>
           </div>
