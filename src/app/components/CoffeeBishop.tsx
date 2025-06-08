@@ -26,12 +26,12 @@ const Coffee = () => {
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
             <div
               data-aos="fade-up"
-              data-aos-delay="700" // Delay changed for the text container
+              data-aos-delay="300" // Delay changed for the text container
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h2
                 data-aos="zoom-in"
-                data-aos-delay="900"
+                data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Brewed with Love
