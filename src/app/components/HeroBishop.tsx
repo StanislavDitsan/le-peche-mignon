@@ -28,9 +28,10 @@ export default function Hero() {
               <span className="text-[#431500]">Le Péché Mignon</span>
             </h1>
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
-              A cozy French café offering artisan coffee, buttery croissants,
-              and fine food products. We invite you to relax and savor the
-              moment
+              Nestled in Bishop&apos;s Stortford, Le Péché Mignon is your spot
+              for fresh coffee, buttery pastries, artisanal deli finds and a
+              cozy moment with good company, whether you&apos;re enjoying brunch
+              or dinner.
             </p>
             <div
               data-aos="zoom-in"
