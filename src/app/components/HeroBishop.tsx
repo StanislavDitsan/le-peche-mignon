@@ -2,9 +2,11 @@
 import Link from "next/link";
 import AnimationObserver from "./AnimationObserver";
 import { useState } from "react";
+import OpenTableWidget from "./OpenTableWidget";
 
 export default function Hero() {
   const [showModal, setShowModal] = useState(false);
+  const [showBookModal, setShowBookModal] = useState(false);
 
   return (
     <section
@@ -22,7 +24,7 @@ export default function Hero() {
             className="lg:col-span-7 space-y-6 lg:space-y-8 text-white lg:mt-32 backdrop-blur-lg bg-white/30 p-10 rounded-xl shadow-xl dark:bg-gray-900"
           >
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white">
-              Welcome to <br />{" "}
+              Welcome to <br />
               <span className="text-[#431500]">Le Péché Mignon</span>
             </h1>
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
@@ -41,13 +43,13 @@ export default function Hero() {
               >
                 Visit Us
               </Link>
-              <Link
-                href="/bishopsstortford/#menu"
+              <button
+                onClick={() => setShowBookModal(true)}
                 aria-label="Book a Table"
                 className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
               >
                 Book a Table
-              </Link>
+              </button>
               <button
                 onClick={() => setShowModal(true)}
                 aria-label="View Menu"
@@ -60,7 +62,13 @@ export default function Hero() {
         </AnimationObserver>
       </div>
 
-      {/* Modal */}
+      {/* Book a Table Modal */}
+      <OpenTableWidget
+        isOpen={showBookModal}
+        onClose={() => setShowBookModal(false)}
+      />
+
+      {/* Modal for View Menu */}
       {showModal && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
@@ -71,7 +79,7 @@ export default function Hero() {
           <div
             className="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-xl mx-4 p-4"
             style={{ maxHeight: "90vh", overflowY: "auto" }}
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setShowModal(false)}
