@@ -10,15 +10,28 @@ const images = [
   "/la-peche-best-coffee.avif",
 ];
 
+const aboutTexts = [
+  `Tucked away in the heart of Bishop's Stortford, Le Péché Mignon is a hidden gem where French-inspired comfort meets genuine hospitality. Whether you're stopping by for the best flat white in town, a soul-warming Tartiflette, or a slice of something sweet, every visit feels like a special occasion.`,
+  `From intimate birthday celebrations to relaxed weekend brunches, our guests come back for the warm welcome, impeccable service, and first-class food and wine. We're proud to cater for all dietary needs and love creating memorable experiences—whether it's your first visit or your fiftieth.`,
+];
+
 export default function About() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [currentText, setCurrentText] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const imgInterval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000); // 3-second image transition
+    }, 3000); // Image changes every 3 seconds
 
-    return () => clearInterval(interval);
+    const textInterval = setInterval(() => {
+      setCurrentText((prev) => (prev + 1) % aboutTexts.length);
+    }, 8000); // Text changes every 8 seconds
+
+    return () => {
+      clearInterval(imgInterval);
+      clearInterval(textInterval);
+    };
   }, []);
 
   return (
@@ -59,17 +72,8 @@ export default function About() {
               >
                 About Us
               </h2>
-              <p className="text-sm text-gray-500 sm:text-base lg:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur auctor nunc at nunc congue, ac feugiat sapien
-                sollicitudin. Sed tincidunt sem at dui efficitur, id facilisis
-                lorem tincidunt.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur auctor nunc at nunc congue, ac feugiat sapien
-                sollicitudin. Sed tincidunt sem at dui efficitur, id facilisis
-                lorem tincidunt.
+              <p className="text-sm text-gray-500 sm:text-base lg:text-lg transition-opacity duration-1000 ease-in-out">
+                {aboutTexts[currentText]}
               </p>
             </div>
           </div>

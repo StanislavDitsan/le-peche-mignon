@@ -143,7 +143,7 @@ const Food = () => {
             </div>
           </div>
           {/* Foodstore Section */}
-          <div id="foodstore" className="mt-16 flex justify-center">
+          <div id="foodstore" className="mt-16 flex justify-center text-center">
             <div
               className="w-full max-w-4xl mx-auto rounded-2xl border border-solid border-[#c18a52] p-12 sm:p-24 bg-white/70 dark:bg-gray-900/70 shadow-lg"
               data-aos="fade-in"
@@ -179,8 +179,7 @@ const Food = () => {
                 data-aos="fade-in"
                 data-aos-delay="950"
               >
-                Menu subject to change. Please ask staff for today&apos;s
-                specials.
+                Menu subject to change.
               </p>
             </div>
           </div>
