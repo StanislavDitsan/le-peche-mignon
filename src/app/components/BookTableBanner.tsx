@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import AnimationObserver from "./AnimationObserver";
+import OpenTableWidget from "./OpenTableWidget";
 
 const BookTable = () => {
+  const [showBookModal, setShowBookModal] = useState(false);
+
   return (
     <AnimationObserver>
       <section className="dark:bg-gray-900 " id="booktable">
@@ -49,14 +53,14 @@ const BookTable = () => {
                 a cozy, welcoming environment. Our team is eager to make your
                 evening memorable.
               </p>
-              <div data-aos="zoom-in" data-aos-delay="1300" className="mt-6">
-                <a
-                  href="/highbury/#reservation"
+              <div data-aos="zoom-in" data-aos-delay="500" className="mt-6">
+                <button
+                  onClick={() => setShowBookModal(true)}
                   aria-label="Book a Table"
                   className="button2 inline-flex items-center justify-center px-8 py-4 text-lg font-semibold dark:text-white"
                 >
                   Reserve Now
-                </a>
+                </button>
               </div>
             </div>
 
@@ -76,6 +80,11 @@ const BookTable = () => {
             </div>
           </div>
         </div>
+        {/* Book a Table Modal */}
+        <OpenTableWidget
+          isOpen={showBookModal}
+          onClose={() => setShowBookModal(false)}
+        />
       </section>
     </AnimationObserver>
   );
