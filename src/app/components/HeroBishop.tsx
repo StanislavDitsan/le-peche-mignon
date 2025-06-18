@@ -28,10 +28,9 @@ export default function Hero() {
               <span className="text-[#431500]">Le Péché Mignon</span>
             </h1>
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
-              Nestled in Bishop&apos;s Stortford, Le Péché Mignon is your spot
-              for fresh coffee, buttery pastries, artisanal deli finds and a
-              cozy moment with good company, whether you&apos;re enjoying brunch
-              or dinner.
+              Le Péché Mignon, a welcoming, family run neighbourhood café and
+              restaurant. The perfect spot to get together over fresh food,
+              great coffee and delicous wine.
             </p>
             <div
               data-aos="zoom-in"
