@@ -5,10 +5,11 @@ import {
   FaPhone,
   FaMapMarkerAlt,
   FaEnvelope,
+  FaClock,
 } from "react-icons/fa";
 // import AnimationObserver from "./AnimationObserver";
 
-const Footer = () => {
+const FooterBishop = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -26,18 +27,6 @@ const Footer = () => {
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-gray-500 mr-3" />
               <a
-                href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600 text-gray-500 text-sm sm:text-base transition-colors"
-                aria-label="google location 6 Ronalds Road, Highbury, London"
-              >
-                6 Ronalds Road, Highbury, London
-              </a>
-            </div>
-            <div className="flex items-center">
-              <FaMapMarkerAlt className="text-gray-500 mr-3" />
-              <a
                 href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -46,6 +35,12 @@ const Footer = () => {
               >
                 3A High St, Bishop&apos;s Stortford, London
               </a>
+            </div>
+            <div className="flex items-center">
+              <FaClock className="text-gray-500 mr-3" />
+              <span className="text-gray-500 text-sm sm:text-base">
+                Open everyday 8:00 &mdash; 4pm
+              </span>
             </div>
             <div className="flex items-center">
               <FaPhone className="text-gray-500 mr-3" />
@@ -95,4 +90,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterBishop;

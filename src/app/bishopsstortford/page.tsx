@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import FooterBishop from "../components/FooterBishop";
 import HeroBishop from "../components/HeroBishop";
 import AboutBishop from "../components/AboutBishop";
 import CoffeeBishop from "../components/CoffeeBishop";
@@ -195,7 +195,7 @@ export default function Bishop() {
       </section>
 
       <section>
-        <Footer />
+        <FooterBishop />
       </section>
     </>
   );

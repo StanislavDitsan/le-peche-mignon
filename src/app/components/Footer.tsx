@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="flex items-center">
               <FaClock className="text-gray-500 mr-3" />
               <span className="text-gray-500 text-sm sm:text-base">
-                Open everyday 7:30 – 4pm
+                Open everyday 7:30 &mdash; 4pm
               </span>
             </div>
             <div className="flex items-center">
