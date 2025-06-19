@@ -176,7 +176,7 @@ const Food = () => {
                 data-aos="fade-down"
                 data-aos-delay="750"
               >
-                Your Next Favorite Dish
+                On the Menu
               </h3>
               <p
                 className="text-gray-500 text-base md:text-lg mb-10"
