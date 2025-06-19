@@ -5,6 +5,7 @@ import AboutBishop from "../components/AboutBishop";
 import CoffeeBishop from "../components/CoffeeBishop";
 import FoodBishop from "../components/FoodBishop";
 import BookTableBanner from "../components/BookTableBanner";
+import FoodStore from "../components/FoodStore";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
@@ -192,6 +193,10 @@ export default function Bishop() {
 
       <section>
         <BookTableBanner />
+      </section>
+
+      <section>
+        <FoodStore />
       </section>
 
       <section>
