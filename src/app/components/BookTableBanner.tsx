@@ -16,14 +16,14 @@ const BookTable = () => {
           <h2
             data-aos="fade-down"
             data-aos-delay="100"
-            className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
+            className="mb-5 hidden md:block text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             Make a Reservation
           </h2>
           <p
             data-aos="fade-in"
             data-aos-delay="300"
-            className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
+            className="mb-8 max-w-lg hidden md:block text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             Whether it&apos;s a special occasion or a casual night out, reserve
             your spot for an unforgettable dining experience.
