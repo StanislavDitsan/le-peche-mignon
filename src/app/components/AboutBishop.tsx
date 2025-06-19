@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import AnimationObserver from "./AnimationObserver";
+import { FaArrowRight } from "react-icons/fa"; // Add this import
 
 const images = [
   "/la-peche-foodie.avif",
@@ -11,8 +12,22 @@ const images = [
 ];
 
 const aboutTexts = [
-  `Tucked away in the heart of Bishop's Stortford, Le Péché Mignon is a hidden gem where French-inspired comfort meets genuine hospitality. Whether you're stopping by for the best flat white in town, a soul-warming Tartiflette, or a slice of something sweet, every visit feels like a special occasion.`,
-  `From intimate birthday celebrations to relaxed weekend brunches, our guests come back for the warm welcome, impeccable service, and first-class food and wine. We're proud to cater for all dietary needs and love creating memorable experiences—whether it's your first visit or your fiftieth.`,
+  `After 18 years in Highbury, we decided to branch out. The decision was easy for our second site: our new home as a family: Bishop’s Stortford. We’re open every day from 8am to 4pm and we hope we have every base covered.`,
+  <>
+    Pop in for a morning coffee (or takeaway if you&apos;re against the clock),
+    leisurely breakfast at the weekend, or stock up on store cupboard
+    essentials, we hope we live up to our name! (Did you work it out?){" "}
+    <a
+      href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#c18a52] hover:text-blue-800"
+    >
+      Our Highbury branch
+    </a>
+    <br />
+    is still going strong if you are ever in the area.
+  </>,
 ];
 
 export default function About() {
@@ -26,13 +41,18 @@ export default function About() {
 
     const textInterval = setInterval(() => {
       setCurrentText((prev) => (prev + 1) % aboutTexts.length);
-    }, 8000); // Text changes every 8 seconds
+    }, 6000); // Text changes every 10 seconds
 
     return () => {
       clearInterval(imgInterval);
       clearInterval(textInterval);
     };
   }, []);
+
+  // Remove text auto-switching, add manual arrow
+  const handleNextText = () => {
+    setCurrentText((prev) => (prev + 1) % aboutTexts.length);
+  };
 
   return (
     <AnimationObserver>
@@ -63,7 +83,7 @@ export default function About() {
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col justify-center gap-5 rounded-2xl border border-[#c18a52] p-10 sm:p-20 h-full bg-white/70 dark:bg-gray-900/70"
+              className="flex flex-col justify-center gap-5 rounded-2xl border border-[#c18a52] p-10 sm:p-20 h-full bg-white/70 dark:bg-gray-900/70 relative"
             >
               <h2
                 data-aos="zoom-in"
@@ -75,6 +95,14 @@ export default function About() {
               <p className="text-sm text-gray-500 sm:text-base lg:text-lg transition-opacity duration-1000 ease-in-out">
                 {aboutTexts[currentText]}
               </p>
+              <button
+                aria-label="Next About Text"
+                onClick={handleNextText}
+                className="absolute bottom-6 right-6 p-3 rounded-full text-[#c18a52]  hover:bg-[#e6ddd6ab] transition shadow-lg"
+                type="button"
+              >
+                <FaArrowRight />
+              </button>
             </div>
           </div>
         </div>
