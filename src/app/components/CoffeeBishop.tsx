@@ -38,14 +38,15 @@ const Coffee = () => {
             data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
-            Crafting Perfect Coffee
+            Our Perfect Coffee
           </h2>
           <p
             data-aos="fade-in"
             data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
-            Every sip is a little moment of joy
+            Monmouth beans, the unbeatable Marzocco machine and talented
+            baristas.
           </p>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
             <div
@@ -65,12 +66,11 @@ const Coffee = () => {
                 data-aos-delay="600"
                 className="text-sm text-gray-500 sm:text-base"
               >
-                We take pride in using the best Monmouth beans and the trusted
-                Marzocco machine to brew the perfect cup. Rich, smooth, and full
-                of flavor. It&rsquo;s not just about coffee; it&rsquo;s about
-                the experience &mdash; from the first sip to the last. Our
-                baristas are passionate about what they do, and it shows in
-                every pour.
+                Our baristas are truly passionate and are trained to pour a
+                great cup every time. We&apos;re always open to what you want so
+                shout up and let us know how you like your coffee. We take pride
+                in using the best Monmouth beans and the trusted Marzocco
+                machine to brew the perfect cup.
               </p>
             </div>
 
