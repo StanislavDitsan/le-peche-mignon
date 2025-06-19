@@ -21,10 +21,31 @@ const Food = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="mx-auto mb-8 mt-4 text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16"
+            className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 "
           >
-            Everything is made fresh every day, using only the best ingredients
-            to make each bite feel special
+            Our food is made using high-quality ingredients sourced as
+            seasonally and as ethically as possible. Our eggs and meat are
+            free-range. Our salads, soups, and stews change daily and are
+            available to take away or eat in. We also have an extensive list of
+            made-to-order toasted sandwiches, baguettes, quiches, and other
+            savoury and sweet snacks.
+            <br />
+            <br />
+            And to top things off, on Friday and Saturday evenings we light the
+            candles, change the playlist, and move the room around to open our
+            restaurant with a very French feel to the food and wine. See the
+            menu for more details. Bookings recommended, but walk-ins welcome!
+            <br />
+            You can read what our guests have to say about us{" "}
+            <a
+              href="https://www.opentable.com/restaurant/profile/123456"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ac6936] font-semibold underline hover:text-[#8a552b] transition-colors"
+            >
+              here
+            </a>
+            .
           </p>
           {/* Content */}
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:justify-center md:grid-cols-1 md:gap-8 lg:grid-cols-2">
@@ -142,10 +163,11 @@ const Food = () => {
               </div>
             </div>
           </div>
+
           {/* Foodstore Section */}
           <div id="foodstore" className="mt-16 flex justify-center text-center">
             <div
-              className="w-full max-w-4xl mx-auto rounded-2xl border border-solid border-[#c18a52] p-12 sm:p-24 bg-white/70 dark:bg-gray-900/70 shadow-lg"
+              className="w-full max-w-4xl mx-auto p-12 sm:p-24 bg-white/70 dark:bg-gray-900/70 "
               data-aos="fade-in"
               data-aos-delay="700"
             >
