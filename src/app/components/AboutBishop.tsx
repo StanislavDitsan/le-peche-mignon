@@ -33,24 +33,30 @@ const aboutTexts = [
 export default function About() {
   const [currentImage, setCurrentImage] = useState(0);
   const [currentText, setCurrentText] = useState(0);
+  const [textManuallyChanged, setTextManuallyChanged] = useState(false);
 
   useEffect(() => {
     const imgInterval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000); // Image changes every 3 seconds
+    }, 3000);
 
-    const textInterval = setInterval(() => {
-      setCurrentText((prev) => (prev + 1) % aboutTexts.length);
-    }, 6000); // Text changes every 10 seconds
+    let textInterval: NodeJS.Timeout | null = null;
+
+    if (!textManuallyChanged) {
+      textInterval = setInterval(() => {
+        setCurrentText((prev) => (prev + 1) % aboutTexts.length);
+      }, 6000);
+    }
 
     return () => {
       clearInterval(imgInterval);
-      clearInterval(textInterval);
+      if (textInterval) clearInterval(textInterval);
     };
-  }, []);
+  }, [textManuallyChanged]); // <-- track the flag in the effect
 
   // Remove text auto-switching, add manual arrow
   const handleNextText = () => {
+    setTextManuallyChanged(true); // stop auto switching
     setCurrentText((prev) => (prev + 1) % aboutTexts.length);
   };
 
