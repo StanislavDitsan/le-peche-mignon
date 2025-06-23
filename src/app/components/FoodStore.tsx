@@ -1,19 +1,33 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AnimationObserver from "./AnimationObserver";
 
+const foodStoreImages = [
+  "/la-peche-coffee.webp",
+  "/la-peche-coffee-time.avif",
+  "/la-peche-monmouth.avif",
+];
+
 const FoodStore = () => {
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageIndex((prev) => (prev + 1) % foodStoreImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <AnimationObserver>
       <section className="dark:bg-gray-900 mt-10" id="foodstore">
-        {/* Container */}
         <div className="mx-auto w-full max-w-7xl px-5 md:px-10 md:py-20">
           {/* Title */}
           <h2
             data-aos="fade-down"
             data-aos-delay="100"
-            className="mb-5  text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
+            className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             Our Food Store
           </h2>
@@ -26,25 +40,48 @@ const FoodStore = () => {
             natural wines.
           </p>
 
-          {/* Content Grid */}
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-            {/* Text Block (Right side) */}
+          {/* Grid Content */}
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-stretch">
+            {/* Slideshow Image Block */}
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="relative flex-1 min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
+            >
+              {foodStoreImages.map((src, i) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt="Gourmet food store display"
+                  width={500}
+                  height={500}
+                  quality={90}
+                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                    i === imageIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
+
+            {/* Text Block */}
             <div
               data-aos="fade-up"
               data-aos-delay="600"
-              className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg lg:order-2"
+              className="flex flex-col gap-5 flex-1 min-h-[400px] rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h3
                 data-aos="zoom-in"
                 data-aos-delay="200"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
-                The Best of Europe, in One Place
+                Europe&apos;s Finest
+                <br />
+                In One Place
               </h3>
               <p
                 data-aos="fade-in"
                 data-aos-delay="300"
-                className="text-sm text-gray-500 sm:text-base"
+                className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
                 As our name in French suggests, we are packed to the rafters
                 with good things. Highlights include chorizo from Brindisa,
@@ -55,7 +92,7 @@ const FoodStore = () => {
               <p
                 data-aos="fade-in"
                 data-aos-delay="400"
-                className="text-sm text-gray-500 sm:text-base"
+                className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
                 We also offer a beautiful selection of natural and biodynamic
                 wines from Les Caves de Pyrene — perfect to enjoy here or at
@@ -64,32 +101,29 @@ const FoodStore = () => {
               <p
                 data-aos="fade-in"
                 data-aos-delay="500"
-                className="text-sm text-gray-500 sm:text-base"
+                className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
-                Follow us on Instagram for regular updates and seasonal finds.
+                Follow us on{" "}
+                <a
+                  target="_blank"
+                  aria-label="Instagram link"
+                  rel="noopener noreferrer"
+                  className="text-[#ac6936] font-semibold no-underline hover:text-[#8a552b] transition-colors"
+                  href="https://www.instagram.com/lepechemignonuk/"
+                >
+                  Instagram
+                </a>{" "}
+                for regular updates and seasonal finds.
               </p>
-            </div>
-
-            {/* Image Block (Left side) */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="flex items-center"
-            >
-              <Image
-                src="/la-peche_gourmet_store.avif" // Replace with your actual image path
-                alt="Gourmet food store shelves"
-                className="inline-block h-full w-full rounded-2xl object-cover shadow-xl"
-                width={500}
-                height={500}
-              />
             </div>
           </div>
         </div>
+
+        {/* Catering Section */}
         <div
           data-aos="fade-up"
           data-aos-delay="200"
-          className="w-full max-w-4xl mx-auto  bg-white/70 dark:bg-gray-900/70 p-10 sm:p-16 text-center"
+          className="w-full max-w-4xl mx-auto bg-white/70 dark:bg-gray-900/70 p-10 sm:p-16 text-center mt-20"
         >
           <h3 className="text-3xl md:text-5xl font-bold dark:text-white mb-6">
             Catering & Private Events

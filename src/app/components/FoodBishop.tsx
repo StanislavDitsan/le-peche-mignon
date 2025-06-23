@@ -21,7 +21,7 @@ const Food = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 "
+            className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 md:text-lg"
           >
             Our food is made using high-quality ingredients sourced as
             seasonally and as ethically as possible. Our eggs and meat are

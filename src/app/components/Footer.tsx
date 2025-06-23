@@ -76,10 +76,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div
-          className="mb-14 w-full border-b border-black mt-16"
-          data-aos="zoom-in"
-        ></div>
+        <div className="mb-14 w-full border-b border-black mt-16"></div>
         <div className="md:flex-row flex justify-between sm:items-center sm:flex-col items-start flex-col-reverse">
           <p className="text-gray-500 text-sm sm:text-base text-center">
             © le peche mignon {currentYear}

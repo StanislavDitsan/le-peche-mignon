@@ -92,13 +92,13 @@ export default function About() {
               >
                 About Us
               </h2>
-              <p className="text-sm text-gray-500 sm:text-base lg:text-lg transition-opacity duration-1000 ease-in-out">
+              <p className="text-sm text-gray-500 sm:text-base lg:text-lg transition-opacity duration-1000 ease-in-out ">
                 {aboutTexts[currentText]}
               </p>
               <button
                 aria-label="Next About Text"
                 onClick={handleNextText}
-                className="absolute bottom-6 right-6 p-3 rounded-full text-[#c18a52]  hover:bg-[#e6ddd6ab] transition shadow-lg"
+                className="absolute bottom-6 right-6 p-3 rounded-full text-[#c18a52]  hover:bg-[#e6ddd6ab] dark:hover:bg-[#1a1410e9] transition shadow-lg"
                 type="button"
               >
                 <FaArrowRight />

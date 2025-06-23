@@ -21,7 +21,7 @@ export default function Hero() {
         <AnimationObserver>
           <div
             data-aos="fade-up"
-            className="lg:col-span-7 space-y-6 lg:space-y-8 text-white lg:mt-32 backdrop-blur-lg bg-white/30 p-10 rounded-xl shadow-xl dark:bg-gray-900"
+            className="lg:col-span-7 space-y-6 lg:space-y-8 text-white lg:mt-32 backdrop-blur-md bg-white/30 p-10 rounded-xl shadow-xl dark:bg-gray-900"
           >
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white">
               Welcome to <br />
