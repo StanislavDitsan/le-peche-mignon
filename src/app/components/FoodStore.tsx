@@ -4,9 +4,11 @@ import React, { useEffect, useState } from "react";
 import AnimationObserver from "./AnimationObserver";
 
 const foodStoreImages = [
-  "/la-peche-coffee.webp",
-  "/la-peche-coffee-time.avif",
-  "/la-peche-monmouth.avif",
+  "/le-peche-mignon-food-store2.avif",
+  "/le-peche-mignon-food-store.avif",
+  "/le-peche-mignon-food-store3.avif",
+  "/le-peche-mignon-food-store4.avif",
+  "/le-peche-mignon-food-store5.avif",
 ];
 
 const FoodStore = () => {
@@ -36,8 +38,8 @@ const FoodStore = () => {
             data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
-            Discover a curated selection of Europe’s finest gourmet foods and
-            natural wines.
+            Discover a curated selection of Europe&apos;s finest gourmet foods
+            and natural wines.
           </p>
 
           {/* Grid Content */}
@@ -120,23 +122,46 @@ const FoodStore = () => {
         </div>
 
         {/* Catering Section */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="w-full max-w-4xl mx-auto bg-white/70 dark:bg-gray-900/70 p-10 sm:p-16 text-center mt-20"
-        >
-          <h3 className="text-3xl md:text-5xl font-bold dark:text-white mb-6">
-            Catering & Private Events
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
-            A full catering service is also available — so if you're having a
-            party at home or an event at work, get in touch to see how we can
-            help.
-            <br className="hidden sm:block" />
-            <br />
-            The space can be hired for private events — for more details, reach
-            out to us via email or phone.
-          </p>
+        <div className="w-full mt-20">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="w-full relative"
+          >
+            {/* Background Image */}
+            <Image
+              src="/la-peche-catering-service-london.avif"
+              alt="Catering and Private Events"
+              width={1920}
+              height={800}
+              className="w-full h-96 sm:h-[28rem] md:h-[32rem] object-cover"
+              priority
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 0,
+                objectFit: "cover",
+                opacity: 0.35, // adjust for desired overlay effect
+              }}
+            />
+            {/* Overlay Content */}
+            <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center justify-center h-96 sm:h-[28rem] md:h-[32rem] text-center">
+              <h3 className="text-3xl md:text-5xl font-bold dark:text-white mb-6 drop-shadow-lg">
+                Catering & Private Events
+              </h3>
+              <p className="text-gray-800 dark:text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed drop-shadow p-8">
+                A full catering service is also available — so if you're having
+                a party at home or an event at work, get in touch to see how we
+                can help.
+                <br className="hidden sm:block" />
+                <br />
+                The space can be hired for private events — for more details,
+                reach out to us via email or phone.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </AnimationObserver>

@@ -253,7 +253,7 @@ const Food = () => {
                     padding: 0,
                     margin: 0,
                   }}
-                  src="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view?embed"
+                  src="https://www.canva.com/design/DAGrL9sDWaA/GIFyU1tpaXGVbxEqDXEjaA/view"
                   allowFullScreen
                   allow="fullscreen"
                   title="PDF Menu"
