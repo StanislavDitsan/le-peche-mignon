@@ -152,9 +152,9 @@ const FoodStore = () => {
                 Catering & Private Events
               </h3>
               <p className="text-gray-800 dark:text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed drop-shadow p-8">
-                A full catering service is also available — so if you're having
-                a party at home or an event at work, get in touch to see how we
-                can help.
+                A full catering service is also available — so if you&apos;re
+                having a party at home or an event at work, get in touch to see
+                how we can help.
                 <br className="hidden sm:block" />
                 <br />
                 The space can be hired for private events — for more details,
