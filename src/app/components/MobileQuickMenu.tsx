@@ -154,7 +154,7 @@ export default function MobileQuickMenu() {
                   left: 0,
                   border: "none",
                 }}
-                src="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view"
+                src="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view?embed"
                 allowFullScreen
                 title="PDF Menu"
               ></iframe>
