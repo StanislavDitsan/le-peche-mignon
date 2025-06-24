@@ -165,13 +165,6 @@ const Food = () => {
               </div>
             </div>
           </div>
-          <p
-            data-aos="fade-in"
-            data-aos-delay="700"
-            className="mt-4 text-xl font-semibold dark:text-white text-center"
-          >
-            and so much more
-          </p>
 
           <div id="foodstore" className="w-full mt-16">
             <div
