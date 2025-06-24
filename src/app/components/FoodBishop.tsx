@@ -61,7 +61,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/le-peche-best-food.avif"
                 alt="Brunch"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -118,20 +118,21 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Soups and Stews"
+                src="/Seasonal-Fruit- Pastries-at-le-peche.avif"
+                alt="Seasonal Fruit & Pastries"
                 className="inline-block h-72 w-full object-cover rounded"
               />
               <div>
                 <p className="text-xl font-semibold dark:text-white">
-                  Homemade Soups & Stews
+                  Seasonal Fruit & Pastries
                 </p>
                 <p className="mb-4 font-semibold text-gray-500">
-                  Fresh & Hearty
+                  Fresh, Colourful & Wholesome
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base">
-                  Our homemade soups and stews change daily. Available to take
-                  away or enjoy around our communal table.
+                  A vibrant selection of berries, kiwi, and pastries served with
+                  creamy Normandy yogurt. Perfect for a light breakfast or a
+                  mid-morning treat.
                 </p>
               </div>
             </div>
@@ -164,6 +165,13 @@ const Food = () => {
               </div>
             </div>
           </div>
+          <p
+            data-aos="fade-in"
+            data-aos-delay="700"
+            className="mt-4 text-xl font-semibold dark:text-white text-center"
+          >
+            and so much more
+          </p>
 
           <div id="foodstore" className="w-full mt-16">
             <div
@@ -210,7 +218,7 @@ const Food = () => {
                   View Menu
                 </button>
                 <p
-                  className="mt-6 text-xs text-gray-400"
+                  className="mt-6 text-sm text-gray-500"
                   data-aos="fade-in"
                   data-aos-delay="950"
                 >
