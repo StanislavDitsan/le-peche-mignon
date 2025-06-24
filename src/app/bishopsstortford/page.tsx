@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar";
+import NavBarBishop from "../components/NavBarBishop";
 import FooterBishop from "../components/FooterBishop";
 import HeroBishop from "../components/HeroBishop";
 import AboutBishop from "../components/AboutBishop";
@@ -174,7 +174,7 @@ export default function Bishop() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchemaData) }}
       />
 
-      <NavBar />
+      <NavBarBishop />
 
       <section>
         <HeroBishop />
