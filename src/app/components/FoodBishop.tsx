@@ -166,7 +166,7 @@ const Food = () => {
             </div>
           </div>
 
-          <div id="foodstore" className="w-full mt-16">
+          <div className="w-full mt-16">
             <div
               data-aos="fade-up"
               data-aos-delay="200"
