@@ -73,7 +73,7 @@ export default function NavBarBishop() {
     { href: "bishopsstortford/#booktable", label: "Reservation" },
     { href: "bishopsstortford/#foodstore", label: "Food Store" },
 
-    { href: "/gallery", label: "Gallery" },
+    // { href: "/gallery", label: "Gallery" },
   ];
 
   return (

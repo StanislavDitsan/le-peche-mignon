@@ -7,6 +7,7 @@ import FoodBishop from "../components/FoodBishop";
 import BookTableBanner from "../components/BookTableBanner";
 import FoodStore from "../components/FoodStore";
 import MobileQuickMenu from "../components/MobileQuickMenu";
+import CustomerReviews from "../components/CustomerReviews";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
@@ -198,6 +199,10 @@ export default function Bishop() {
 
       <section>
         <FoodStore />
+      </section>
+
+      <section>
+        <CustomerReviews />
       </section>
 
       <section>
