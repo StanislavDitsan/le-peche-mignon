@@ -14,6 +14,7 @@ export default function Hero() {
       style={{ backgroundImage: "url('/Le-Péché-Mignon-bishop.webp')" }}
     >
       {/* Dark semi-transparent overlay */}
+
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
       <div className="relative z-10 flex flex-col items-center text-center px-4 py-8 lg:grid lg:max-w-screen-xl lg:mx-auto lg:gap-8 lg:grid-cols-12 lg:text-left lg:items-start lg:px-6 lg:py-16">
