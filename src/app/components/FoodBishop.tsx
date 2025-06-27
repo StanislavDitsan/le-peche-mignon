@@ -268,14 +268,14 @@ const Food = () => {
                     padding: 0,
                     margin: 0,
                   }}
-                  src="https://www.canva.com/design/DAGrL9sDWaA/GIFyU1tpaXGVbxEqDXEjaA/view"
+                  src="https://www.canva.com/design/DAGrjtKSlnc/nViO8oaSm8mcTYUI0yYtTQ/view?embed"
                   allowFullScreen
                   allow="fullscreen"
                   title="PDF Menu"
                 ></iframe>
               </div>
               <a
-                href="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view"
+                href="https://www.canva.com/design/DAGrjtKSlnc/nViO8oaSm8mcTYUI0yYtTQ/view"
                 target="_blank"
                 rel="noopener"
                 className="block text-center text-[#ac6936] font-semibold underline mt-2"
