@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FaBars, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import { MdEditCalendar } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import { PiForkKnifeFill } from "react-icons/pi";
 import OpenTableWidget from "./OpenTableWidget"; // Make sure this is imported
