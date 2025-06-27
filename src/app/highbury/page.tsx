@@ -6,6 +6,7 @@ import Food from "../components/Food";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import MobileQuickMenu from "../components/MobileQuickMenuN";
 
 export const metadata = {
   title: "Le Peche Mignon | Best Coffee and Fresh Food",
@@ -194,6 +195,10 @@ export default function Highbury() {
       <section>
         <FindUs />
       </section>
+      <section>
+        <MobileQuickMenu />
+      </section>
+
       <section>
         <Footer />
       </section>
