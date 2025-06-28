@@ -39,15 +39,15 @@ const FindUs = () => {
               >
                 We don&apos;t take reservations, but please don&apos;t let this
                 put you off. Come along and we will seat you as quickly as we
-                can. All our tables are for sharing.
+                can. <br /> All our tables are for sharing.
               </p>
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                We&apos;ve got a beautifully secluded garden to the rear. If the
-                weather is good, it&apos;s a great place to relax.
+                We&apos;ve got a beautifully secluded garden to the rear. <br />{" "}
+                If the weather is good, it&apos;s a great place to relax.
               </p>
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
@@ -55,11 +55,12 @@ const FindUs = () => {
                 data-aos-delay="450"
               >
                 We&apos;re always trying to improve - we&apos;d love to hear
-                what you think about Le Péché Mignon. Drop us a line at:{" "}
+                what you think about Le Péché Mignon. <br /> <br /> Drop us a
+                line at:{" "}
                 <a
                   href="mailto:feedback@lepechemignon.co.uk"
                   aria-label="feedback email"
-                  className="text-blue-600 hover:underline"
+                  className="no-underline text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors"
                 >
                   feedback@lepechemignon.co.uk
                 </a>
@@ -80,8 +81,14 @@ const FindUs = () => {
             className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 border border-white/30"
             data-aos="fade-up"
             data-aos-delay="600"
+            style={{
+              backgroundImage: "url('/la-peche-cafe-uk.avif')",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
           >
-            <div className="bg-white backdrop-blur-sm dark:bg-gray-900 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
+            <div className="bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
               <div
                 className="w-full md:w-4/5"
                 data-aos="fade-up"
@@ -94,10 +101,12 @@ const FindUs = () => {
                   </span>
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
-                  Bonjour Bishop&apos;s Stortford! We&apos;re excited to
-                  announce the opening of our new location. Join us for
-                  breakfast and lunch at our new spot.
+                  Our Bishop&apos;s Stortford location is now open! <br />{" "}
+                  <br />
+                  Come by for breakfast, lunch or dinner and enjoy our cozy new
+                  space.
                 </p>
+                <br />
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
                   À bientôt &ndash; see you soon!
                 </p>

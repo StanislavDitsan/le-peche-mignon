@@ -9,7 +9,7 @@ const lora = Lora({ subsets: ["latin"] });
 
 const carouselItems = [
   {
-    src: "/la-peche.jpg",
+    src: "/la-peche-cafe-uk.avif",
     alt: "Carousel Image 0",
     label: "New Location!",
   },
@@ -19,7 +19,7 @@ const carouselItems = [
     label: "Family friendly outdoor space",
   },
   {
-    src: "/Artisan-coffee.jpg",
+    src: "/la-peche-coffee.webp",
     alt: "Artisan coffee",
     label: "Artisan coffee",
   },
@@ -29,28 +29,36 @@ const carouselItems = [
     label: "Taste of local producers in Highbury",
   },
   {
-    src: "/pechemignon_home_pic1.jpg",
-    alt: "Carousel Image 4",
+    src: "/catering-service.avif",
+    alt: "Delicious food and more to savor",
     label: "Delicious food and more to savor",
+  },
+  {
+    src: "/le-peche-mignon-food-store2.avif",
+    alt: "Gourmet food offerings",
+    label: "Gourmet food offerings",
+  },
+  {
+    src: "/le-peche-best-wine.avif",
+    alt: "Carousel Image 4",
+    label: "Beautiful selection of natural and biodynamic wines",
   },
 ];
 
 export default function EmblaCarousel() {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true });
 
-  // Auto-slide logic
   useEffect(() => {
     if (!embla) return;
     const autoScroll = setInterval(() => {
-      embla.scrollNext(); // Scroll to the next slide
-    }, 3000); // Adjust the interval (e.g., 3000ms for 3 seconds)
-
-    return () => clearInterval(autoScroll); // Cleanup on unmount
+      embla.scrollNext();
+    }, 6000);
+    return () => clearInterval(autoScroll);
   }, [embla]);
 
   const onSelect = useCallback(() => {
     if (!embla) return;
-    embla.selectedScrollSnap(); // This was updating `selectedIndex`, but it's no longer needed
+    embla.selectedScrollSnap();
   }, [embla]);
 
   useEffect(() => {
@@ -63,20 +71,26 @@ export default function EmblaCarousel() {
   const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 
   return (
-    <div className="embla relative">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <div className="relative flex flex-col w-full px-4 sm:px-8 lg:px-32 xl:px-80">
+      {/* Carousel viewport */}
+      <div
+        className="embla__viewport overflow-hidden rounded-none lg:rounded-3xl"
+        ref={emblaRef}
+      >
+        <div className="embla__container flex">
           {carouselItems.map((item, index) => (
-            <div className="embla__slide" key={index}>
+            <div className="embla__slide relative min-w-full" key={index}>
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={500}
-                height={500}
-                className="w-full h-full object-cover"
+                width={1600}
+                height={1900}
+                className="w-full h-full object-cover rounded-none lg:rounded-3xl"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className={`${lora.className} embla__label`}>
+              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center pb-6 px-4 text-center">
+                <span
+                  className={`${lora.className} text-white text-sm sm:text-base lg:text-xl bg-black/60 px-4 py-2 rounded-md backdrop-blur-sm`}
+                >
                   {item.label}
                 </span>
               </div>
@@ -84,22 +98,24 @@ export default function EmblaCarousel() {
           ))}
         </div>
       </div>
-      {/* Rounded Previous Button */}
-      <button
-        aria-label="button previous"
-        className="hidden md:flex absolute top-1/2 left-4 z-10 items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
-        onClick={scrollPrev}
-      >
-        <FaArrowLeft className="text-xl" />
-      </button>
-      {/* Rounded Next Button */}
-      <button
-        aria-label="button next"
-        className="hidden md:flex absolute top-1/2 right-4 z-10 items-center justify-center w-12 h-12 text-white bg-black rounded-full transform -translate-y-1/2 hover:bg-black/70"
-        onClick={scrollNext}
-      >
-        <FaArrowRight className="text-xl" />
-      </button>
+
+      {/* Navigation buttons below the carousel, right-aligned (desktop only) */}
+      <div className="hidden lg:flex justify-end mt-4 pr-4 space-x-4">
+        <button
+          aria-label="button previous"
+          onClick={scrollPrev}
+          className="w-12 h-12 flex items-center justify-center text-white bg-black rounded-full hover:bg-black/70 transition"
+        >
+          <FaArrowLeft className="text-xl" />
+        </button>
+        <button
+          aria-label="button next"
+          onClick={scrollNext}
+          className="w-12 h-12 flex items-center justify-center text-white bg-black rounded-full hover:bg-black/70 transition"
+        >
+          <FaArrowRight className="text-xl" />
+        </button>
+      </div>
     </div>
   );
 }
