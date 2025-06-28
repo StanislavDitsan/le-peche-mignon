@@ -67,7 +67,7 @@ const Landing = () => {
                     Our Website
                   </button>
                 </Link>
-                <Link href="/location1/menu">
+                <Link href="https://maps.app.goo.gl/4iDcZC63Tfx4zSuE9">
                   <button className="button px-6 py-3 rounded-lg shadow-md flex items-center gap-2 transition-colors">
                     Get Directions
                   </button>
@@ -91,7 +91,7 @@ const Landing = () => {
                     Our Website
                   </button>
                 </Link>
-                <Link href="/location2/menu">
+                <Link href="https://maps.app.goo.gl/t8J9VGA1onoqTAFN7">
                   <button className="button px-6 py-3 rounded-lg shadow-md flex items-center gap-2 transition-colors">
                     Get Directions
                   </button>

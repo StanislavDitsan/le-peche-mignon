@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-gray-500 mr-3" />
               <a
-                href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
+                href="https://maps.app.goo.gl/4iDcZC63Tfx4zSuE9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 text-gray-500 text-sm sm:text-base transition-colors"
