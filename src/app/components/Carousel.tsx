@@ -112,14 +112,18 @@ export default function EmblaCarousel() {
         <button
           aria-label="button previous"
           onClick={scrollPrev}
-          className="w-12 h-12 flex items-center justify-center text-white bg-black rounded-full hover:bg-black/70 transition"
+          className="p-2 bg-white dark:bg-gray-800 shadow-md rounded-full dark:text-white"
+          data-aos="zoom-in"
+          data-aos-delay="400"
         >
           <FaArrowLeft className="text-xl" />
         </button>
         <button
           aria-label="button next"
           onClick={scrollNext}
-          className="w-12 h-12 flex items-center justify-center text-white bg-black rounded-full hover:bg-black/70 transition"
+          className="p-2 bg-white dark:bg-gray-800 shadow-md rounded-full dark:text-white"
+          data-aos="zoom-in"
+          data-aos-delay="400"
         >
           <FaArrowRight className="text-xl" />
         </button>
