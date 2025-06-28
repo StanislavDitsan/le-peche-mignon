@@ -17,7 +17,7 @@ const FindUs = () => {
                 height={500}
                 src="/peche_mignon_map.png"
                 alt=""
-                className="mx-auto inline-block h-full w-full max-w-2xl object-cover bg-black/90 border border-white/30 backdrop-blur-md rounded-2xl"
+                className="mx-auto inline-block h-full w-full max-w-2xl object-cover bg-black/90 backdrop-blur-md rounded-2xl"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="200">
@@ -78,7 +78,7 @@ const FindUs = () => {
             </div>
           </div>
           <div
-            className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 border border-white/30"
+            className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 "
             data-aos="fade-up"
             data-aos-delay="600"
             style={{
