@@ -15,13 +15,36 @@ const Food = () => {
           >
             Our Menu
           </h2>
+
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="mx-auto mb-8 mt-4 text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16"
+            className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 md:text-lg"
           >
-            Indulgent weekend brunch, daily specials, and classic favourites
-            with a twist. Freshly made every day using the finest ingredients.
+            Our food is made using high-quality ingredients sourced as
+            seasonally and as ethically as possible. Our eggs and meat are
+            free-range. Our salads, soups, and stews change daily and are
+            available to take away or eat in. We also have an extensive list of
+            made-to-order toasted sandwiches, baguettes, quiches, and other
+            savoury and sweet snacks.
+            <br />
+            <br />
+            And to top things off, on Friday and Saturday evenings we light the
+            candles, change the playlist, and move the room around to open our
+            restaurant with a very French feel to the food and wine. See the
+            menu for more details. Bookings recommended, but walk-ins welcome!
+            <br />
+            <br />
+            You can read what our guests have to say about us{" "}
+            <a
+              href="https://maps.app.goo.gl/srWBG56Em3oGgUbs5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors no-underline"
+            >
+              here
+            </a>
+            .
           </p>
           {/* Content */}
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:justify-center md:grid-cols-1 md:gap-8 lg:grid-cols-2">
@@ -36,7 +59,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/le-peche-best-food.avif"
                 alt="Brunch"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -64,7 +87,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/le-peche-best-food2.avif"
                 alt="Toasted Sandwiches"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -93,20 +116,21 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/le-peche-best-food4.avif"
                 alt="Soups and Stews"
                 className="inline-block h-72 w-full object-cover rounded"
               />
               <div>
                 <p className="text-xl font-semibold dark:text-white">
-                  Homemade Soups & Stews
+                  Seasonal Quiche & Savouries
                 </p>
                 <p className="mb-4 font-semibold text-gray-500">
-                  Fresh & Hearty
+                  Golden, Flaky, Delicious
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base">
-                  Our homemade soups and stews change daily. Available to take
-                  away or enjoy around our communal table.
+                  Freshly baked with market vegetables and buttery pastry.
+                  Perfect for a light lunch or to enjoy with a salad at our
+                  communal table or on the go.
                 </p>
               </div>
             </div>
@@ -121,7 +145,7 @@ const Food = () => {
               <Image
                 width={500}
                 height={500}
-                src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/le-peche-mignon-food-store.avif"
                 alt="Fresh Ingredients"
                 className="inline-block h-72 w-full object-cover rounded"
               />
@@ -151,13 +175,20 @@ const Food = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="800"
-              className="mx-auto mt-4 mb-8 max-w-3xl text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16"
+              className="mx-auto mt-4 mb-8 max-w-3xl px-4 text-center text-sm leading-relaxed tracking-tight text-gray-500 sm:text-base md:mb-12 lg:mb-16"
             >
-              We&apos;ve been called petite, intimate, bijou, and even snug.
-              What we do hope is that we&apos;re packed with good things. Here
-              are some highlights of the best of Europe&apos;s fine food
-              offerings:
+              As our name in French suggests, we are packed to the rafters with
+              good things.
+              <br />
+              <br />
+              Here are some of our highlights of what we consider the best of
+              Europe's gourmet food offerings: <br /> <br />
+              Chorizo from Brindisa, coffee from Monmouth, chocolate from
+              Meurice, artisanal cheese from Mons Fromager, the best of Italy
+              from Seggiano, and last but not least, jams from La Trinquelinette
+              in France.
             </p>
+
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
               {/* Left Content */}
               <ul className="mx-auto max-w-4xl space-y-6 text-sm text-gray-500 sm:text-base md:space-y-8 lg:text-lg">
@@ -225,7 +256,7 @@ const Food = () => {
                     className="h-12 w-12 rounded-full object-cover"
                   />
                   <div>
-                    <strong>Cheese from Neals Yard Dairy</strong>
+                    <strong>Cheese from Mons Fromager</strong>
                     <p>Artisanal selections for every palate.</p>
                   </div>
                 </li>
@@ -252,7 +283,7 @@ const Food = () => {
                 <div
                   data-aos="fade-up"
                   data-aos-delay="900"
-                  className="border-[#294ebc] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
+                  className="border-[#294ebc] pl-4 border-r-4 border-l-0 pr-4"
                 >
                   <p className="text-lg font-semibold text-gray-700">
                     Natural and Biodynamic Wines
@@ -264,7 +295,7 @@ const Food = () => {
                 <div
                   data-aos="fade-up"
                   data-aos-delay="1000"
-                  className="border-[#dad1d1] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
+                  className="border-[#dad1d1] pl-4 border-r-4 border-l-0 pr-4"
                 >
                   <p className="text-lg font-semibold text-gray-700">
                     Craft Beers
@@ -276,14 +307,30 @@ const Food = () => {
                 <div
                   data-aos="fade-up"
                   data-aos-delay="1100"
-                  className="border-[#ba2323] pl-4 lg:border-r-4 lg:border-l-0 lg:pr-4"
+                  className="border-[#ba2323] pl-4 border-r-4 border-l-0 pr-4"
                 >
                   <p className="text-lg font-semibold text-gray-700">
                     Catering Services
                   </p>
                   <p className="text-sm text-gray-500 sm:text-base">
-                    Hosting a party or event? Call or email us to see how we can
-                    help.
+                    Hosting a party or event?{" "}
+                    <a
+                      className="no-underline text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors"
+                      href="tel:+442076071826"
+                      aria-label="Call Le Peche Mignon"
+                    >
+                      Call
+                    </a>{" "}
+                    or{" "}
+                    <a
+                      className="no-underline text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors"
+                      href="mailto:bookings@lepechemignon.co.uk"
+                      target="_blank"
+                      aria-label="Email Le Peche Mignon"
+                    >
+                      email{" "}
+                    </a>
+                    us to see how we can help.
                   </p>
                 </div>
               </div>

@@ -32,17 +32,22 @@ export default function About() {
                 About Us
               </h2>
               <p className="text-sm text-gray-500 sm:text-base lg:text-lg">
-                Le Péché Mignon is an independent French café and fine food
-                store nestled in a surprising location on Highbury&apos;s
-                Ronalds Road, within walking distance of Highbury Fields and
-                Arsenal&apos;s Emirates Stadium.
+                It all started back in late 2006. After many scooter runs around
+                London looking at sites the stars aligned, and we found our spot
+                on Ronalds Rd. We fell in love with the neighbourhood on first
+                sight and not much has changed since!
                 <br />
                 <br />
-                Enjoy browsing the morning papers over a coffee and a croissant,
-                a quick sandwich at lunchtime, or one of our delicious salads
-                with friends across our communal table. Stock up your cupboards
-                with an exciting array of products, from wine and cheese to
-                charcuterie and olive oil.
+                We&apos;re open every day from 7:30 to 4pm and we hope we have
+                every base covered. Pop in for a morning coffee (or takeaway if
+                you&apos;re against the clock), leisurely breakfast at the
+                weekend or stock up on store cupboard essentials — we hope we
+                live up to our name!
+                <br />
+                <br />
+                (Did you work it out?) We have since branched out and opened our
+                second site in Bishop&apos;s Stortford in Hertfordshire in 2023.
+                See what we are doing here.
               </p>
             </div>
           </div>

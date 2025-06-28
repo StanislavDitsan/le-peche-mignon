@@ -22,9 +22,10 @@ export default function Hero() {
               <span className="text-[#431500]">Le Péché Mignon</span>
             </h1>
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
-              A cozy French café offering artisan coffee, buttery croissants,
-              and fine food products. We invite you to relax and savor the
-              moment
+              A welcoming, family run neighbourhood café nestled in a surprising
+              location on Highbury&apos;s Ronalds Road within walking distance
+              of Highbury Fields and Arsenal&apos;s Emirates Stadium. It&apos;s
+              a very tiny space with lots going on.
             </p>
             <div
               data-aos="zoom-in"

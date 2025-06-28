@@ -33,7 +33,7 @@ export default function MobileQuickMenu() {
     {
       label: "Map",
       icon: <FaMapMarkerAlt className="text-[20px]" />,
-      href: "https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH",
+      href: "https://maps.app.goo.gl/srWBG56Em3oGgUbs5",
       target: "_blank",
       ariaLabel: "Open Google Maps",
     },

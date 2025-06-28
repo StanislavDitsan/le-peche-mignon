@@ -62,8 +62,8 @@ const Coffee = () => {
                 <br />
                 <br />
                 Our baristas are truly passionate and are trained to pour a
-                great cup every time. Our approach is simple: Monmouth beans,
-                the unbeatable Marzocco machine and talented baristas.
+                great cup every time. We&apos;re always open to what you want so
+                don&apos;t be shy and let us know how you like your coffee.
               </p>
             </div>
           </div>
