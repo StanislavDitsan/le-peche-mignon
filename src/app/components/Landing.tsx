@@ -19,8 +19,10 @@ const Landing = () => {
           loop
           muted
           playsInline
+          preload="auto"
+          poster="/pe-peche-video-into-backup.avif"
         >
-          <source src="/testvideo.mp4" type="video/mp4" />
+          <source src="/le-peche-video-intro.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
 
@@ -67,7 +69,11 @@ const Landing = () => {
                     Our Website
                   </button>
                 </Link>
-                <Link href="https://maps.app.goo.gl/4iDcZC63Tfx4zSuE9">
+                <Link
+                  target="_blank"
+                  aria-label="directions to highbury cafe"
+                  href="https://maps.app.goo.gl/4iDcZC63Tfx4zSuE9"
+                >
                   <button className="button px-6 py-3 rounded-lg shadow-md flex items-center gap-2 transition-colors">
                     Get Directions
                   </button>
@@ -91,7 +97,11 @@ const Landing = () => {
                     Our Website
                   </button>
                 </Link>
-                <Link href="https://maps.app.goo.gl/t8J9VGA1onoqTAFN7">
+                <Link
+                  target="_blank"
+                  aria-label="directions to bishopsstortford cafe"
+                  href="https://maps.app.goo.gl/t8J9VGA1onoqTAFN7"
+                >
                   <button className="button px-6 py-3 rounded-lg shadow-md flex items-center gap-2 transition-colors">
                     Get Directions
                   </button>
