@@ -182,7 +182,7 @@ const Food = () => {
               <br />
               <br />
               Here are some of our highlights of what we consider the best of
-              Europe's gourmet food offerings: <br /> <br />
+              Europe&apos;s gourmet food offerings: <br /> <br />
               Chorizo from Brindisa, coffee from Monmouth, chocolate from
               Meurice, artisanal cheese from Mons Fromager, the best of Italy
               from Seggiano, and last but not least, jams from La Trinquelinette
