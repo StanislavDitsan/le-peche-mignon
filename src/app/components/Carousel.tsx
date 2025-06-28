@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { Lora } from "next/font/google";
@@ -20,8 +20,8 @@ const carouselItems = [
   },
   {
     src: "/la-peche-coffee.webp",
-    alt: "Artisan coffee",
-    label: "Artisan coffee",
+    alt: "Artisan coffee & fresh pastries",
+    label: "Artisan coffee & fresh pastries",
   },
   {
     src: "/Le-Péché-Mignon.3.jpg",
@@ -47,34 +47,42 @@ const carouselItems = [
 
 export default function EmblaCarousel() {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true });
+  const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    if (!embla) return;
-    const autoScroll = setInterval(() => {
-      embla.scrollNext();
+  const startAutoScroll = useCallback(() => {
+    if (autoScrollRef.current) clearInterval(autoScrollRef.current);
+    autoScrollRef.current = setInterval(() => {
+      embla?.scrollNext();
     }, 6000);
-    return () => clearInterval(autoScroll);
   }, [embla]);
 
-  const onSelect = useCallback(() => {
-    if (!embla) return;
-    embla.selectedScrollSnap();
-  }, [embla]);
+  const stopAutoScroll = useCallback(() => {
+    if (autoScrollRef.current) clearInterval(autoScrollRef.current);
+  }, []);
 
   useEffect(() => {
     if (!embla) return;
-    embla.on("select", onSelect);
-    onSelect();
-  }, [embla, onSelect]);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+    startAutoScroll();
+
+    embla.on("pointerDown", stopAutoScroll);
+    embla.on("pointerUp", startAutoScroll);
+
+    return () => {
+      stopAutoScroll();
+      embla.off("pointerDown", stopAutoScroll);
+      embla.off("pointerUp", startAutoScroll);
+    };
+  }, [embla, startAutoScroll, stopAutoScroll]);
+
+  const scrollPrev = useCallback(() => embla?.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla?.scrollNext(), [embla]);
 
   return (
     <div className="relative flex flex-col w-full px-4 sm:px-8 lg:px-32 xl:px-80">
       {/* Carousel viewport */}
       <div
-        className="embla__viewport overflow-hidden rounded-none lg:rounded-3xl"
+        className="embla__viewport overflow-hidden rounded-3xl"
         ref={emblaRef}
       >
         <div className="embla__container flex">
@@ -85,7 +93,7 @@ export default function EmblaCarousel() {
                 alt={item.alt}
                 width={1600}
                 height={1900}
-                className="w-full h-full object-cover rounded-none lg:rounded-3xl"
+                className="w-full h-full object-cover rounded-3xl"
               />
               <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center pb-6 px-4 text-center">
                 <span
