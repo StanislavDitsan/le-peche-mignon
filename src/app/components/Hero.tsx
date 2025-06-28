@@ -24,8 +24,8 @@ export default function Hero() {
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
               A welcoming, family run neighbourhood café nestled in a surprising
               location on Highbury&apos;s Ronalds Road within walking distance
-              of Highbury Fields and Arsenal&apos;s Emirates Stadium. It&apos;s
-              a very tiny space with lots going on.
+              of Highbury Fields and Arsenal&apos;s Emirates Stadium. <br />{" "}
+              It&apos;s a very tiny space with lots going on.
             </p>
             <div
               data-aos="zoom-in"
