@@ -25,6 +25,13 @@ const FooterBishop = () => {
           </h2>
           <div className="mt-8 md:mt-0 space-y-4">
             <div className="flex items-center">
+              <FaClock className="text-gray-500 mr-3" />
+              <span className="text-gray-500 text-sm sm:text-base">
+                Open everyday 8:00 &mdash; 4pm | Friday and Saturday
+                6&mdash;11pm
+              </span>
+            </div>
+            <div className="flex items-center">
               <FaMapMarkerAlt className="text-gray-500 mr-3" />
               <a
                 href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
@@ -36,12 +43,7 @@ const FooterBishop = () => {
                 3A High St, Bishop&apos;s Stortford, London
               </a>
             </div>
-            <div className="flex items-center">
-              <FaClock className="text-gray-500 mr-3" />
-              <span className="text-gray-500 text-sm sm:text-base">
-                Open everyday 8:00 &mdash; 4pm
-              </span>
-            </div>
+
             <div className="flex items-center">
               <FaPhone className="text-gray-500 mr-3" />
               <a
@@ -61,7 +63,7 @@ const FooterBishop = () => {
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 text-gray-500 text-sm sm:text-base transition-colors"
               >
-                @peche_mignon
+                @lepechemignonuk
               </a>
             </div>
             <div className="flex items-center">

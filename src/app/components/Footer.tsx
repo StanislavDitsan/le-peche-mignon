@@ -61,7 +61,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 text-gray-500 text-sm sm:text-base transition-colors"
               >
-                @peche_mignon
+                @lepechemignonuk
               </a>
             </div>
             <div className="flex items-center">
