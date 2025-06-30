@@ -101,14 +101,7 @@ const FindUs = () => {
                   </span>
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
-                  Our Bishop&apos;s Stortford location is now open! <br />{" "}
-                  <br />
-                  Come by for breakfast, lunch or dinner and enjoy our cozy new
-                  space.
-                </p>
-                <br />
-                <p className="text-sm text-gray-500 sm:text-base mb-2">
-                  À bientôt &ndash; see you soon!
+                  Our 2nd site opened in Bishop's Stortford in 2023.
                 </p>
               </div>
               <div
