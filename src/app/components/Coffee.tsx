@@ -14,7 +14,7 @@ const Coffee = () => {
             data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white"
           >
-            Crafting Perfect Coffee
+            Our Coffee
           </h2>
           <p
             data-aos="fade-in"
@@ -31,9 +31,9 @@ const Coffee = () => {
               className="flex items-center"
             >
               <Image
-                src="/coffee.jpg"
-                alt=""
-                className="inline-block h-full w-full rounded-2xl object-cover shadow-xl"
+                src="/le-peche-our-coffee.avif"
+                alt="le-peche-our-coffee"
+                className="inline-block h-96 w-full rounded-2xl object-cover shadow-xl"
                 width={500}
                 height={500}
               />
@@ -48,19 +48,13 @@ const Coffee = () => {
                 data-aos-delay="900"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
-                A French Twist on Artisan Coffee
+                Made For You
               </h2>
               <p
                 data-aos="fade-in"
                 data-aos-delay="1100"
                 className="text-sm text-gray-500 sm:text-base"
               >
-                Inspired by the emergence of London&apos;s artisan coffee scene
-                we now enjoy being part of it, albeit with a French touch. After
-                all it&apos;s not only the Antipodeans who know how to make a
-                good cup of coffee!
-                <br />
-                <br />
                 Our baristas are truly passionate and are trained to pour a
                 great cup every time. We&apos;re always open to what you want so
                 don&apos;t be shy and let us know how you like your coffee.
