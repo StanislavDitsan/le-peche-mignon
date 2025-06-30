@@ -10,8 +10,12 @@ export default function Hero() {
 
   return (
     <section
-      className="relative bg-white dark:bg-gray-900 bg-cover bg-center lg:h-screen"
-      style={{ backgroundImage: "url('/Le-Péché-Mignon-bishop.webp')" }}
+      className="relative bg-white dark:bg-gray-900 bg-cover bg-center lg:h-screen bg-fixed"
+      style={{
+        backgroundSize: "125%", // Zoom in the image
+        backgroundPosition: "center 30%", // Move image down
+        backgroundImage: "url('/le-peche-hero-image.avif')",
+      }}
     >
       {/* Dark semi-transparent overlay */}
 
