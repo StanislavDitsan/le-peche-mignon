@@ -116,9 +116,8 @@ const Landing = () => {
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <p className="text-white flex items-center gap-2">
-            <FaCoffee className="text-[#ac6936]" /> Your Cozy Café Spot | Le
-            Péché Mignon
+          <p className="text-white flex items-center gap-2 text-sm">
+            <FaCoffee className="text-[#ac6936]" /> Le Péché Mignon
           </p>
         </footer>
       </div>
