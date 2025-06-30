@@ -45,9 +45,17 @@ export default function About() {
                 live up to our name!
                 <br />
                 <br />
-                (Did you work it out?) We have since branched out and opened our
-                second site in Bishop&apos;s Stortford in Hertfordshire in 2023.
-                See what we are doing here.
+                We have since branched out and opened our second site in
+                Bishop&apos;s Stortford in Hertfordshire in 2023. Come and{" "}
+                <a
+                  target="_blank"
+                  aria-label="Bishop Stortford "
+                  rel="noopener noreferrer"
+                  className="text-[#ac6936] font-semibold no-underline hover:text-[#8a552b] transition-colors"
+                  href="/bishopsstortford"
+                >
+                  visit us.
+                </a>{" "}
               </p>
             </div>
           </div>
