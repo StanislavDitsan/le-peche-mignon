@@ -23,11 +23,11 @@ const carouselItems = [
     alt: "Artisan coffee & fresh pastries",
     label: "Artisan coffee & fresh pastries",
   },
-  {
-    src: "/Le-Péché-Mignon.3.jpg",
-    alt: "Carousel Image 3",
-    label: "Taste of local producers in Highbury",
-  },
+  // {
+  //   src: "/Le-Péché-Mignon.3.jpg",
+  //   alt: "Carousel Image 3",
+  //   label: "Taste of local producers in Highbury",
+  // },
   {
     src: "/catering-service.avif",
     alt: "Delicious food and more to savor",
