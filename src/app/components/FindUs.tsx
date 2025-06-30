@@ -101,7 +101,7 @@ const FindUs = () => {
                   </span>
                 </p>
                 <p className="text-sm text-gray-500 sm:text-base mb-2">
-                  Our 2nd site opened in Bishop's Stortford in 2023.
+                  Our 2nd site opened in Bishop&aposl;s Stortford in 2023.
                 </p>
               </div>
               <div
