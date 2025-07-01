@@ -66,7 +66,7 @@ const FindUs = () => {
                 </a>
               </p>
               <a
-                href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
+                href="https://maps.app.goo.gl/SGWGNyDhj5Q62Ls9A"
                 target="_blank"
                 aria-label="get directions link"
                 className="button2 inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white dark:text-white mt-2"

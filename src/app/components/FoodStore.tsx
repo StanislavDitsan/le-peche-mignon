@@ -6,8 +6,8 @@ import AnimationObserver from "./AnimationObserver";
 const foodStoreImages = [
   "/le-peche-mignon-food-store2.avif",
   "/le-peche-mignon-food-store.avif",
-  "/le-peche-mignon-food-store3.avif",
-  "/le-peche-mignon-food-store4.avif",
+  "/le-peche-mignon-food-store33.avif",
+  "/le-peche-best-cheese.avif",
   "/le-peche-mignon-food-store5.avif",
 ];
 
@@ -151,7 +151,7 @@ const FoodStore = () => {
               <h3 className="text-3xl md:text-5xl font-bold dark:text-white mb-6 drop-shadow-lg">
                 Catering & Private Events
               </h3>
-              <p className="text-gray-800 dark:text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed drop-shadow p-8">
+              <p className="text-gray-800 dark:text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed drop-shadow p-8 lg:text-nowrap">
                 A full catering service is also available — so if you&apos;re
                 having a party at home or an event at work, get in touch to see
                 how we can help.
