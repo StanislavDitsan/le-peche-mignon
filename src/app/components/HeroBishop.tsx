@@ -10,10 +10,9 @@ export default function Hero() {
 
   return (
     <section
-      className="relative bg-white dark:bg-gray-900 bg-cover bg-center lg:h-screen bg-fixed"
+      className="relative bg-white dark:bg-gray-900 bg-cover bg-no-repeat bg-center 
+             lg:bg-fixed lg:bg-[length:125%] lg:bg-[position:center_30%] lg:h-screen"
       style={{
-        backgroundSize: "125%", // Zoom in the image
-        backgroundPosition: "center 30%", // Move image down
         backgroundImage: "url('/le-peche-hero-image.avif')",
       }}
     >
@@ -33,9 +32,9 @@ export default function Hero() {
               <span className="text-[#431500]">Le Péché Mignon</span>
             </h1>
             <p className="max-w-2xl dark:text-white text-black md:text-lg lg:text-xl">
-              Le Péché Mignon, a welcoming, family run neighbourhood café and
-              restaurant. The perfect spot to get together over fresh food,
-              great coffee and delicous wine.
+              Le Péché Mignon, a welcoming, family run neighbourhood café,
+              restaurant and food store. The perfect spot to get together over
+              fresh food, great coffee and delicious wine.
             </p>
             <div
               data-aos="zoom-in"
@@ -45,21 +44,21 @@ export default function Hero() {
                 href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
                 aria-label="Visit us navigation"
                 target="_blank"
-                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+                className="inline-flex w-40 button items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300 whitespace-nowrap"
               >
                 Directions
               </Link>
               <button
                 onClick={() => setShowBookModal(true)}
                 aria-label="Book a Table"
-                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+                className="inline-flex w-40 button items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300 whitespace-nowrap"
               >
                 Book a Table
               </button>
               <button
                 onClick={() => setShowModal(true)}
                 aria-label="View Menu"
-                className="inline-flex button items-center justify-center px-6 py-3 text-base font-medium text-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+                className="inline-flex w-40 button items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300 whitespace-nowrap"
               >
                 View Menu
               </button>

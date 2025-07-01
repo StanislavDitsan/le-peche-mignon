@@ -38,7 +38,7 @@ const Coffee = () => {
             data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
-            Our Perfect Coffee
+            Our Coffee
           </h2>
           <p
             data-aos="fade-in"
