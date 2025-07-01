@@ -46,13 +46,13 @@ export default function Reviews() {
           >
             What People Say
           </h2>
-          <p
+          {/* <p
             data-aos="fade-in"
             data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             Real words from guests who made our café part of their day.
-          </p>
+          </p> */}
 
           {/* Scroll buttons (desktop only) */}
           <div className="hidden lg:flex absolute bottom-4 right-4 z-10 space-x-2">
@@ -79,7 +79,7 @@ export default function Reviews() {
             ref={scrollRef}
             data-aos="fade-in"
             data-aos-delay="500"
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2 px-1 md:px-4 scrollbar-hide scroll-smooth"
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2 lg:pt-10 px-1 md:px-4 scrollbar-hide scroll-smooth"
           >
             {/* Spacer to center first card */}
             <div className="shrink-0 w-4 md:w-8" />
