@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import "./globals.css";
 import { Lora } from "next/font/google";
 import { Open_Sans } from "next/font/google";
+import LenisProvider from "./components/LenisProvider";
 
 const lora = Lora({ subsets: ["latin"] });
 const open_sans = Open_Sans({ subsets: ["latin"] });
@@ -55,7 +56,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased dark:bg-gray-900">
         {/* <NavBar /> */}
-        {children}
+        <LenisProvider>{children}</LenisProvider>
         <Analytics />
       </body>
     </html>

@@ -150,7 +150,7 @@ const Coffee = () => {
                 data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
-                A Place to Be
+                Fresh, Seasonal Ingredients
               </h3>
               <p
                 data-aos="fade-in"

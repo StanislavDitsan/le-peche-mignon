@@ -94,7 +94,7 @@ const FindUs = () => {
                 data-aos="fade-up"
                 data-aos-delay="700"
               >
-                <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex">
+                <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex ">
                   New Location{" "}
                   <span className="lg:ml-2">
                     <CiLocationOn />

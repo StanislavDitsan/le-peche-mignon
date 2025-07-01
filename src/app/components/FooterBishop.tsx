@@ -19,20 +19,20 @@ const FooterBishop = () => {
           <h2 className="font-bold text-3xl md:text-5xl w-full max-w-xl inline-flex items-center dark:text-white">
             Le Péché Mignon{" "}
             <CiCoffeeCup
-              className="text-black ml-2 dark:text-white"
+              className="text-black ml-2 dark:text-white transition-transform duration-300 hover:scale-110"
               style={{ fontSize: "1em" }}
             />
           </h2>
           <div className="mt-8 md:mt-0 space-y-4">
             <div className="flex items-center">
-              <FaClock className="text-gray-500 mr-3" />
+              <FaClock className="text-gray-500 mr-3 transition-transform duration-300 hover:scale-110" />
               <span className="text-gray-500 text-sm sm:text-base">
-                Open everyday 8:00 &mdash; 4pm | Friday and Saturday
+                Open everyday 8:00 &mdash; 4pm <br /> Friday and Saturday
                 6&mdash;11pm
               </span>
             </div>
             <div className="flex items-center">
-              <FaMapMarkerAlt className="text-gray-500 mr-3" />
+              <FaMapMarkerAlt className="text-gray-500 mr-3 transition-transform duration-300 hover:scale-110" />
               <a
                 href="https://maps.app.goo.gl/ugWVvKbhbvi3irsf9"
                 target="_blank"
@@ -45,7 +45,7 @@ const FooterBishop = () => {
             </div>
 
             <div className="flex items-center">
-              <FaPhone className="text-gray-500 mr-3" />
+              <FaPhone className="text-gray-500 mr-3 transition-transform duration-300 hover:scale-110" />
               <a
                 aria-label="phone number +441279654004"
                 href="tel:+441279654004"
@@ -55,7 +55,7 @@ const FooterBishop = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <FaInstagram className="text-gray-500 mr-3" />
+              <FaInstagram className="text-gray-500 mr-3 transition-transform duration-300 hover:scale-110" />
               <a
                 href="https://www.instagram.com/lepechemignonuk/"
                 target="_blank"
@@ -67,7 +67,7 @@ const FooterBishop = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <FaEnvelope className="text-gray-500 mr-3" />
+              <FaEnvelope className="text-gray-500 mr-3 transition-transform duration-300 hover:scale-110" />
               <a
                 href="mailto:feedback@lepechemignon.co.uk"
                 aria-label="email Address feedback@lepechemignon.co.uk"
