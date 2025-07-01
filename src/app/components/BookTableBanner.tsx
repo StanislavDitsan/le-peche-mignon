@@ -13,7 +13,7 @@ const BookTable = () => {
         {/* Container */}
         <div className="mx-auto w-full max-w-7xl px-5 md:px-10 md:py-20">
           {/* Title */}
-          <h2
+          {/* <h2
             data-aos="fade-down"
             data-aos-delay="100"
             className="mb-5 hidden md:block text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
@@ -27,7 +27,7 @@ const BookTable = () => {
           >
             Whether it&apos;s a special occasion or a casual night out, reserve
             your spot for an unforgettable dining experience.
-          </p>
+          </p> */}
 
           {/* Content Grid */}
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
