@@ -48,7 +48,7 @@ const Coffee = () => {
                 data-aos-delay="900"
                 className="text-3xl font-bold md:text-5xl dark:text-white text-nowrap"
               >
-                A Simple Approach
+                Simple Approach
               </h2>
               <p
                 data-aos="fade-in"
