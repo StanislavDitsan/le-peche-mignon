@@ -113,7 +113,7 @@ const Coffee = () => {
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             From hand-poured coffee to curated wines and fresh seasonal plates —
-            every visit is a reason to linger
+            every visit is a reason to linger.
           </p>
 
           {/* Content Grid */}
@@ -150,7 +150,7 @@ const Coffee = () => {
                 data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
-                Great Meals, <br /> Good Times
+                A Place to Be
               </h3>
               <p
                 data-aos="fade-in"
