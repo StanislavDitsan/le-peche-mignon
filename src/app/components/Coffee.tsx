@@ -46,9 +46,9 @@ const Coffee = () => {
               <h2
                 data-aos="zoom-in"
                 data-aos-delay="900"
-                className="text-3xl font-bold md:text-5xl dark:text-white"
+                className="text-3xl font-bold md:text-5xl dark:text-white text-nowrap"
               >
-                Made For You
+                A Simple Approach
               </h2>
               <p
                 data-aos="fade-in"
