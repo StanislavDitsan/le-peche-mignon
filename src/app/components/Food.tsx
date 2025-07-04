@@ -1,8 +1,10 @@
-// import Image from "next/image";
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import AnimationObserver from "./AnimationObserver";
 
 const Food = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <AnimationObserver>
       <section className="dark:bg-gray-900" id="menu">
@@ -27,25 +29,19 @@ const Food = () => {
             available to take away or eat in. We also have an extensive list of
             made-to-order toasted sandwiches, baguettes, quiches, and other
             savoury and sweet snacks.
-            {/* <br />
-            <br />
-            And to top things off, on Friday and Saturday evenings we light the
-            candles, change the playlist, and move the room around to open our
-            restaurant with a very French feel to the food and wine. See the
-            menu for more details. Bookings recommended, but walk-ins welcome!
-            <br />
-            <br />
-            You can read what our guests have to say about us{" "}
-            <a
-              href="https://maps.app.goo.gl/srWBG56Em3oGgUbs5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors no-underline"
-            >
-              here
-            </a>
-            . */}
           </p>
+
+          <div className="flex justify-center mb-12">
+            <button
+              data-aos="fade-down"
+              data-aos-delay="500"
+              onClick={() => setShowModal(true)}
+              aria-label="View Menu"
+              className="inline-flex button2 items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
+            >
+              View Full Menu
+            </button>
+          </div>
 
           {/* Foodstore Section */}
           <div id="foodstore" className="mt-16">
@@ -74,6 +70,70 @@ const Food = () => {
             </p>
           </div>
         </div>
+
+        {/* Modal */}
+        {showModal && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+            onClick={() => setShowModal(false)}
+            aria-modal="true"
+            role="dialog"
+          >
+            <div
+              className="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-xl mx-4 p-4"
+              style={{ maxHeight: "90vh", overflowY: "auto" }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 dark:hover:text-white text-3xl font-bold z-10"
+                aria-label="Close modal"
+              >
+                &times;
+              </button>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: 0,
+                  paddingTop: "141.4286%",
+                  boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+                  marginTop: "1.6em",
+                  marginBottom: "0.9em",
+                  overflow: "hidden",
+                  borderRadius: "8px",
+                  willChange: "transform",
+                }}
+              >
+                <iframe
+                  loading="lazy"
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    top: 0,
+                    left: 0,
+                    border: "none",
+                    padding: 0,
+                    margin: 0,
+                  }}
+                  src="https://www.canva.com/design/DAGr_uEfmHk/_s2BT__5b712ce9J-gJBWw/view?embed"
+                  allowFullScreen
+                  allow="fullscreen"
+                  title="PDF Menu"
+                ></iframe>
+              </div>
+              <a
+                href="https://www.canva.com/design/DAGr_uEfmHk/_s2BT__5b712ce9J-gJBWw/view"
+                target="_blank"
+                rel="noopener"
+                className="block text-center text-[#ac6936] font-semibold underline mt-2"
+              >
+                Open in new tab
+              </a>
+            </div>
+          </div>
+        )}
       </section>
     </AnimationObserver>
   );

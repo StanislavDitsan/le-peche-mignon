@@ -153,13 +153,13 @@ export default function MobileQuickMenu() {
                   left: 0,
                   border: "none",
                 }}
-                src="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view?embed"
+                src="https://www.canva.com/design/DAGr_uEfmHk/_s2BT__5b712ce9J-gJBWw/view?embed"
                 allowFullScreen
                 title="PDF Menu"
               ></iframe>
             </div>
             <a
-              href="https://www.canva.com/design/DAGnuOE99P4/naUQTqLdy_FZK28iAzitQw/view"
+              href="https://www.canva.com/design/DAGr_uEfmHk/_s2BT__5b712ce9J-gJBWw/view"
               target="_blank"
               rel="noopener"
               className="block text-center text-[#ac6936] font-semibold underline mt-2"
