@@ -68,7 +68,7 @@ export default function About() {
             {/* Image Slideshow */}
             <div
               data-aos="fade-up"
-              className="relative w-full h-[300px] sm:h-[400px] lg:h-auto overflow-hidden rounded-2xl"
+              className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl order-1 lg:order-none"
             >
               {images.map((src, index) => (
                 <Image
@@ -89,7 +89,7 @@ export default function About() {
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex flex-col justify-center gap-5 rounded-2xl border border-[#c18a52] p-10 sm:p-20 h-full bg-white/70 dark:bg-gray-900/70 relative"
+              className="flex flex-col justify-center gap-5 rounded-2xl border border-[#c18a52] p-10 sm:p-20 h-full min-h-[320px] bg-white/70 dark:bg-gray-900/70 relative"
             >
               <h2
                 data-aos="zoom-in"
