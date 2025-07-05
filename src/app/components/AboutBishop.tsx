@@ -18,7 +18,7 @@ const aboutTexts = [
     leisurely breakfast at the weekend, or stock up on store cupboard
     essentials, we hope we live up to our name! (Did you work it out?){" "}
     <a
-      href="https://www.google.com/maps?q=6+Ronalds+Road,+Highbury,+LONDON+N5+1XH"
+      href="https://maps.app.goo.gl/khimeTcTtJeGmJaRA"
       target="_blank"
       rel="noopener noreferrer"
       className="text-[#c18a52] hover:text-blue-800"
