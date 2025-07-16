@@ -1,20 +1,22 @@
 import Landing from "./components/Landing";
 
 export const metadata = {
-  title: "Le Peche Mignon | Best Coffee and Fresh Food",
+  title:
+    "Le Peche Mignon | Specialty Coffee, Fresh Food & Wine in Highbury & Bishop's Stortford",
   description:
-    "Welcome to Le Peche Mignon! Enjoy freshly brewed coffee, delicious food, and a cozy atmosphere. Visit our cafe for your daily coffee fix and explore our menu.",
+    "Le Péché Mignon is a family-run neighbourhood café, restaurant, and food store with locations in Highbury and Bishop's Stortford. Enjoy specialty coffee, delicious food, and a cozy atmosphere at either of our welcoming venues.",
   keywords:
-    "coffee, coffee shop, fresh food, best coffee, Le Peche Mignon, cozy cafe, specialty coffee, food, cafe atmosphere, delicious coffee, coffee lovers",
+    "coffee, coffee shop, fresh food, best coffee, Le Peche Mignon, cozy cafe, specialty coffee, food, cafe atmosphere, delicious coffee, wine, brunch, Bishop's Stortford, Highbury, North London",
   openGraph: {
-    title: "Le Peche Mignon | Best Coffee and Fresh Food",
+    title:
+      "Le Peche Mignon | Specialty Coffee, Fresh Food & Wine in Highbury & Bishop's Stortford",
     description:
-      "Enjoy a cozy and inviting atmosphere with every cup. Discover the best coffee and fresh food at Le Peche Mignon.",
-    url: "https://le-peche-mignon.vercel.app/",
+      "Le Péché Mignon serves freshly brewed coffee, seasonal dishes, and wine in Highbury and Bishop's Stortford. Discover a cozy, family-run café experience in both locations.",
+    url: "https://www.lepechemignon.com",
     images: [
       {
-        url: "https://le-peche-mignon.vercel.app//opengraph.jpg", // Replace with actual image URL
-        alt: "Le Peche Mignon - Best Coffee and Fresh Food",
+        url: "https://www.lepechemignon.com/images/opengraph.jpg",
+        alt: "Le Peche Mignon - Specialty Coffee and Fresh Food in Highbury & Bishop's Stortford",
       },
     ],
   },
@@ -25,64 +27,53 @@ const combinedSchemaData = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      name: "Le Peche Mignon | Best Coffee and Fresh Food",
+      name: "Le Peche Mignon - Highbury",
       description:
-        "Le Peche Mignon offers the finest coffee and fresh food. Enjoy a cozy atmosphere with a variety of coffee options and delicious meals.",
-      image: "https://www.lepechemignon.com/images/hero-image.jpg", // Replace with actual image URL
+        "Le Péché Mignon is a tiny, family-run neighbourhood café and food store on Ronalds Road in Highbury, North London. Known for specialty coffee, fresh food, and a warm local atmosphere.",
+      image: "https://www.lepechemignon.com/images/hero-highbury.jpg",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Your Street Address", // Update with your street address
-        addressLocality: "Your City", // Update with your city
-        addressRegion: "Your Region", // Update with your region
-        postalCode: "Your Postal Code", // Update with your postal code
-        addressCountry: "Your Country", // Update with your country
+        streetAddress: "6 Ronalds Rd",
+        addressLocality: "Highbury",
+        addressRegion: "London",
+        postalCode: "N5 1XH",
+        addressCountry: "UK",
       },
-      email: "contact@lepechemignon.com", // Update with your email address
+      email: "feedback@lepechemignon.co.uk",
+      telephone: "020 7607 1826",
       url: "https://www.lepechemignon.com",
-      openingHours: "Mo,Tu,We,Th,Fr 08:00-18:00", // Update with your actual opening hours
-      sameAs: [
-        "https://www.facebook.com/lepechemignon",
-        "https://www.instagram.com/lepechemignon/",
-        "https://www.tiktok.com/@lepechemignon",
-      ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.7",
-        bestRating: "5",
-        ratingCount: "120",
-      },
+      openingHours: ["Mo-Su 07:30-16:00"],
+      sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
-      "@type": "Product",
-      "@id": "https://www.lepechemignon.com/shop/specialty-coffee",
-      name: "Le Peche Mignon Specialty Coffee Beans",
+      "@type": "LocalBusiness",
+      name: "Le Peche Mignon - Bishop's Stortford",
       description:
-        "High-quality specialty coffee beans roasted to perfection for a rich and flavorful cup.",
-      image: [
-        "https://www.lepechemignon.com/images/specialty-coffee.jpg", // Replace with your product image URL
-      ],
-      brand: "Le Peche Mignon",
-      offers: {
-        "@type": "Offer",
-        url: "https://www.lepechemignon.com/shop/specialty-coffee",
-        priceCurrency: "EUR",
-        price: "14.99",
-        availability: "https://schema.org/InStock",
+        "Le Péché Mignon is a family-run café, restaurant, and food store located on High Street in Bishop's Stortford, Hertfordshire. Offering specialty coffee, seasonal menus, and wine.",
+      image: "https://www.lepechemignon.com/images/hero-bishop.jpg",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "3A High St",
+        addressLocality: "Bishop's Stortford",
+        addressRegion: "Hertfordshire",
+        postalCode: "CM23 2LS",
+        addressCountry: "UK",
       },
+      email: "feedback@lepechemignon.co.uk",
+      telephone: "+44 1279 654004",
+      url: "https://www.lepechemignon.com",
+      openingHours: ["Mo-Su 08:00-16:00", "Fr-Sa 18:00-23:00"],
+      sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
       "@type": "Organization",
       "@id": "https://www.lepechemignon.com/#organization",
       name: "Le Peche Mignon",
       legalName: "Le Peche Mignon Coffee Shop",
-      email: "contact@lepechemignon.com",
       url: "https://www.lepechemignon.com",
-      logo: "https://www.lepechemignon.com/images/logo.png", // Replace with actual logo URL
-      sameAs: [
-        "https://www.facebook.com/lepechemignon",
-        "https://www.instagram.com/lepechemignon/",
-        "https://www.tiktok.com/@lepechemignon",
-      ],
+      email: "feedback@lepechemignon.co.uk",
+      logo: "https://www.lepechemignon.com/images/logo.png",
+      sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
       "@type": "WebSite",
@@ -90,66 +81,25 @@ const combinedSchemaData = {
       url: "https://www.lepechemignon.com",
       name: "Le Peche Mignon",
       description:
-        "Your go-to destination for freshly brewed coffee and delicious meals.",
+        "Le Peche Mignon is a family-run neighbourhood café, restaurant and food store with two locations: Highbury, London and Bishop's Stortford, Hertfordshire.",
       publisher: {
         "@id": "https://www.lepechemignon.com/#organization",
       },
     },
     {
-      "@type": "ItemList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Product",
-            name: "Le Peche Mignon Espresso Blend",
-            description:
-              "Our signature espresso blend with rich and bold flavors.",
-            url: "https://www.lepechemignon.com/shop/espresso-blend",
-            image: "https://www.lepechemignon.com/images/espresso-blend.jpg", // Replace with actual product image
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "EUR",
-              price: "9.99",
-              availability: "https://schema.org/InStock",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Product",
-            name: "Le Peche Mignon French Pastries",
-            description:
-              "Delicious French pastries, perfect for pairing with your coffee.",
-            url: "https://www.lepechemignon.com/shop/french-pastries",
-            image: "https://www.lepechemignon.com/images/french-pastries.jpg", // Replace with actual product image
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "EUR",
-              price: "4.99",
-              availability: "https://schema.org/InStock",
-            },
-          },
-        },
-      ],
-    },
-    {
       "@type": "ContactPage",
       name: "Contact Le Peche Mignon",
       description:
-        "Reach out to us for any inquiries, orders, or feedback. We're happy to hear from you!",
-      url: "https://www.lepechemignon.com/contact",
+        "Reach out to either of our locations for inquiries, bookings, or feedback. We'd love to hear from you.",
+      url: "https://www.lepechemignon.com",
     },
     {
       "@type": "Blog",
       name: "Le Peche Mignon Blog",
       description:
-        "Read our latest posts on coffee, food, and cafe culture. Stay updated with new arrivals and special offers.",
-      url: "https://www.lepechemignon.com/blog",
-      image: "https://www.lepechemignon.com/images/blog-image.jpg", // Replace with actual blog image
+        "Explore our stories and updates — from new dishes to behind-the-scenes of café life in Highbury and Bishop's Stortford.",
+      url: "https://www.lepechemignon.com",
+      image: "https://www.lepechemignon.com/images/blog-image.jpg",
       mainEntityOfPage: {
         "@type": "WebSite",
         "@id": "https://www.lepechemignon.com",

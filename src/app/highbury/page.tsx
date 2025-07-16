@@ -9,20 +9,20 @@ import Footer from "../components/Footer";
 import MobileQuickMenu from "../components/MobileQuickMenuN";
 
 export const metadata = {
-  title: "Le Peche Mignon | Best Coffee and Fresh Food",
+  title: "Le Peche Mignon | Best Coffee and Fresh Food in Highbury",
   description:
-    "Welcome to Le Peche Mignon! Enjoy freshly brewed coffee, delicious food, and a cozy atmosphere. Visit our cafe for your daily coffee fix and explore our menu.",
+    "Le Péché Mignon is a cosy, family-run café and food store in Highbury, London. Tucked away on Ronalds Road, we serve freshly brewed coffee, seasonal food, and pantry goods — open daily from 7:30am.",
   keywords:
-    "coffee, coffee shop, fresh food, best coffee, Le Peche Mignon, cozy cafe, specialty coffee, food, cafe atmosphere, delicious coffee, coffee lovers",
+    "Highbury café, Le Peche Mignon, coffee shop, fresh food, breakfast, brunch, pantry goods, cozy coffee shop, specialty coffee, North London café",
   openGraph: {
-    title: "Le Peche Mignon | Best Coffee and Fresh Food",
+    title: "Le Peche Mignon | Best Coffee and Fresh Food in Highbury",
     description:
-      "Enjoy a cozy and inviting atmosphere with every cup. Discover the best coffee and fresh food at Le Peche Mignon.",
-    url: "https://le-peche-mignon.vercel.app/",
+      "Family-run café and food store in the heart of Highbury, London. Enjoy coffee, breakfast, and more — open daily from 7:30am on Ronalds Road.",
+    url: "https://www.lepechemignon.com",
     images: [
       {
-        url: "https://le-peche-mignon.vercel.app//opengraph.jpg", // Replace with actual image URL
-        alt: "Le Peche Mignon - Best Coffee and Fresh Food",
+        url: "https://www.lepechemignon.com/images/opengraph.jpg",
+        alt: "Le Peche Mignon - Coffee and Food in Highbury",
       },
     ],
   },
@@ -33,49 +33,29 @@ const combinedSchemaData = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      name: "Le Peche Mignon | Best Coffee and Fresh Food",
+      "@id": "https://www.lepechemignon.com/#highbury",
+      name: "Le Peche Mignon",
       description:
-        "Le Peche Mignon offers the finest coffee and fresh food. Enjoy a cozy atmosphere with a variety of coffee options and delicious meals.",
-      image: "https://www.lepechemignon.com/images/hero-image.jpg", // Replace with actual image URL
+        "Le Péché Mignon is a cosy, family-run neighbourhood café and food store tucked away on Ronalds Road in Highbury. We serve specialty coffee, breakfast, brunch, and pantry items.",
+      image: "https://www.lepechemignon.com/images/hero-image.jpg",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Your Street Address", // Update with your street address
-        addressLocality: "Your City", // Update with your city
-        addressRegion: "Your Region", // Update with your region
-        postalCode: "Your Postal Code", // Update with your postal code
-        addressCountry: "Your Country", // Update with your country
+        streetAddress: "6 Ronalds Road",
+        addressLocality: "Highbury",
+        addressRegion: "London",
+        postalCode: "N5 1XH",
+        addressCountry: "UK",
       },
-      email: "contact@lepechemignon.com", // Update with your email address
+      email: "feedback@lepechemignon.co.uk",
+      telephone: "020 7607 1826",
       url: "https://www.lepechemignon.com",
-      openingHours: "Mo,Tu,We,Th,Fr 08:00-18:00", // Update with your actual opening hours
-      sameAs: [
-        "https://www.facebook.com/lepechemignon",
-        "https://www.instagram.com/lepechemignon/",
-        "https://www.tiktok.com/@lepechemignon",
-      ],
+      openingHours: ["Mo-Su 07:30-16:00"],
+      sameAs: ["https://www.instagram.com/lepechemignonuk/"],
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.7",
+        ratingValue: "4.8",
         bestRating: "5",
-        ratingCount: "120",
-      },
-    },
-    {
-      "@type": "Product",
-      "@id": "https://www.lepechemignon.com/shop/specialty-coffee",
-      name: "Le Peche Mignon Specialty Coffee Beans",
-      description:
-        "High-quality specialty coffee beans roasted to perfection for a rich and flavorful cup.",
-      image: [
-        "https://www.lepechemignon.com/images/specialty-coffee.jpg", // Replace with your product image URL
-      ],
-      brand: "Le Peche Mignon",
-      offers: {
-        "@type": "Offer",
-        url: "https://www.lepechemignon.com/shop/specialty-coffee",
-        priceCurrency: "EUR",
-        price: "14.99",
-        availability: "https://schema.org/InStock",
+        ratingCount: "200",
       },
     },
     {
@@ -83,14 +63,10 @@ const combinedSchemaData = {
       "@id": "https://www.lepechemignon.com/#organization",
       name: "Le Peche Mignon",
       legalName: "Le Peche Mignon Coffee Shop",
-      email: "contact@lepechemignon.com",
       url: "https://www.lepechemignon.com",
-      logo: "https://www.lepechemignon.com/images/logo.png", // Replace with actual logo URL
-      sameAs: [
-        "https://www.facebook.com/lepechemignon",
-        "https://www.instagram.com/lepechemignon/",
-        "https://www.tiktok.com/@lepechemignon",
-      ],
+      email: "feedback@lepechemignon.co.uk",
+      logo: "https://www.lepechemignon.com/images/logo.png",
+      sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
       "@type": "WebSite",
@@ -98,69 +74,28 @@ const combinedSchemaData = {
       url: "https://www.lepechemignon.com",
       name: "Le Peche Mignon",
       description:
-        "Your go-to destination for freshly brewed coffee and delicious meals.",
+        "Le Peche Mignon in Highbury, London is your go-to for quality coffee, fresh food, and warm neighbourhood vibes.",
       publisher: {
         "@id": "https://www.lepechemignon.com/#organization",
       },
     },
     {
-      "@type": "ItemList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Product",
-            name: "Le Peche Mignon Espresso Blend",
-            description:
-              "Our signature espresso blend with rich and bold flavors.",
-            url: "https://www.lepechemignon.com/shop/espresso-blend",
-            image: "https://www.lepechemignon.com/images/espresso-blend.jpg", // Replace with actual product image
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "EUR",
-              price: "9.99",
-              availability: "https://schema.org/InStock",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Product",
-            name: "Le Peche Mignon French Pastries",
-            description:
-              "Delicious French pastries, perfect for pairing with your coffee.",
-            url: "https://www.lepechemignon.com/shop/french-pastries",
-            image: "https://www.lepechemignon.com/images/french-pastries.jpg", // Replace with actual product image
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "EUR",
-              price: "4.99",
-              availability: "https://schema.org/InStock",
-            },
-          },
-        },
-      ],
-    },
-    {
       "@type": "ContactPage",
       name: "Contact Le Peche Mignon",
       description:
-        "Reach out to us for any inquiries, orders, or feedback. We're happy to hear from you!",
-      url: "https://www.lepechemignon.com/contact",
+        "Get in touch with Le Peche Mignon in Highbury for bookings, questions, or feedback.",
+      url: "https://www.lepechemignon.com",
     },
     {
       "@type": "Blog",
       name: "Le Peche Mignon Blog",
       description:
-        "Read our latest posts on coffee, food, and cafe culture. Stay updated with new arrivals and special offers.",
-      url: "https://www.lepechemignon.com/blog",
-      image: "https://www.lepechemignon.com/images/blog-image.jpg", // Replace with actual blog image
+        "Stories, updates, and behind-the-scenes from our tiny but mighty café in Highbury.",
+      url: "https://www.lepechemignon.com",
+      image: "https://www.lepechemignon.com/images/blog-image.jpg",
       mainEntityOfPage: {
         "@type": "WebSite",
-        "@id": "https://www.lepechemignon.com",
+        "@id": "https://www.lepechemignon.com/#website",
       },
     },
   ],

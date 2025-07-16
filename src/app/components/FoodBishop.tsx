@@ -37,16 +37,17 @@ const Food = () => {
             menu for more details. Bookings recommended, but walk-ins welcome!
             <br />
             <br />
-            You can read what our guests have to say about us{" "}
+            You can read what our guests have to say about us. <br />
+            <br />
             <a
               href="https://www.opentable.co.uk/r/le-peche-mignon-hertfordshire?corrid=bcb71ecd-df5f-4103-82fb-60bc1c7424e5&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2025-06-20T19%3A00%3A00"
+              aria-label="Read guest reviews for Le Peche Mignon on OpenTable"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ac6936] font-semibold hover:text-[#8a552b] transition-colors no-underline"
             >
-              here
+              Read reviews on OpenTable
             </a>
-            .
           </p>
           {/* Content */}
 
