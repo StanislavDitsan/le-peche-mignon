@@ -1,5 +1,6 @@
 "use client"; // Make this a client-side component
 
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import "./globals.css";
@@ -37,6 +38,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N6P10J8D5K"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N6P10J8D5K');
+  `}
+        </Script>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         {/* Dark mode preference script */}
