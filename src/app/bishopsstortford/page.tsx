@@ -38,7 +38,7 @@ const combinedSchemaData = {
       name: "Le Peche Mignon",
       description:
         "Le Peche Mignon is a welcoming, family-run neighbourhood café, restaurant, and food store in Bishop's Stortford. We serve specialty coffee, seasonal food, and a curated wine selection.",
-      image: "https://www.lepechemignon.com/images/hero-image.jpg",
+      image: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       address: {
         "@type": "PostalAddress",
         streetAddress: "3A High St",
@@ -66,7 +66,7 @@ const combinedSchemaData = {
       legalName: "Le Peche Mignon Coffee Shop",
       url: "https://www.lepechemignon.com",
       email: "feedback@lepechemignon.co.uk",
-      logo: "https://www.lepechemignon.com/images/logo.png",
+      logo: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
@@ -93,7 +93,7 @@ const combinedSchemaData = {
       description:
         "Explore our stories, recipes, and behind-the-scenes updates from the Le Peche Mignon café and kitchen.",
       url: "https://www.lepechemignon.com",
-      image: "https://www.lepechemignon.com/images/blog-image.jpg",
+      image: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       mainEntityOfPage: {
         "@type": "WebSite",
         "@id": "https://www.lepechemignon.com",

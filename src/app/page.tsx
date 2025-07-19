@@ -15,7 +15,7 @@ export const metadata = {
     url: "https://www.lepechemignon.com",
     images: [
       {
-        url: "https://www.lepechemignon.com/images/opengraph.jpg",
+        url: "https://www.lepechemignon.com/pechemignon_home_pic.jpg",
         alt: "Le Peche Mignon - Specialty Coffee and Fresh Food in Highbury & Bishop's Stortford",
       },
     ],
@@ -30,7 +30,7 @@ const combinedSchemaData = {
       name: "Le Peche Mignon - Highbury",
       description:
         "Le Péché Mignon is a tiny, family-run neighbourhood café and food store on Ronalds Road in Highbury, North London. Known for specialty coffee, fresh food, and a warm local atmosphere.",
-      image: "https://www.lepechemignon.com/images/hero-highbury.jpg",
+      image: "https://www.lepechemignon.com/hero-highbury.jpg",
       address: {
         "@type": "PostalAddress",
         streetAddress: "6 Ronalds Rd",
@@ -50,7 +50,7 @@ const combinedSchemaData = {
       name: "Le Peche Mignon - Bishop's Stortford",
       description:
         "Le Péché Mignon is a family-run café, restaurant, and food store located on High Street in Bishop's Stortford, Hertfordshire. Offering specialty coffee, seasonal menus, and wine.",
-      image: "https://www.lepechemignon.com/images/hero-bishop.jpg",
+      image: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       address: {
         "@type": "PostalAddress",
         streetAddress: "3A High St",
@@ -72,7 +72,7 @@ const combinedSchemaData = {
       legalName: "Le Peche Mignon Coffee Shop",
       url: "https://www.lepechemignon.com",
       email: "feedback@lepechemignon.co.uk",
-      logo: "https://www.lepechemignon.com/images/logo.png",
+      logo: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
@@ -99,7 +99,7 @@ const combinedSchemaData = {
       description:
         "Explore our stories and updates — from new dishes to behind-the-scenes of café life in Highbury and Bishop's Stortford.",
       url: "https://www.lepechemignon.com",
-      image: "https://www.lepechemignon.com/images/blog-image.jpg",
+      image: "https://www.lepechemignon.com/la-peche-cafe-uk.avif",
       mainEntityOfPage: {
         "@type": "WebSite",
         "@id": "https://www.lepechemignon.com",
