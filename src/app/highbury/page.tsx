@@ -21,7 +21,7 @@ export const metadata = {
     url: "https://www.lepechemignon.co.uk",
     images: [
       {
-        url: "https://www.lepechemignon.co.uk/images/opengraph.jpg",
+        url: "https://www.lepechemignon.co.uk/peche_mignon-1.jpg",
         alt: "Le Peche Mignon - Coffee and Food in Highbury",
       },
     ],
@@ -37,7 +37,7 @@ const combinedSchemaData = {
       name: "Le Peche Mignon",
       description:
         "Le Péché Mignon is a cosy, family-run neighbourhood café and food store tucked away on Ronalds Road in Highbury. We serve specialty coffee, breakfast, brunch, and pantry items.",
-      image: "https://www.lepechemignon.co.uk/images/hero-image.jpg",
+      image: "https://www.lepechemignon.co.uk/peche_mignon-1.jpg",
       address: {
         "@type": "PostalAddress",
         streetAddress: "6 Ronalds Road",
@@ -65,7 +65,7 @@ const combinedSchemaData = {
       legalName: "Le Peche Mignon Coffee Shop",
       url: "https://www.lepechemignon.co.uk",
       email: "feedback@lepechemignon.co.uk",
-      logo: "https://www.lepechemignon.co.uk/images/logo.png",
+      logo: "https://www.lepechemignon.co.uk/le-peche-meta.jpg",
       sameAs: ["https://www.instagram.com/lepechemignonuk/"],
     },
     {
@@ -92,7 +92,7 @@ const combinedSchemaData = {
       description:
         "Stories, updates, and behind-the-scenes from our tiny but mighty café in Highbury.",
       url: "https://www.lepechemignon.co.uk",
-      image: "https://www.lepechemignon.co.uk/images/blog-image.jpg",
+      image: "https://www.lepechemignon.co.uk/le-peche-meta.jpg",
       mainEntityOfPage: {
         "@type": "WebSite",
         "@id": "https://www.lepechemignon.co.uk/#website",

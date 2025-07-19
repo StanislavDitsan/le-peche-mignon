@@ -23,7 +23,7 @@ export const metadata = {
     url: "https://www.lepechemignon.co.uk",
     images: [
       {
-        url: "https://www.lepechemignon.co.uk/images/opengraph.jpg",
+        url: "https://www.lepechemignon.co.uk/le-peche-meta.jpg",
         alt: "Le Peche Mignon - Coffee, Food and Restaurant in Bishop's Stortford",
       },
     ],
@@ -93,7 +93,7 @@ const combinedSchemaData = {
       description:
         "Explore our stories, recipes, and behind-the-scenes updates from the Le Peche Mignon café and kitchen.",
       url: "https://www.lepechemignon.co.uk",
-      image: "https://www.lepechemignon.co.uk/la-peche-cafe-uk.avif",
+      image: "https://www.lepechemignon.co.uk/le-peche-meta.jpg",
       mainEntityOfPage: {
         "@type": "WebSite",
         "@id": "https://www.lepechemignon.co.uk",

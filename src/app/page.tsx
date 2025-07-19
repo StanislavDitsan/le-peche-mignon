@@ -15,7 +15,7 @@ export const metadata = {
     url: "https://www.lepechemignon.co.uk",
     images: [
       {
-        url: "https://www.lepechemignon.co.uk/pechemignon_home_pic.jpg",
+        url: "https://www.lepechemignon.co.uk/le-peche-meta.jpg",
         alt: "Le Peche Mignon - Specialty Coffee and Fresh Food in Highbury & Bishop's Stortford",
       },
     ],
@@ -30,7 +30,7 @@ const combinedSchemaData = {
       name: "Le Peche Mignon - Highbury",
       description:
         "Le Péché Mignon is a tiny, family-run neighbourhood café and food store on Ronalds Road in Highbury, North London. Known for specialty coffee, fresh food, and a warm local atmosphere.",
-      image: "https://www.lepechemignon.co.uk/hero-highbury.jpg",
+      image: "https://www.lepechemignon.co.uk/peche_mignon-1.jpg",
       address: {
         "@type": "PostalAddress",
         streetAddress: "6 Ronalds Rd",
