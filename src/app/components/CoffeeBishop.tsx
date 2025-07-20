@@ -35,14 +35,12 @@ const Coffee = () => {
           {/* Title */}
           <h2
             data-aos="fade-down"
-            data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             Our Coffee
           </h2>
           <p
             data-aos="fade-in"
-            data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             Monmouth beans, the unbeatable Marzocco machine and talented
@@ -51,19 +49,16 @@ const Coffee = () => {
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h2
                 data-aos="zoom-in"
-                data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Brewed with Love
               </h2>
               <p
                 data-aos="fade-in"
-                data-aos-delay="600"
                 className="text-sm text-gray-500 sm:text-base"
               >
                 Our baristas are truly passionate and are trained to pour a
@@ -76,7 +71,6 @@ const Coffee = () => {
 
             <div
               data-aos="fade-up"
-              data-aos-delay="500"
               className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
             >
               {coffeeImages.map((src, i) => (
@@ -102,14 +96,12 @@ const Coffee = () => {
           {/* Title */}
           <h2
             data-aos="fade-down"
-            data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             Moments That Matter
           </h2>
           <p
             data-aos="fade-in"
-            data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             From hand-poured coffee to curated wines and fresh seasonal plates —
@@ -121,7 +113,6 @@ const Coffee = () => {
             {/* Image Block (first on large screens) */}
             <div
               data-aos="fade-up"
-              data-aos-delay="500"
               className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl order-1 lg:order-none"
             >
               {momentsImages.map((src, i) => (
@@ -142,19 +133,16 @@ const Coffee = () => {
             {/* Text Block (second on large screens) */}
             <div
               data-aos="fade-up"
-              data-aos-delay="700"
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h3
                 data-aos="zoom-in"
-                data-aos-delay="400"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Fresh, Seasonal Ingredients
               </h3>
               <p
                 data-aos="fade-in"
-                data-aos-delay="500"
                 className="text-sm text-gray-500 sm:text-base"
               >
                 Some days it&apos;s full of chatter and clinking glasses, others

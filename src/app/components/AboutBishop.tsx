@@ -88,12 +88,10 @@ export default function About() {
             {/* Content Block */}
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
               className="flex flex-col justify-center gap-5 rounded-2xl border border-[#c18a52] p-10 sm:p-20 h-full min-h-[320px] bg-white/70 dark:bg-gray-900/70 relative"
             >
               <h2
                 data-aos="zoom-in"
-                data-aos-delay="400"
                 className="text-3xl font-bold md:text-6xl dark:text-white"
               >
                 About Us

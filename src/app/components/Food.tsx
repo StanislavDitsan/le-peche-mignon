@@ -20,7 +20,6 @@ const Food = () => {
 
           <p
             data-aos="fade-up"
-            data-aos-delay="200"
             className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 md:text-lg"
           >
             Our food is made using high-quality ingredients sourced as
@@ -34,7 +33,6 @@ const Food = () => {
           <div className="flex justify-center mb-12">
             <button
               data-aos="fade-down"
-              data-aos-delay="500"
               onClick={() => setShowModal(true)}
               aria-label="View Menu"
               className="inline-flex button2 items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 rounded-full transition-all duration-300"
@@ -47,14 +45,12 @@ const Food = () => {
           <div id="foodstore" className="mt-16">
             <h3
               data-aos="fade-down"
-              data-aos-delay="700"
               className="text-center text-4xl font-bold md:text-6xl dark:text-white"
             >
               Quel est votre péché mignon?
             </h3>
             <p
               data-aos="fade-up"
-              data-aos-delay="800"
               className="mx-auto mt-4 mb-8 max-w-3xl px-4 text-center text-sm leading-relaxed tracking-tight text-gray-500 sm:text-base md:mb-12 lg:mb-16"
             >
               As our name in French suggests, we are packed to the rafters with

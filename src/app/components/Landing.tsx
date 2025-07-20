@@ -45,7 +45,6 @@ const Landing = () => {
             />
             <p
               data-aos="fade-in"
-              data-aos-delay="300"
               className="font-semibold uppercase mt-6 mb-8 text-gray-300 font-serif"
             >
               Select your preferred location
@@ -57,7 +56,6 @@ const Landing = () => {
             <div
               className="bg-white shadow-lg p-6 text-center mb-5 rounded-2xl hover:scale-105 transition-transform duration-300 hover:shadow-xl backdrop-blur-sm bg-white/20 relative"
               data-aos="zoom-in"
-              data-aos-delay="0"
             >
               <h2 className="text-xl font-semibold mb-5 text-[#fff] lg:text-2xl">
                 <CiCoffeeCup className="inline-block mr-2 text-[#fff]" />{" "}
@@ -85,7 +83,6 @@ const Landing = () => {
             <div
               className="bg-white shadow-lg p-6 text-center mb-5 rounded-2xl hover:scale-105 transition-transform duration-300 hover:shadow-xl relative backdrop-blur-sm bg-white/20"
               data-aos="zoom-in"
-              data-aos-delay="0"
             >
               <h2 className="text-xl font-semibold mb-5 text-[#fff] lg:text-2xl">
                 <BiCoffeeTogo className="inline-block mr-2 text-[#fff]" />{" "}
@@ -114,7 +111,6 @@ const Landing = () => {
         <footer
           className="flex justify-center items-center w-full py-4 mt-4 z-20"
           data-aos="zoom-in"
-          data-aos-delay="300"
         >
           <p className="text-white flex items-center gap-2 text-sm">
             <FaCoffee className="text-[#ac6936]" /> Le Péché Mignon

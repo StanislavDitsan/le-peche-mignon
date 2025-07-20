@@ -28,14 +28,12 @@ const FoodStore = () => {
           {/* Title */}
           <h2
             data-aos="fade-down"
-            data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             Our Food Store
           </h2>
           <p
             data-aos="fade-in"
-            data-aos-delay="300"
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             Discover a curated selection of Europe&apos;s finest gourmet foods
@@ -47,7 +45,6 @@ const FoodStore = () => {
             {/* Slideshow Image Block */}
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
               className="relative flex-1 min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
             >
               {foodStoreImages.map((src, i) => (
@@ -68,12 +65,10 @@ const FoodStore = () => {
             {/* Text Block */}
             <div
               data-aos="fade-up"
-              data-aos-delay="600"
               className="flex flex-col gap-5 flex-1 min-h-[400px] rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20 bg-white/70 dark:bg-gray-900/70 shadow-lg"
             >
               <h3
                 data-aos="zoom-in"
-                data-aos-delay="200"
                 className="text-3xl font-bold md:text-5xl dark:text-white"
               >
                 Europe&apos;s Finest
@@ -82,7 +77,6 @@ const FoodStore = () => {
               </h3>
               <p
                 data-aos="fade-in"
-                data-aos-delay="300"
                 className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
                 As our name in French suggests, we are packed to the rafters
@@ -93,7 +87,6 @@ const FoodStore = () => {
               </p>
               <p
                 data-aos="fade-in"
-                data-aos-delay="400"
                 className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
                 We also offer a beautiful selection of natural and biodynamic
@@ -102,7 +95,6 @@ const FoodStore = () => {
               </p>
               <p
                 data-aos="fade-in"
-                data-aos-delay="500"
                 className="text-sm text-gray-500 sm:text-base md:text-lg"
               >
                 Follow us on{" "}
@@ -123,11 +115,7 @@ const FoodStore = () => {
 
         {/* Catering Section */}
         <div className="w-full mt-20">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="w-full relative"
-          >
+          <div data-aos="fade-up" className="w-full relative">
             {/* Background Image */}
             <Image
               src="/la-peche-catering-service-london.avif"

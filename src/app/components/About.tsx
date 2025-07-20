@@ -21,12 +21,10 @@ export default function About() {
             {/* Content */}
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
               className="flex flex-col gap-5 rounded-2xl border border-solid border-[#c18a52] p-10 sm:p-20"
             >
               <h2
                 data-aos="zoom-in"
-                data-aos-delay="900"
                 className="text-3xl font-bold md:text-6xl dark:text-white"
               >
                 About Us

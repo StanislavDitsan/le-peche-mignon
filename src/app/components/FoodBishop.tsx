@@ -20,7 +20,6 @@ const Food = () => {
           </h2>
           <p
             data-aos="fade-up"
-            data-aos-delay="200"
             className="mx-auto mb-8 mt-4 text-left text-pretty text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16 p-8 md:text-lg"
           >
             Our food is made using high-quality ingredients sourced as
@@ -52,11 +51,7 @@ const Food = () => {
           {/* Content */}
 
           <div className="w-full mt-16">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="w-full relative"
-            >
+            <div data-aos="fade-up" className="w-full relative">
               {/* Background Image */}
               <Image
                 src="/catering-service.avif" // <-- Replace with your image path
@@ -90,16 +85,11 @@ const Food = () => {
                   onClick={() => setShowModal(true)}
                   className="button2 inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#ac6936] text-white font-semibold text-lg shadow-lg hover:bg-[#8a552b] transition-all duration-300 dark:text-white"
                   data-aos="zoom-in"
-                  data-aos-delay="900"
                   aria-label="Open PDF Menu Modal"
                 >
                   View Menu
                 </button>
-                <p
-                  className="mt-6 text-sm text-gray-500"
-                  data-aos="fade-in"
-                  data-aos-delay="950"
-                >
+                <p className="mt-6 text-sm text-gray-500" data-aos="fade-in">
                   Menu subject to change.
                 </p>
               </div>

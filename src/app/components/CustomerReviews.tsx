@@ -41,14 +41,13 @@ export default function Reviews() {
           {/* Title */}
           <h2
             data-aos="fade-down"
-            data-aos-delay="100"
             className="mb-5 text-3xl font-bold md:text-6xl lg:mb-4 dark:text-white text-center md:text-left"
           >
             What People Say
           </h2>
           {/* <p
             data-aos="fade-in"
-            data-aos-delay="300"
+            
             className="mb-8 max-w-lg text-gray-500 text-sm sm:text-base lg:mb-24 lg:text-lg text-center md:text-left"
           >
             Real words from guests who made our café part of their day.
@@ -60,7 +59,6 @@ export default function Reviews() {
               onClick={() => scroll("left")}
               className="p-2 bg-white dark:bg-gray-800 shadow-md rounded-full hover:scale-110 transition dark:text-white"
               data-aos="zoom-in"
-              data-aos-delay="400"
             >
               <IoChevronBack size={24} />
             </button>
@@ -68,7 +66,6 @@ export default function Reviews() {
               onClick={() => scroll("right")}
               className="p-2 bg-white dark:bg-gray-800 shadow-md rounded-full hover:scale-110 transition dark:text-white"
               data-aos="zoom-in"
-              data-aos-delay="400"
             >
               <IoChevronForward size={24} />
             </button>
@@ -78,7 +75,6 @@ export default function Reviews() {
           <div
             ref={scrollRef}
             data-aos="fade-in"
-            data-aos-delay="500"
             className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2 lg:pt-10 px-1 md:px-4 scrollbar-hide scroll-smooth"
           >
             {/* Spacer to center first card */}

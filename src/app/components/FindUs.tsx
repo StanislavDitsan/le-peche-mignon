@@ -11,7 +11,7 @@ const FindUs = () => {
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
           {/* Component */}
           <div className="grid items-center gap-8 sm:gap-20 lg:grid-cols-2">
-            <div data-aos="fade-in" data-aos-delay="100">
+            <div data-aos="fade-in">
               <Image
                 width={500}
                 height={500}
@@ -20,14 +20,13 @@ const FindUs = () => {
                 className="mx-auto inline-block h-full w-full max-w-2xl object-cover bg-black/90 backdrop-blur-md rounded-2xl"
               />
             </div>
-            <div data-aos="fade-up" data-aos-delay="200">
+            <div data-aos="fade-up">
               <h1 className="mb-4 text-4xl font-bold md:text-6xl dark:text-white">
                 Find Us
               </h1>
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
                 data-aos="fade-up"
-                data-aos-delay="300"
               >
                 Le Péché Mignon is a 5-minute walk from either Highbury and
                 Islington or Holloway Road station.
@@ -35,7 +34,6 @@ const FindUs = () => {
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
                 data-aos="fade-up"
-                data-aos-delay="350"
               >
                 We don&apos;t take reservations, but please don&apos;t let this
                 put you off. Come along and we will seat you as quickly as we
@@ -44,7 +42,6 @@ const FindUs = () => {
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
                 data-aos="fade-up"
-                data-aos-delay="400"
               >
                 We&apos;ve got a beautifully secluded garden to the rear. <br />{" "}
                 If the weather is good, it&apos;s a great place to relax.
@@ -52,7 +49,6 @@ const FindUs = () => {
               <p
                 className="max-w-lg text-sm text-gray-500 sm:text-base mb-2"
                 data-aos="fade-up"
-                data-aos-delay="450"
               >
                 We&apos;re always trying to improve - we&apos;d love to hear
                 what you think about Le Péché Mignon. <br /> <br /> Drop us a
@@ -71,7 +67,6 @@ const FindUs = () => {
                 aria-label="get directions link"
                 className="button2 inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white dark:text-white mt-2"
                 data-aos="zoom-in"
-                data-aos-delay="500"
               >
                 Get Directions
               </a>
@@ -80,7 +75,6 @@ const FindUs = () => {
           <div
             className="flex items-center justify-center mt-5 rounded-2xl p-10 bg-black/90 "
             data-aos="fade-up"
-            data-aos-delay="600"
             style={{
               backgroundImage: "url('/la-peche-cafe-uk.avif')",
               backgroundPosition: "center",
@@ -89,11 +83,7 @@ const FindUs = () => {
             }}
           >
             <div className="bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 shadow-md rounded-lg p-10 max-w-[1024px] gap-10 md:gap-20 flex flex-col md:flex-row items-center justify-between">
-              <div
-                className="w-full md:w-4/5"
-                data-aos="fade-up"
-                data-aos-delay="700"
-              >
+              <div className="w-full md:w-4/5" data-aos="fade-up">
                 <p className="text-4xl font-bold md:text-6xl dark:text-white mb-4 inline-flex ">
                   New Location{" "}
                   <span className="lg:ml-2">
@@ -107,7 +97,6 @@ const FindUs = () => {
               <div
                 className="w-full md:w-1/5 flex justify-center"
                 data-aos="fade-up"
-                data-aos-delay="800"
               >
                 <a
                   target="_blank"
