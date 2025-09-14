@@ -11,15 +11,15 @@ import CustomerReviews from "../components/CustomerReviews";
 
 export const metadata = {
   title:
-    "Le Peche Mignon | Coffee, Restaurant & Food Store in Bishop's Stortford",
+    "Restaurant Bishop’s Stortford | Le Peche Mignon - Coffee, Food & Wine Bar",
   description:
-    "Le Peche Mignon is a family-run café, restaurant, and food store in Bishop's Stortford. Enjoy specialty coffee, seasonal dishes, and a warm, welcoming vibe — open daily from 8am.",
+    "Restaurant Bishop’s Stortford - Le Peche Mignon is the top-rated restaurant, café, and food store in Bishop’s Stortford. Enjoy specialty coffee, fresh food, brunch, and a cozy atmosphere at the best restaurant in Bishop’s Stortford.",
   keywords:
-    "Bishop's Stortford coffee shop, Le Peche Mignon, family-run restaurant, neighborhood café, food store, wine bar, breakfast, brunch, fresh food, cozy café, local restaurant, best coffee Bishop's Stortford",
+    "restaurant Bishop’s Stortford, Bishop’s Stortford restaurant, best restaurant Bishop’s Stortford, Le Peche Mignon, coffee shop Bishop’s Stortford, brunch Bishop’s Stortford, food store Bishop’s Stortford, wine bar Bishop’s Stortford, family-run restaurant, local restaurant Bishop’s Stortford",
   openGraph: {
-    title: "Le Peche Mignon | Coffee, Restaurant & Food Store",
+    title: "Restaurant Bishop’s Stortford | Le Peche Mignon",
     description:
-      "A cozy family-run café, restaurant, and food store in Bishop's Stortford. Visit us for great coffee, fresh food, and local wine — all in one place.",
+      "Restaurant Bishop’s Stortford - Le Peche Mignon is the best restaurant, café, and food store in Bishop’s Stortford. Visit us for specialty coffee, fresh food, brunch, and wine in a cozy, family-run setting.",
     url: "https://www.lepechemignon.co.uk",
     images: [
       {

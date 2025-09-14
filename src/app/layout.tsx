@@ -38,6 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="description"
+          content="Restaurant Bishop’s Stortford & Highbury’s Ronalds Road - Le Peche Mignon is a top-rated restaurant, café, and food store. Enjoy specialty coffee, fresh food, brunch, and a cozy atmosphere at the best restaurants in Bishop’s Stortford and Highbury."
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N6P10J8D5K"
           strategy="afterInteractive"
