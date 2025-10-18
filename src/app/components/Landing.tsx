@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaCoffee } from "react-icons/fa";
 import { CiCoffeeCup } from "react-icons/ci";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { FaPowerOff } from "react-icons/fa";
