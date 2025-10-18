@@ -78,9 +78,24 @@ const Footer = () => {
         </div>
         <div className="mb-14 w-full border-b border-black mt-16"></div>
         <div className="md:flex-row flex justify-between sm:items-center sm:flex-col items-start flex-col-reverse">
-          <p className="text-gray-500 text-sm sm:text-base text-center">
-            © le peche mignon {currentYear}
-          </p>
+          <div className="flex flex-row w-full items-start">
+            <div className="flex flex-col items-start">
+              <p className="text-gray-500 text-sm sm:text-base text-left">
+                © le peche mignon {currentYear}
+              </p>
+              <p className="text-gray-500 flex items-center gap-2 text-sm mt-1">
+                Site developed by
+                <a
+                  href="https://digitelle-studios.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#ac6936] hover:underline transition-colors"
+                >
+                  Digitelle Studios
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

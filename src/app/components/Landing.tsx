@@ -6,6 +6,7 @@ import React from "react";
 import { FaCoffee } from "react-icons/fa";
 import { CiCoffeeCup } from "react-icons/ci";
 import { BiCoffeeTogo } from "react-icons/bi";
+import { FaPowerOff } from "react-icons/fa";
 import AnimationObserver from "./AnimationObserver";
 
 const Landing = () => {
@@ -113,7 +114,18 @@ const Landing = () => {
           data-aos="zoom-in"
         >
           <p className="text-white flex items-center gap-2 text-sm">
-            <FaCoffee className="text-[#ac6936]" /> Le Péché Mignon
+            <FaPowerOff
+              className="text-[#ac6936] text-base"
+              aria-label="Powered"
+            />{" "}
+            <a
+              href="https://digitelle-studios.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#ac6936] hover:underline transition-colors"
+            >
+              Digitelle Studios
+            </a>
           </p>
         </footer>
       </div>
