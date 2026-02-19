@@ -68,10 +68,10 @@ export default function NavBarBishop() {
   const navLinks = [
     { href: "/", label: "Main" },
     { href: "/bishopsstortford", label: "Home" },
-    { href: "bishopsstortford/#coffee", label: "Coffee" },
-    { href: "bishopsstortford/#menu", label: "Menu" },
-    { href: "bishopsstortford/#booktable", label: "Reservation" },
-    { href: "bishopsstortford/#foodstore", label: "Food Store" },
+    { href: "/bishopsstortford#coffee", label: "Coffee" },
+    { href: "/bishopsstortford#menu", label: "Menu" },
+    { href: "/bishopsstortford#booktable", label: "Reservation" },
+    { href: "/bishopsstortford#foodstore", label: "Food Store" },
 
     // { href: "/gallery", label: "Gallery" },
   ];

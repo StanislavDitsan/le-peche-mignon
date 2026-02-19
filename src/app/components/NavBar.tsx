@@ -68,9 +68,9 @@ export default function NavBarBishop() {
   const navLinks = [
     { href: "/", label: "Main" },
     { href: "/highbury", label: "Home" },
-    { href: "highbury/#coffee", label: "Coffee" },
-    { href: "highbury/#menu", label: "Menu" },
-    { href: "highbury/#foodstore", label: "Food Store" },
+    { href: "/highbury#coffee", label: "Coffee" },
+    { href: "/highbury#menu", label: "Menu" },
+    { href: "/highbury#foodstore", label: "Food Store" },
 
     { href: "/gallery", label: "Gallery" },
   ];
