@@ -10,13 +10,8 @@ const nextConfig: NextConfig = {
     root: projectRoot,
   },
   images: {
-    qualities: [75, 90, 100],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**", // Allow all remote images
-      },
-    ],
+    // Serve original static assets directly to avoid Vercel Image Optimization reads.
+    unoptimized: true,
   },
   allowedDevOrigins: ["http://192.168.1.16:3000"],
 };
