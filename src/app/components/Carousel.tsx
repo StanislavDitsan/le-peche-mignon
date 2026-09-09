@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { Lora } from "next/font/google";
@@ -48,6 +48,9 @@ const carouselItems = [
 export default function EmblaCarousel() {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true });
   const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
+  const [loadedSlides, setLoadedSlides] = useState<Set<number>>(
+    () => new Set([0, 1, carouselItems.length - 1])
+  );
 
   const startAutoScroll = useCallback(() => {
     if (autoScrollRef.current) clearInterval(autoScrollRef.current);
@@ -65,13 +68,29 @@ export default function EmblaCarousel() {
 
     startAutoScroll();
 
+    const markNeighborsLoaded = () => {
+      const selected = embla.selectedScrollSnap();
+      const len = carouselItems.length;
+      setLoadedSlides((prev) => {
+        const next = new Set(prev);
+        next.add(selected);
+        next.add((selected + 1) % len);
+        next.add((selected - 1 + len) % len);
+        return next;
+      });
+    };
+
+    markNeighborsLoaded();
+
     embla.on("pointerDown", stopAutoScroll);
     embla.on("pointerUp", startAutoScroll);
+    embla.on("select", markNeighborsLoaded);
 
     return () => {
       stopAutoScroll();
       embla.off("pointerDown", stopAutoScroll);
       embla.off("pointerUp", startAutoScroll);
+      embla.off("select", markNeighborsLoaded);
     };
   }, [embla, startAutoScroll, stopAutoScroll]);
 
@@ -88,13 +107,15 @@ export default function EmblaCarousel() {
         <div className="embla__container flex">
           {carouselItems.map((item, index) => (
             <div className="embla__slide relative min-w-full" key={index}>
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={1600}
-                height={1900}
-                className="w-full h-full object-cover rounded-3xl"
-              />
+              {loadedSlides.has(index) && (
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={1600}
+                  height={1900}
+                  className="w-full h-full object-cover rounded-3xl"
+                />
+              )}
               <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center pb-6 px-4 text-center">
                 <span
                   className={`${lora.className} text-white text-sm sm:text-base lg:text-xl bg-black/60 px-4 py-2 rounded-md backdrop-blur-sm`}

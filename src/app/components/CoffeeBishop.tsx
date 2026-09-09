@@ -73,19 +73,26 @@ const Coffee = () => {
               data-aos="fade-up"
               className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
             >
-              {coffeeImages.map((src, i) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt=""
-                  width={500}
-                  height={500}
-                  quality={90}
-                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
-                    i === coffeeImageIndex ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
+              {coffeeImages.map((src, i) => {
+                const distance = Math.min(
+                  Math.abs(i - coffeeImageIndex),
+                  coffeeImages.length - Math.abs(i - coffeeImageIndex)
+                );
+                if (distance > 1) return null;
+                return (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt=""
+                    width={500}
+                    height={500}
+                    quality={90}
+                    className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                      i === coffeeImageIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -115,19 +122,26 @@ const Coffee = () => {
               data-aos="fade-up"
               className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl order-1 lg:order-none"
             >
-              {momentsImages.map((src, i) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt="Cozy coffee shop interior"
-                  width={500}
-                  height={500}
-                  quality={90}
-                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
-                    i === momentsImageIndex ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
+              {momentsImages.map((src, i) => {
+                const distance = Math.min(
+                  Math.abs(i - momentsImageIndex),
+                  momentsImages.length - Math.abs(i - momentsImageIndex)
+                );
+                if (distance > 1) return null;
+                return (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt="Cozy coffee shop interior"
+                    width={500}
+                    height={500}
+                    quality={90}
+                    className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                      i === momentsImageIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                );
+              })}
             </div>
 
             {/* Text Block (second on large screens) */}

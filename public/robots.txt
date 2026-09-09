@@ -1,0 +1,30 @@
+User-agent: *
+Crawl-delay: 10
+Allow: /
+
+# Aggressive/low-value crawlers and AI scrapers — block outright to save bandwidth and requests
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://www.lepechemignon.co.uk/sitemap.xml

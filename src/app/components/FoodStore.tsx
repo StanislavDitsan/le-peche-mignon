@@ -47,19 +47,26 @@ const FoodStore = () => {
               data-aos="fade-up"
               className="relative flex-1 min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl"
             >
-              {foodStoreImages.map((src, i) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt="Gourmet food store display"
-                  width={500}
-                  height={500}
-                  quality={90}
-                  className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
-                    i === imageIndex ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
+              {foodStoreImages.map((src, i) => {
+                const distance = Math.min(
+                  Math.abs(i - imageIndex),
+                  foodStoreImages.length - Math.abs(i - imageIndex)
+                );
+                if (distance > 1) return null;
+                return (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt="Gourmet food store display"
+                    width={500}
+                    height={500}
+                    quality={90}
+                    className={`absolute h-full w-full rounded-2xl object-cover transition-opacity duration-1000 ease-in-out ${
+                      i === imageIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                );
+              })}
             </div>
 
             {/* Text Block */}

@@ -70,19 +70,27 @@ export default function About() {
               data-aos="fade-up"
               className="relative flex items-center h-[400px] w-full overflow-hidden rounded-2xl shadow-xl order-1 lg:order-none"
             >
-              {images.map((src, index) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt="About Us"
-                  width={500}
-                  height={500}
-                  quality={100}
-                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out rounded-2xl ${
-                    index === currentImage ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
+              {images.map((src, index) => {
+                const distance =
+                  Math.min(
+                    Math.abs(index - currentImage),
+                    images.length - Math.abs(index - currentImage)
+                  );
+                if (distance > 1) return null;
+                return (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt="About Us"
+                    width={500}
+                    height={500}
+                    quality={100}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out rounded-2xl ${
+                      index === currentImage ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                );
+              })}
             </div>
 
             {/* Content Block */}
