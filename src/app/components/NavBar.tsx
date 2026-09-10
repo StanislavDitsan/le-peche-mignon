@@ -91,11 +91,12 @@ export default function NavBarBishop() {
             <Image
               data-aos="fade-right"
               src="/peche_mignon_logo.png"
-              className="h-auto w-auto"
+              className="h-12 md:h-16 w-auto"
               alt="peche_mignon_logo.png"
               aria-label="peche_mignon_logo"
               width={80}
               height={100}
+              priority
             />
           </Link>
 
