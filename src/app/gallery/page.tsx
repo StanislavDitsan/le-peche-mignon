@@ -36,23 +36,23 @@ const Gallery = () => {
     },
     {
       src: "/peche_mignon-8.jpg",
-      alt: "Image 7",
+      alt: "Image 8",
     },
     {
       src: "/peche_mignon-9.jpg",
-      alt: "Image 7",
+      alt: "Image 9",
     },
     {
       src: "/peche_mignon-10.jpg",
-      alt: "Image 7",
+      alt: "Image 10",
     },
     {
       src: "/peche_mignon-11.jpg",
-      alt: "Image 7",
+      alt: "Image 11",
     },
     {
       src: "/peche_mignon-12.jpg",
-      alt: "Image 7",
+      alt: "Image 12",
     },
   ];
 
